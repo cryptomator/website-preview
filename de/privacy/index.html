@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datenschutzerklärung</title>
+    
+      <meta name="description" content="Verschlüssle deine Dropbox, Google Drive, und Co. Cryptomator ist eine freie Open-Source-Software."/>
+      <meta property="og:title" content="Cryptomator - Datenschutzerklärung"/>
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://cryptomator.org/de/privacy/"/>
+      <meta property="og:site_name" content="Cryptomator"/>
+      <meta property="og:description" content="Verschlüssle deine Dropbox, Google Drive, und Co. Cryptomator ist eine freie Open-Source-Software."/>
+      <meta property="og:image" content="https://cryptomator.org/img/og-image.png">
+      <meta property="og:image:width" content="1200"/>
+      <meta property="og:image:height" content="630"/>
+    
+    <meta property="og:locale" content="de_DE" />
+    
+      <meta property="og:locale:alternate" content="en_US" />
+    
+    <meta name="apple-itunes-app" content="app-id=1560822163">
+    
+      
+      <link rel="stylesheet" href="/css/main.min.0768fc2e50c20d0f0f617b2ff7e661afefac5a64c173728de1addb03fbf10145.css" integrity="sha256-B2j8LlDCDQ8PYXsv9&#43;Zhr&#43;&#43;sWmTBc3KN4a3bA/vxAUU=" media="screen" />
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/de/feed.xml" />
+    
+      <link rel="alternate" hreflang="en" href="/privacy/" />
+    
+    
+      
+    
+  </head>
+  <body class="bg-dark font-body text-gray-900">
+    <div class="w-full bg-primary text-center text-sm text-white p-0.5">
+  <p>Suchst du nach einer Alternative zu Boxcryptor nach deren Übernahme? Cryptomator ist hier, um zu bleiben! <a class="underline" href="/de/blog/2022/12/08/boxcryptor-shuts-down-find-your-cloud-encryption-alternative/">Mehr erfahren.</a></p>
+</div>
+<nav x-data="{ isNavOpen: false }" :class="isNavOpen ? 'relative' : 'relative'" class="w-full text-primary absolute lg:px-8 bg-white border-t-2 border-primary shadow">
+  <div class="flex justify-between items-stretch w-full">
+    <a class="flex items-center hover:no-underline py-2 mx-2 lg:ml-0" href="/de/">
+      <img src="/img/logo.svg" class="h-8" alt="Logo"/>
+      <span class="font-headline font-bold ml-2 pb-px">CRYPTOMATOR</span>
+    </a>
+
+    
+    <ul class="hidden lg:flex items-stretch list-none m-0">
+      <li class="flex items-center lg:mx-2 border-b-2 border-transparent hover:border-primary">
+        <a class="p-2 hover:no-underline" href="/de/downloads/">Downloads</a>
+      </li>
+      <li class="flex items-center lg:mx-2 border-b-2 border-transparent hover:border-primary">
+        <a class="p-2 hover:no-underline" href="/de/hub/">Cryptomator Hub</a>
+      </li>
+      <li x-data="{ isSupportUsDropdownOpen: false }" class="flex items-center border-b-2 border-transparent">
+        <button @click="isSupportUsDropdownOpen = !isSupportUsDropdownOpen" class="whitespace-nowrap p-2">
+          <span>Unterstütze uns</span>
+          <i class="fas fa-chevron-down fa-fw text-xs"></i>
+        </button>
+        <div class="relative">
+          <div x-show="isSupportUsDropdownOpen" @click.outside="isSupportUsDropdownOpen = false" x-cloak class="absolute right-0 mt-6 py-2 w-64 bg-white rounded shadow-md z-50">
+            <a href="/de/supporter-cert/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Supporter-Zertifikat</a>
+            <a href="/de/donate/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Spenden</a>
+            <a href="/de/sponsors/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Sponsoren</a>
+          </div>
+        </div>
+      </li>
+      <li x-data="{ isLearnMoreDropdownOpen: false }" class="flex items-center border-b-2 border-transparent">
+        <button @click="isLearnMoreDropdownOpen = !isLearnMoreDropdownOpen" class="whitespace-nowrap p-2">
+          <span>Mehr erfahren</span>
+          <i class="fas fa-chevron-down fa-fw text-xs"></i>
+        </button>
+        <div class="relative">
+          <div x-show="isLearnMoreDropdownOpen" @click.outside="isLearnMoreDropdownOpen = false" x-cloak class="absolute right-0 mt-6 py-2 w-96 bg-white rounded shadow-md z-50">
+            <a href="/de/open-source/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Wie Open Source die Sicherheit stärkt</a>
+            <a href="/de/encrypt-dropbox/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Verschlüsselung deiner Dropbox</a>
+            <a href="/de/boxcryptor-alternative/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Alternative zu Boxcryptor</a>
+            <a href="/de/coop/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Unsere Kooperationspartner</a>
+            <a href="/de/enterprise/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Einsatz im Enterprise</a>
+            <a href="/de/gdpr/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">DSGVO-Konformität</a>
+          </div>
+        </div>
+      </li>
+      
+      <li class="flex items-center mx-5 my-3 border-l border-primary"></li>
+      
+      <li x-data="{ isLangDropdownOpen: false }" class="flex items-center border-b-2 border-transparent">
+        <button @click="isLangDropdownOpen = !isLangDropdownOpen" class="whitespace-nowrap p-2">
+          <span>DE</span>
+          <i class="fas fa-chevron-down fa-fw text-xs"></i>
+        </button>
+        <div class="relative">
+          <div x-show="isLangDropdownOpen" @click.outside="isLangDropdownOpen = false" x-cloak class="absolute right-0 mt-6 py-2 w-48 bg-white rounded shadow-md z-50">
+            <a href="/privacy/" lang="en" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">English</a>
+          </div>
+        </div>
+      </li>
+      <li class="flex items-center border-b-2 border-transparent">
+        <a class="p-2 hover:no-underline" href="https://twitter.com/Cryptomator" target="_blank" rel="noopener"><i class="fab fa-twitter fa-fw" aria-label="Twitter"></i></a>
+      </li>
+      <li class="flex items-center border-b-2 border-transparent">
+        <a class="p-2 hover:no-underline" href="https://github.com/cryptomator" target="_blank" rel="noopener"><i class="fab fa-github fa-fw" aria-label="GitHub"></i></a>
+      </li>
+    </ul>
+    
+    
+    <button @click="isNavOpen = !isNavOpen" type="button" class="self-center lg:hidden border border-primary rounded px-2 py-1 mx-2" aria-label="Toggle Navigation">
+      <i x-show="isNavOpen" class="fas fa-times fa-fw"></i>
+      <i x-show="!isNavOpen" class="fas fa-bars fa-fw"></i>
+    </button>
+  </div>
+  
+  
+  <div :class="isNavOpen ? 'block' : 'hidden'" x-cloak class="lg:hidden">
+    <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/downloads/">Downloads</a>
+    <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/hub/">Cryptomator Hub</a>
+    
+    <hr class="border-primary my-2"/>
+
+    <div class="uppercase tracking-wide text-gray-500 text-xs font-bold p-2">
+      Unterstütze uns
+    </div>
+    <div class="mt-1">
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/supporter-cert/">Supporter-Zertifikat</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/donate/">Spenden</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/sponsors/">Sponsoren</a>
+    </div>
+    
+    <hr class="border-primary my-2"/>
+
+    <div class="uppercase tracking-wide text-gray-500 text-xs font-bold p-2">
+      Mehr erfahren
+    </div>
+    <div class="mt-1">
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/open-source/">Wie Open Source die Sicherheit stärkt</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/encrypt-dropbox/">Verschlüsselung deiner Dropbox</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/boxcryptor-alternative/">Alternative zu Boxcryptor</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/coop/">Unsere Kooperationspartner</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/enterprise/">Einsatz im Enterprise</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/gdpr/">DSGVO-Konformität</a>
+    </div>
+
+    <hr class="border-primary my-2"/>
+    
+    <div class="uppercase tracking-wide text-gray-500 text-xs font-bold p-2">
+      <i class="fas fa-globe fa-fw"></i> DE
+    </div>
+    <div class="mt-1">
+      
+      <a href="/privacy/" lang="en" class="block px-2 py-1 hover:text-secondary hover:no-underline">English</a>
+      
+    </div>
+    
+    <hr class="border-primary my-2"/>
+    
+    <a class="block p-2 hover:text-secondary hover:no-underline" href="https://twitter.com/Cryptomator" target="_blank" rel="noopener">
+      <i class="fab fa-twitter fa-fw"></i>
+      <span>Cryptomator auf Twitter</span>
+    </a>
+    <a class="block p-2 hover:text-secondary hover:no-underline" href="https://github.com/cryptomator" target="_blank" rel="noopener">
+      <i class="fab fa-github fa-fw"></i>
+      <span>Cryptomator auf GitHub</span>
+    </a>
+  </div>
+</nav>
+
+    <div class="bg-gray-100 min-vh-80">
+    
+    
+  <div class="container-prose py-12">
+    <article class="prose prose-sm md:prose max-w-none md:max-w-none">
+      <header class="mb-6">
+        <h1>Datenschutzerklärung</h1>
+      </header>
+      <p><em>Stand: März 2022</em></p>
+<p class="text-lg leading-relaxed text-gray-700">Als Anbieter einer Software zur Stärkung der Privatsphäre liegen uns Ihre Rechte in Bezug auf Datenschutz und informationelle Selbstbestimmung am Herzen. Von uns bereitgestellte Dienste erheben nur absolut notwendige Daten. Selbstverständlich verzichten wir auf den Einsatz von Analysetools und unnötigen Cookies. Für einige Vorgänge, insbesondere im Zusammenhang mit Zahlungsvorgängen sind wir jedoch auf Dienste Dritter angewiesen und Sie sollten auch deren Datenschutzerklärungen aufmerksam lesen.</p>
+<p>Diese Datenschutzerklärung strukturiert sich in folgende Abschnitte:</p>
+<ol>
+<li><a href="#contact">Name und Anschrift der Verantwortlichen</a></li>
+<li><a href="#general">Allgemeines zur Datenverarbeitung</a></li>
+<li><a href="#logfiles">Bereitstellung der Webseite und Erstellung von Logfiles</a></li>
+<li><a href="#cookies">Verwendung von Cookies</a></li>
+<li><a href="#email">E-Mail-Kontaktmöglichkeit</a></li>
+<li><a href="#payments">Verwendung im Zuge von Online-Bestellungen (E-Commerce)</a></li>
+<li><a href="#thirdparty">Weitergabe personenbezogener Daten an Dritte</a></li>
+<li><a href="#app">Nutzung der Anwendung Cryptomator</a></li>
+<li><a href="#rights">Rechte der betroffenen Person</a></li>
+</ol>
+<h2 id="contact">1. Name und Anschrift der Verantwortlichen</h2>
+<p>Die Verantwortliche im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze der Mitgliedstaaten sowie sonstiger datenschutzrechtlicher Bestimmungen ist:</p>
+<p>Skymatic GmbH<br/>
+Am Hauptbahnhof 6<br/>
+53111 Bonn</p>
+<p>Vertreten durch:<br/>
+Tobias Hagemann<br/>
+Sebastian Stenzel</p>
+<p>Kontakt:
+<a href="mailto:privacy@cryptomator.org">privacy@cryptomator.org</a></p>
+<h2 id="general">2. Allgemeines zur Datenverarbeitung</h2>
+<h3 id="21-umfang-der-verarbeitung-personenbezogener-daten">2.1 Umfang der Verarbeitung personenbezogener Daten</h3>
+<p>Wir erheben und verwenden personenbezogene Daten unserer Nutzer grundsätzlich nur, soweit dies zur Bereitstellung einer funktionsfähigen Website sowie unserer Inhalte und Leistungen erforderlich ist. Die Erhebung und Verwendung personenbezogener Daten unserer Nutzer erfolgt regelmäßig nur nach Einwilligung des Nutzers. Eine Ausnahme gilt in solchen Fällen, in denen eine vorherige Einholung einer Einwilligung aus tatsächlichen Gründen nicht möglich ist und die Verarbeitung der Daten durch gesetzliche Vorschriften gestattet ist.</p>
+<h3 id="22-rechtsgrundlage-für-die-verarbeitung-personenbezogener-daten">2.2 Rechtsgrundlage für die Verarbeitung personenbezogener Daten</h3>
+<p>Soweit wir für Verarbeitungsvorgänge personenbezogener Daten eine Einwilligung der betroffenen Person einholen, dient Art. 6 Abs. 1 lit. a EU-Datenschutzgrundverordnung (DSGVO) als Rechtsgrundlage für die Verarbeitung personenbezogener Daten.</p>
+<p>Bei der Verarbeitung von personenbezogenen Daten, die zur Erfüllung eines Vertrages, dessen Vertragspartei die betroffene Person ist, erforderlich ist, dient Art. 6 Abs. 1 lit. b DSGVO als Rechtsgrundlage. Dies gilt auch für Verarbeitungsvorgänge, die zur Durchführung vorvertraglicher Maßnahmen erforderlich sind.</p>
+<p>Soweit eine Verarbeitung personenbezogener Daten zur Erfüllung einer rechtlichen Verpflichtung erforderlich ist, der unser Unternehmen unterliegt, dient Art. 6 Abs. 1 lit. c DSGVO als Rechtsgrundlage.</p>
+<p>Für den Fall, dass lebenswichtige Interessen der betroffenen Person oder einer anderen natürlichen Person eine Verarbeitung personenbezogener Daten erforderlich machen, dient Art. 6 Abs. 1 lit. d DSGVO als Rechtsgrundlage.</p>
+<p>Ist die Verarbeitung zur Wahrung eines berechtigten Interesses unseres Unternehmens oder eines Dritten erforderlich und überwiegen die Interessen, Grundrechte und Grundfreiheiten des Betroffenen das erstgenannte Interesse nicht, so dient Art. 6 Abs. 1 lit. f DSGVO als Rechtsgrundlage für die Verarbeitung.</p>
+<h3 id="23-speicherdauer-und-löschung-der-daten">2.3 Speicherdauer und Löschung der Daten</h3>
+<p>Die personenbezogenen Daten der betroffenen Person werden gelöscht oder gesperrt, sobald der Zweck der Speicherung entfällt. Eine Speicherung kann darüber hinaus dann erfolgen, wenn dies durch den europäischen oder nationalen Gesetzgeber in unionsrechtlichen Verordnungen, Gesetzen oder sonstigen Vorschriften, denen der Verantwortliche unterliegt, vorgesehen wurde. Eine Sperrung oder Löschung der Daten erfolgt auch dann, wenn eine durch die genannten Normen vorgeschriebene Speicherfrist abläuft, es sei denn, dass eine Erforderlichkeit zur weiteren Speicherung der Daten für einen Vertragsabschluss oder eine Vertragserfüllung besteht.</p>
+<h2 id="logfiles">3. Bereitstellung der Webseite und Erstellung von Logfiles</h2>
+<h3 id="31-beschreibung-und-umfang-der-datenverarbeitung">3.1 Beschreibung und Umfang der Datenverarbeitung</h3>
+<p>Bei jedem Aufruf unserer Internetseite erfasst unser System automatisiert Daten und Informationen vom Computersystem des aufrufenden Rechners.
+Folgende Daten werden hierbei erhoben:</p>
+<ul>
+<li>Browsertyp und Browserversion</li>
+<li>verwendetes Betriebssystem</li>
+<li>Referrer URL</li>
+<li>Uhrzeit der Serveranfrage</li>
+<li>IP-Adresse</li>
+<li>die besuchte Webseite</li>
+<li>die Menge an übertragenen Daten in Byte</li>
+</ul>
+<p>Die Daten werden ebenfalls in den Logfiles unseres Systems gespeichert.
+Eine Speicherung dieser Daten zusammen mit anderen personenbezogenen Daten des Nutzers findet nicht statt.</p>
+<h3 id="32-rechtsgrundlage-für-die-datenverarbeitung">3.2 Rechtsgrundlage für die Datenverarbeitung</h3>
+<p>Rechtsgrundlage für die vorübergehende Speicherung der Daten und der Logfiles ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+<h3 id="33-zweck-der-datenverarbeitung">3.3 Zweck der Datenverarbeitung</h3>
+<p>Die vorübergehende Speicherung der IP-Adresse durch das System ist notwendig, um eine Auslieferung der Website an den Rechner des Nutzers zu ermöglichen. Hierfür muss die IP-Adresse des Nutzers für die Dauer der Sitzung gespeichert bleiben.</p>
+<p>Die Speicherung in Logfiles erfolgt, um die Funktionsfähigkeit der Website sicherzustellen. Zudem dienen uns die Daten zur Optimierung der Website und zur Sicherstellung der Sicherheit unserer informationstechnischen Systeme. Eine Auswertung der Daten zu Marketingzwecken findet in diesem Zusammenhang nicht statt.</p>
+<p>In diesen Zwecken liegt auch unser berechtigtes Interesse an der Datenverarbeitung nach Art. 6 Abs. 1 lit. f DSGVO.</p>
+<h3 id="34-dauer-der-speicherung">3.4 Dauer der Speicherung</h3>
+<p>Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind. Im Falle der Erfassung der Daten zur Bereitstellung der Website ist dies der Fall, wenn die jeweilige Sitzung beendet ist.</p>
+<p>Im Falle der Speicherung der Daten in Logfiles ist dies nach spätestens 7 Tagen der Fall.</p>
+<h3 id="35-widerspruchs--und-beseitigungsmöglichkeiten">3.5 Widerspruchs- und Beseitigungsmöglichkeiten</h3>
+<p>Die Erfassung der Daten zur Bereitstellung der Website und die Speicherung der Daten in Logfiles ist für den Betrieb der Internetseite zwingend erforderlich. Es besteht folglich seitens des Nutzers keine Widerspruchsmöglichkeit.</p>
+<h2 id="cookies">4. Verwendung von Cookies</h2>
+<h3 id="41-beschreibung-und-umfang-der-datenverarbeitung">4.1 Beschreibung und Umfang der Datenverarbeitung</h3>
+<p>Unsere Webseite verwendet ausschließlich technisch notwendige Cookies. Bei Cookies handelt es sich um Textdateien, die im Internetbrowser bzw. vom Internetbrowser auf dem Computersystem des Nutzers gespeichert werden. Ruft ein Nutzer eine Website auf, so kann ein Cookie auf dem Betriebssystem des Nutzers gespeichert werden. Dieser Cookie enthält eine charakteristische Zeichenfolge, die eine eindeutige Identifizierung des Browsers beim erneuten Aufrufen der Website ermöglicht.</p>
+<h3 id="42-rechtsgrundlage-für-die-datenverarbeitung">4.2 Rechtsgrundlage für die Datenverarbeitung</h3>
+<p>Die Rechtsgrundlage für die Verarbeitung personenbezogener Daten unter Verwendung technisch notweniger Cookies ist Art. 6 Abs. 1 lit. f DSGVO.</p>
+<h3 id="43-zweck-der-datenverarbeitung">4.3 Zweck der Datenverarbeitung</h3>
+<p>Der Zweck der Verwendung technisch notwendiger Cookies ist, die Nutzung von Websites für die Nutzer zu ermöglichen. Sie dienen insbesondere der Erkennung von DDOS-Angriffen und deren Abwehr. Die durch technisch notwendige Cookies erhobenen Nutzerdaten werden nicht zur Erstellung von Nutzerprofilen verwendet.</p>
+<p>In diesen Zwecken liegt auch unser berechtigtes Interesse in der Verarbeitung der personenbezogenen Daten nach Art. 6 Abs. 1 lit. f DSGVO.</p>
+<h3 id="44-dauer-der-speicherung-widerspruchs-und-beseitigungsmöglichkeiten">4.4 Dauer der Speicherung, Widerspruchs und Beseitigungsmöglichkeiten</h3>
+<p>Cookies werden auf dem Rechner des Nutzers gespeichert und von diesem an unserer Seite übermittelt. Daher haben Sie als Nutzer auch die volle Kontrolle über die Verwendung von Cookies. Durch eine Änderung der Einstellungen in Ihrem Internetbrowser können Sie die Übertragung von Cookies deaktivieren oder einschränken. Bereits gespeicherte Cookies können jederzeit gelöscht werden. Dies kann auch automatisiert erfolgen. Werden Cookies für unsere Website deaktiviert, können möglicherweise nicht mehr alle Funktionen der Website vollumfänglich genutzt werden.</p>
+<h2 id="email">5. E-Mail-Kontaktmöglichkeit</h2>
+<h3 id="51-beschreibung-und-umfang-der-datenverarbeitung">5.1 Beschreibung und Umfang der Datenverarbeitung</h3>
+<p>Eine Kontaktaufnahme mit uns ist über die bereitgestellte E-Mail-Adresse möglich. In diesem Fall werden die mit der E-Mail übermittelten personenbezogenen Daten des Nutzers gespeichert.</p>
+<p>Es erfolgt in diesem Zusammenhang keine Weitergabe der Daten an Dritte. Die Daten werden nur für die Verarbeitung der Konversation verwendet.</p>
+<h3 id="52-rechtsgrundlage-für-die-datenverarbeitung">5.2 Rechtsgrundlage für die Datenverarbeitung</h3>
+<p>Rechtsgrundlage für die Verarbeitung der Daten, die im Zuge einer Übersendung einer E-Mail übermittelt werden, ist, sofern eine Einwilligung des Nutzers vorliegt, Art. 6 Abs. 1 lit. a DSGVO und, sollte diese nicht vorliegen, Art. 6 Abs. 1 lit. f DSGVO. Zielt der Kontakt auf den Abschluss eines Vertrages ab so ist zusätzliche Rechtsgrundlage für die Verarbeitung ebenfalls Art. 6 Abs. 1 lit. b DSGVO.</p>
+<h3 id="53-zweck-der-datenverarbeitung">5.3 Zweck der Datenverarbeitung</h3>
+<p>Die Verarbeitung der personenbezogenen Daten dient uns allein zur Bearbeitung der Kontaktaufnahme. Hierin liegt auch das erforderliche berechtigte Interesse an der Verarbeitung der Daten.</p>
+<h3 id="54-dauer-der-speicherung">5.4 Dauer der Speicherung</h3>
+<p>Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind. Für die personenbezogenen Daten die per E-Mail übersandt wurden ist dies dann der Fall, wenn die jeweilige Konversation mit dem Nutzer beendet ist. Beendet ist die Konversation dann, wenn sich aus den Umständen entnehmen lässt, dass der betroffene Sachverhalt abschließend geklärt ist.</p>
+<p>Zielte die Kontaktaufnahme auf den Abschluss eines Vertrags ab und ist dieser zustande gekommen, so ist der Zweck nach vollständiger Abwicklung des Vertrags erreicht. Darüber hinaus können gesetzliche Aufbewahrungspflichten, z.B. nach der Abgabeordnung (AO) die weitere Speicherung notwendig machen.</p>
+<h3 id="55-widerspruchs--und-beseitigungsmöglichkeit">5.5 Widerspruchs- und Beseitigungsmöglichkeit</h3>
+<p>Der Nutzer hat jederzeit die Möglichkeit, seine Einwilligung zur Verarbeitung der personenbezogenen Daten zu widerrufen. Nimmt der Nutzer per E-Mail Kontakt zu uns auf, so kann er der Speicherung seiner personenbezogenen Daten jederzeit widersprechen. In einem solchen Fall kann die Konversation nicht fortgeführt werden.</p>
+<p>Den Widerspruch können Sie jederzeit formlos an <a href="mailto:privacy@cryptomator.org">privacy@cryptomator.org</a> oder jede andere von uns bereitgestellte Kontaktmöglichkeit (z.B. postalisch) richten.</p>
+<p>Alle personenbezogenen Daten, die im Zuge der Kontaktaufnahme gespeichert wurden, werden in diesem Fall gelöscht.</p>
+<h2 id="payments">6. Verwendung im Zuge von Online-Bestellungen (E-Commerce)</h2>
+<h3 id="61-beschreibung-und-umfang-der-datenverarbeitung">6.1 Beschreibung und Umfang der Datenverarbeitung</h3>
+<p>Im Falle einer Online-Bestellung über unseren Online-Shop werden folgende Daten erhoben:</p>
+<ul>
+<li>Auswahl Privat- oder Firmenkunde</li>
+<li>Vor- und Nachname</li>
+<li>E-Mail-Adresse</li>
+<li>Firmenname (bei Firmenkunden)</li>
+<li>USt-IdNr. (bei Firmenkunden)</li>
+<li>Anschrift (Straße, Hausnummer, Postleitzahl, Ort, Land)</li>
+<li>Bankverbindung (bei Bezahlung per Bankeinzug)</li>
+<li>Kreditkartendaten (bei Bezahlung mit Kreditkarte)</li>
+</ul>
+<p>Im Rahmen des Bestellvorgangs wird eine Einwilligung des Nutzer zur Verarbeitung dieser Daten eingeholt und der Nutzer auf diese Datenschutzerklärung hingewiesen. Eine Weitergabe der Daten findet nur statt, soweit dies zur Erfüllung vertraglicher Verpflichtungen notwendig ist. Details hierzu finden sich im nachfolgenden Abschnitt (<a href="#thirdparty">7. Weitergabe personenbezogener Daten an Dritte</a>).</p>
+<h3 id="62-rechtsgrundlage-für-die-datenverarbeitung">6.2 Rechtsgrundlage für die Datenverarbeitung</h3>
+<p>Rechtsgrundlage für die vorübergehende Speicherung der Daten ist Art. 6 Abs. 1 lit. b DSGVO.</p>
+<h3 id="63-zweck-der-datenverarbeitung">6.3 Zweck der Datenverarbeitung</h3>
+<p>Die Daten werden ausschließlich dafür verwendet, um die von Ihnen getätigte Bestellung zu bearbeiten. Im Falle einer Bestellung speichern wir den Vertragstext und senden Ihnen die Versandbestätigung per E-Mail zu. Die AGB können Sie jederzeit auch <a href="/de/terms">hier</a> einsehen.</p>
+<h3 id="64-dauer-der-speicherung">6.4 Dauer der Speicherung</h3>
+<p>Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind. Im Falle der Erfassung der Daten zur Bestellabwicklung ist dies der Fall, sobald die Bestellung vollständig abgewickelt ist. Auch nach Abschluss des Vertrags kann eine Erforderlichkeit, personenbezogene Daten des Vertragspartners zu speichern, bestehen, um vertraglichen oder gesetzlichen Verpflichtungen nachzukommen.</p>
+<h3 id="65-widerspruchs--und-beseitigungsmöglichkeiten">6.5 Widerspruchs- und Beseitigungsmöglichkeiten</h3>
+<p>Die Erfassung der Daten zur Bestellabwicklung und die Speicherung der Daten zu demselben Zweck ist zwingend erforderlich. Es besteht folglich seitens des Nutzers keine Widerspruchsmöglichkeit.</p>
+<h2 id="thirdparty">7. Weitergabe personenbezogener Daten an Dritte</h2>
+<h3 id="71-beschreibung-und-umfang-der-datenweitergabe">7.1 Beschreibung und Umfang der Datenweitergabe</h3>
+<p>Zur Erfüllung unserer vertraglichen Verpflichtungen ist es teilweise unumgänglich, dass bestimmte Daten auch an Dritte weitergegeben werden. Dies dient jeweils nur zur Erfüllung eines Vertrages oder zur Durchführung vorvertraglicher Maßnahmen. Einzelheiten können Sie der folgenden Tabelle entnehmen:</p>
+<table>
+<thead>
+<tr>
+<th>Kategorie</th>
+<th>Daten, die weitergegeben werden können</th>
+<th>Zweck der Datenweitergabe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Zahlungsdienstleister</td>
+<td>Name und E-Mail-Adresse, Bestellnummer, -datum und -summe, Kreditkartendaten</td>
+<td>Abwicklung der Zahlung; Zuordnung der Zahlung zum Kunden</td>
+</tr>
+</tbody>
+</table>
+<p>Für den Bezahlvorgang wird der Nutzer gegebenenfalls auf die Webseite des von ihm ausgewählten Zahlungsdienstleisters weitergeleitet oder Daten von Webseiten dieser Dienstleister nachgeladen. Dies können abhängig von der vom Nutzer gewählten Zahlungsweise sein:</p>
+<ul>
+<li>PayPal (PayPal (Europe) S.à r.l. et Cie, S.C.A., 22-24 Boulevard Royal, L-2449 Luxembourg). Bitte beachten Sie die diesbezüglichen Datenschutzhinweise unter: <a href="https://www.paypal.com/de/webapps/mpp/ua/privacy-full" target="_blank" rel="noopener">https://www.paypal.com/de/webapps/mpp/ua/privacy-full</a>.</li>
+<li>Stripe (Stripe Payments Europe, Ltd., 1 Grand Canal Street Lower, Grand Canal Dock, Dublin, Irland). Bitte beachten Sie die diesbezüglichen Datenschutzhinweise unter: <a href="https://stripe.com/de/privacy" target="_blank" rel="noopener">https://stripe.com/de/privacy</a>.</li>
+<li>CoinPayments (CoinPayments Inc., Hodltech OÜ, Tornimäe 5, 10145 Tallinn, Estland). Bitte beachten Sie die diesbezüglichen Datenschutzhinweise unter: <a href="https://www.coinpayments.net/help-privacy" target="_blank" rel="noopener">https://www.coinpayments.net/help-privacy</a>.</li>
+<li>Paddle (Paddle Payments Ltd., Core B, Block 71, The Plaza, Park West 12 Dublin, Irland). Bitte beachten Sie die diesbezüglichen Datenschutzhinweise unter: <a href="https://paddle.com/privacy/" target="_blank" rel="noopener">https://paddle.com/privacy/</a>.</li>
+</ul>
+<h3 id="72-rechtsgrundlage-für-die-datenweitergabe">7.2 Rechtsgrundlage für die Datenweitergabe</h3>
+<p>Rechtsgrundlage für die Verarbeitung der Daten ist bei Vorliegen einer Einwilligung des Nutzers Art. 6 Abs. 1 lit. a DSGVO. Dient die Weitergabe der Erfüllung eines Vertrages, dessen Vertragspartei der Nutzer ist oder der Durchführung vorvertraglicher Maßnahmen, so ist zusätzliche Rechtsgrundlage für die Verarbeitung der Daten Art. 6 Abs. 1 lit. b DSGVO. Darüber hinaus ist Art. 6 Abs. 1 lit. f DSGVO ebenfalls zusätzlich Rechtsgrundlage.</p>
+<h3 id="73-zweck-der-datenweitergabe">7.3 Zweck der Datenweitergabe</h3>
+<p>Die Weitergabe dient der Erfüllung unserer vertraglichen und vorvertraglichen Pflichten. In diesen Zwecken liegt zugleich unser berechtigtes Interesse gem. Art. 6 Abs. 1 lit. f DSGVO.</p>
+<h3 id="74-widerspruchs--und-beseitigungsmöglichkeit">7.4 Widerspruchs- und Beseitigungsmöglichkeit</h3>
+<p>Die Weitergabe der Daten ist zur Erfüllung von Verträgen oder für vorvertragliche Maßnahmen zwingend erforderlich. Es besteht folglich seitens des Nutzers keine Widerspruchsmöglichkeit.</p>
+<h2 id="app">8. Nutzung der Anwendung Cryptomator</h2>
+<h3 id="81-beschreibung-und-umfang-der-datenweitergabe">8.1 Beschreibung und Umfang der Datenweitergabe</h3>
+<p>Bei Nutzung einer der Cryptomator-Anwendungen für Desktop, iOS oder Android können Daten durch uns verarbeitet werden. Dies kann durch die Nutzung einer der nachfolgendend genannten Funktionen erfolgen.</p>
+<h4 id="811-update-check-desktop-android">8.1.1 Update-Check (Desktop, Android)</h4>
+<p>Falls der Nutzer manuell oder per automatischem Intervall die Update-Prüfung nutzt, stellt die Anwendung eine Verbindung zu einem Server her, um die neueste Version abzufragen. Dabei werden folgende Daten übermittelt:</p>
+<ul>
+<li>Betriebssystem</li>
+<li>Softwareversion</li>
+<li>Uhrzeit der Anfrage</li>
+<li>IP-Adresse</li>
+</ul>
+<h4 id="812-übermittlung-von-fehlerprotokollen">8.1.2 Übermittlung von Fehlerprotokollen</h4>
+<p>Lokal auf dem Gerät des Nutzers erstellte Log-Dateien können bei der Fehlerbehebung behilflich sein. Sendet der Nutzer eine dieser Dateien per E-Mail, können folgende Daten übermittelt werden:</p>
+<ul>
+<li>Betriebssystem</li>
+<li>Softwareversion</li>
+<li>Uhrzeit ausgeführter Aktionen innerhalb der Anwendung</li>
+<li>Aufgetretene Fehlermeldungen und Warnungen</li>
+<li>Ggf. Dateipfade (bei aktiviertem Debug-Modus)</li>
+</ul>
+<p>Eine Speicherung dieser Daten zusammen mit anderen personenbezogenen Daten des Nutzers findet nicht statt.</p>
+<h4 id="813-zugriff-auf-cloud-speicher-dienste-android-ios">8.1.3 Zugriff auf Cloud-Speicher-Dienste (Android, iOS)</h4>
+<p>Falls der Nutzer die Cryptomator App für iOS oder Android autorisiert, auf einen oder mehrere Cloud-Speicher-Dienste zuzugreifen, erhält die Anwendung Zugriff auf dort gespeicherte Daten. Die Anwendung greift auf keine Daten zu, die außerhalb von durch den Nutzer wissentlich ausgewählten Ordnern liegen.</p>
+<p>Diese Daten werden ausschließlich lokal auf dem Gerät des Nutzers verarbeitet. Unter keinen Umständen erhalten wir Teile dieser Daten.</p>
+<p>Sollten solche Cloud-Speicher-Dienste genutzt werden, sind auch die Datenschutzerklärungen der jeweiligen Anbieter zu beachten:</p>
+<ul>
+<li><a href="https://www.apple.com/legal/privacy/en-ww/">iCloud Drive</a></li>
+<li><a href="https://www.dropbox.com/privacy">Dropbox</a></li>
+<li><a href="https://developers.google.com/terms/api-services-user-data-policy">Google Drive</a></li>
+<li><a href="https://privacy.microsoft.com/en-us/privacystatement">OneDrive</a></li>
+<li><a href="https://www.pcloud.com/privacy_policy.html">pCloud</a></li>
+</ul>
+<h3 id="82-rechtsgrundlage-für-die-datenverarbeitung">8.2 Rechtsgrundlage für die Datenverarbeitung</h3>
+<p>Rechtsgrundlage für die vorübergehende Speicherung der Daten ist bei Einwilligung Art. 6 Abs. 1 lit. a DSGVO, zudem Art. 6 Abs. 1 lit. f DSGVO.</p>
+<h3 id="83-zweck-der-datenverarbeitung">8.3 Zweck der Datenverarbeitung</h3>
+<p>Der Update-Check ist notwendig, um den Nutzer über (u.a. sicherheitsrelevante) Aktualisierungen zu informieren. Dies dient sowohl der laufend notwendigen Anpassung an die Betriebsumgebgung, schützt den Anwender vor Problemen und Inkompatibilitäten und ermöglicht ihm Funktionserweiterungen zu nutzen.</p>
+<p>Bei der Übermittlung des Fehlerprotokolls können darin Daten enthalten sein, die Sie selbst angepasst haben (z.B. Dateinamen), mit denen Sie identifiziert werden könnten oder die auf sonstige Weise für Sie sensibel sein können.</p>
+<p>Die Speicherung in Logfiles erfolgt, um Konstellationen aus eingesetzten Betriebssystem- und Programmversionen auszuwerten, Probleme aufzudecken und ggfs. Updates anzubieten. In diesen Zwecken liegt auch unser berechtigtes Interesse an der Datenverarbeitung nach Art. 6 Abs. 1 lit. f DSGVO.</p>
+<h3 id="84-dauer-der-speicherung">8.4 Dauer der Speicherung</h3>
+<p>Die Daten werden gelöscht, sobald sie für die Erreichung des Zweckes ihrer Erhebung nicht mehr erforderlich sind.</p>
+<p>Im Falle der Speicherung der Daten in Logfiles ist dies nach spätestens 30 Tagen der Fall. Eine darüberhinausgehende Speicherung ist möglich. In diesem Fall werden die personenbezogenen Daten der Nutzer gelöscht oder verfremdet, sodass eine Zuordnung des aufrufenden Clients nicht mehr möglich ist.</p>
+<h2 id="rights">9. Rechte der betroffenen Person</h2>
+<p>Werden personenbezogene Daten von Ihnen verarbeitet, sind Sie Betroffener i.S.d. DSGVO und es stehen Ihnen folgende Rechte gegenüber dem Verantwortlichen zu:</p>
+<h3 id="91-recht-auf-auskunft---art-15-dsgvo">9.1 Recht auf Auskunft - Art. 15 DSGVO</h3>
+<p>Mit dem Recht auf Auskunft erhält der Betroffene eine umfassende Einsicht in die ihn angehenden Daten und einige andere wichtige Kriterien, wie beispielsweise die Verarbeitungszwecke oder die Dauer der Speicherung. Es gelten die in § 34 BDSG geregelten Ausnahmen von diesem Recht.</p>
+<h3 id="92-recht-auf-berichtigung---art-16-dsgvo">9.2 Recht auf Berichtigung - Art. 16 DSGVO</h3>
+<p>Das Recht auf Berichtigung beinhaltet die Möglichkeit für den Betroffenen, unrichtige ihn angehende personenbezogene Daten korrigieren zu lassen.</p>
+<h3 id="93-recht-auf-löschung---art-17-dsgvo">9.3 Recht auf Löschung - Art. 17 DSGVO</h3>
+<p>Das Recht auf Löschung beinhaltet die Möglichkeit für den Betroffenen, Daten beim Verantwortlichen löschen zu lassen. Dies ist allerdings nur dann möglich, wenn die ihn angehenden personenbezogenen Daten nicht mehr notwendig sind, rechtswidrig verarbeitet werden oder eine diesbezügliche Einwilligung widerrufen wurde. Es gelten die in § 35 BDSG geregelten Ausnahmen von diesem Recht.</p>
+<h3 id="94-recht-auf-einschränkung-der-verarbeitung---art-18-dsgvo">9.4 Recht auf Einschränkung der Verarbeitung - Art. 18 DSGVO</h3>
+<p>Das Recht auf Einschränkung der Verarbeitung beinhaltet die Möglichkeit für den Betroffenen, eine weitere Verarbeitung der ihn angehenden personenbezogenen Daten vorerst zu verhindern. Eine Einschränkung tritt vor allem in der Prüfungsphase anderer Rechtewahrnehmungen durch den Betroffenen ein.</p>
+<h3 id="95-recht-auf-datenübertragbarkeit---art-20-dsgvo">9.5 Recht auf Datenübertragbarkeit - Art. 20 DSGVO</h3>
+<p>Das Recht auf Datenübertragbarkeit beinhaltet die Möglichkeit für den Betroffenen, die ihn angehenden personenbezogenen Daten in einem gängigen, maschinenlesbaren Format vom Verantwortlichen zu erhalten, um sie ggf. an einen anderen Verantwortlichen weiterleiten zu lassen. Gemäß Art. 20 Abs. 3 Satz 2 DSGVO steht dieses Recht aber dann nicht zur Verfügung, wenn die Datenverarbeitung der Wahrnehmung öffentlicher Aufgaben dient.</p>
+<h3 id="96-recht-auf-widerspruch---art-21-dsgvo">9.6 Recht auf Widerspruch - Art. 21 DSGVO</h3>
+<p>Das Recht auf Widerspruch beinhaltet die Möglichkeit für Betroffene, in einer besonderen Situation der weiteren Verarbeitung ihrer personenbezogenen Daten zu widersprechen, soweit diese durch die Wahrnehmung öffentlicher Aufgaben oder öffentlicher sowie privater Interessen gerechtfertigt ist. Es gelten die in § 36 BDSG geregelten Ausnahmen von diesem Recht.</p>
+<h3 id="97-recht-auf-beschwerde-bei-einer-aufsichtsbehörde">9.7 Recht auf Beschwerde bei einer Aufsichtsbehörde</h3>
+<p>Unbeschadet eines anderweitigen verwaltungsrechtlichen oder gerichtlichen Rechtsbehelfs steht Ihnen das Recht auf Beschwerde bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres Aufenthaltsorts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes, zu, wenn Sie der Ansicht sind, dass die Verarbeitung der Sie betreffenden personenbezogenen Daten gegen die DSGVO verstößt.</p>
+<p>Die Aufsichtsbehörde, bei der die Beschwerde eingereicht wurde, unterrichtet den Beschwerdeführer über den Stand und die Ergebnisse der Beschwerde einschließlich der Möglichkeit eines gerichtlichen Rechtsbehelfs nach Art. 78 DSGVO.</p>
+
+    </article>
+  </div>
+
+    </div>
+    <footer class="border-t-2 border-secondary pt-8 pb-16">
+  <section class="container text-white font-light leading-loose grid grid-cols-2 gap-x-6 gap-y-8 md:grid-cols-3 lg:grid-cols-5">
+    <div>
+      <h4 class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">Cryptomator</h4>
+      <ul class="list-none m-0">
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/blog/">Blog</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://cryptomator.redbubble.com/" target="_blank" rel="noopener">Merchandise</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/presskit/">Pressemappe</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">Etwas beitragen</h4>
+      <ul class="list-none m-0">
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://github.com/cryptomator" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/donate/">Spenden</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://translate.cryptomator.org/" target="_blank" rel="noopener">Übersetzen</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">Support</h4>
+      <ul class="list-none m-0">
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://docs.cryptomator.org/" target="_blank" rel="noopener">Docs</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://community.cryptomator.org/" target="_blank" rel="noopener">Community</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/contact/">Kontakt</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">Uns folgen</h4>
+      <ul class="list-none m-0">
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://twitter.com/Cryptomator" target="_blank" rel="noopener">Twitter</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://mastodon.online/@cryptomator" target="_blank" rel="noopener me">Fediverse</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/feed.xml" rel="alternate" type="application/rss+xml">RSS-Feed</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">Rechtliches</h4>
+      <ul class="list-none m-0">
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/impressum/">Impressum</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/privacy/">Datenschutzerklärung</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/terms/">AGB</a></li>
+      </ul>
+    </div>
+  </section>
+</footer>
+
+
+    
+    <script type="text/javascript" src="/js/jquery/jquery.min.ff1523fb7389539c84c65aba19260648793bb4f5e29329d2ee8804bc37a3fe6e.js" integrity="sha256-/xUj&#43;3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="></script>
+
+    
+    <script type="text/javascript" src="/js/alpinejs/cdn.min.d1573a45c19419ee881d3f7e6d6810bb955ea0d64470da1f1875537de18c603e.js" integrity="sha256-0Vc6RcGUGe6IHT9&#43;bWgQu5VeoNZEcNofGHVTfeGMYD4=" defer></script>
+
+    
+    <script type="text/javascript" src="/js/lazysizes/lazysizes.min.3d9120fa621da6d613c1698b7014ec6bdf4620366e8f2b7b547059f4b6f6272b.js" integrity="sha256-PZEg&#43;mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys=" async></script>
+  </body>
+</html>

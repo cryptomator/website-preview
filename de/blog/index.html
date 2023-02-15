@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    
+      <meta name="description" content="Verschlüssle deine Dropbox, Google Drive, und Co. Cryptomator ist eine freie Open-Source-Software."/>
+      <meta property="og:title" content="Cryptomator - Blog"/>
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://cryptomator.org/de/blog/"/>
+      <meta property="og:site_name" content="Cryptomator"/>
+      <meta property="og:description" content="Verschlüssle deine Dropbox, Google Drive, und Co. Cryptomator ist eine freie Open-Source-Software."/>
+      <meta property="og:image" content="https://cryptomator.org/img/og-image.png">
+      <meta property="og:image:width" content="1200"/>
+      <meta property="og:image:height" content="630"/>
+    
+    <meta property="og:locale" content="de_DE" />
+    
+      <meta property="og:locale:alternate" content="en_US" />
+    
+    <meta name="apple-itunes-app" content="app-id=1560822163">
+    
+      
+      <link rel="stylesheet" href="/css/main.min.0768fc2e50c20d0f0f617b2ff7e661afefac5a64c173728de1addb03fbf10145.css" integrity="sha256-B2j8LlDCDQ8PYXsv9&#43;Zhr&#43;&#43;sWmTBc3KN4a3bA/vxAUU=" media="screen" />
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/de/feed.xml" />
+    
+      <link rel="alternate" hreflang="en" href="/blog/" />
+    
+    
+      
+    
+  </head>
+  <body class="bg-dark font-body text-gray-900">
+    <div class="w-full bg-primary text-center text-sm text-white p-0.5">
+  <p>Suchst du nach einer Alternative zu Boxcryptor nach deren Übernahme? Cryptomator ist hier, um zu bleiben! <a class="underline" href="/de/blog/2022/12/08/boxcryptor-shuts-down-find-your-cloud-encryption-alternative/">Mehr erfahren.</a></p>
+</div>
+<nav x-data="{ isNavOpen: false }" :class="isNavOpen ? 'relative' : 'relative'" class="w-full text-primary absolute lg:px-8 bg-white border-t-2 border-primary shadow">
+  <div class="flex justify-between items-stretch w-full">
+    <a class="flex items-center hover:no-underline py-2 mx-2 lg:ml-0" href="/de/">
+      <img src="/img/logo.svg" class="h-8" alt="Logo"/>
+      <span class="font-headline font-bold ml-2 pb-px">CRYPTOMATOR</span>
+    </a>
+
+    
+    <ul class="hidden lg:flex items-stretch list-none m-0">
+      <li class="flex items-center lg:mx-2 border-b-2 border-transparent hover:border-primary">
+        <a class="p-2 hover:no-underline" href="/de/downloads/">Downloads</a>
+      </li>
+      <li class="flex items-center lg:mx-2 border-b-2 border-transparent hover:border-primary">
+        <a class="p-2 hover:no-underline" href="/de/hub/">Cryptomator Hub</a>
+      </li>
+      <li x-data="{ isSupportUsDropdownOpen: false }" class="flex items-center border-b-2 border-transparent">
+        <button @click="isSupportUsDropdownOpen = !isSupportUsDropdownOpen" class="whitespace-nowrap p-2">
+          <span>Unterstütze uns</span>
+          <i class="fas fa-chevron-down fa-fw text-xs"></i>
+        </button>
+        <div class="relative">
+          <div x-show="isSupportUsDropdownOpen" @click.outside="isSupportUsDropdownOpen = false" x-cloak class="absolute right-0 mt-6 py-2 w-64 bg-white rounded shadow-md z-50">
+            <a href="/de/supporter-cert/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Supporter-Zertifikat</a>
+            <a href="/de/donate/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Spenden</a>
+            <a href="/de/sponsors/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Sponsoren</a>
+          </div>
+        </div>
+      </li>
+      <li x-data="{ isLearnMoreDropdownOpen: false }" class="flex items-center border-b-2 border-transparent">
+        <button @click="isLearnMoreDropdownOpen = !isLearnMoreDropdownOpen" class="whitespace-nowrap p-2">
+          <span>Mehr erfahren</span>
+          <i class="fas fa-chevron-down fa-fw text-xs"></i>
+        </button>
+        <div class="relative">
+          <div x-show="isLearnMoreDropdownOpen" @click.outside="isLearnMoreDropdownOpen = false" x-cloak class="absolute right-0 mt-6 py-2 w-96 bg-white rounded shadow-md z-50">
+            <a href="/de/open-source/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Wie Open Source die Sicherheit stärkt</a>
+            <a href="/de/encrypt-dropbox/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Verschlüsselung deiner Dropbox</a>
+            <a href="/de/boxcryptor-alternative/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Alternative zu Boxcryptor</a>
+            <a href="/de/coop/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Unsere Kooperationspartner</a>
+            <a href="/de/enterprise/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Einsatz im Enterprise</a>
+            <a href="/de/gdpr/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">DSGVO-Konformität</a>
+          </div>
+        </div>
+      </li>
+      
+      <li class="flex items-center mx-5 my-3 border-l border-primary"></li>
+      
+      <li x-data="{ isLangDropdownOpen: false }" class="flex items-center border-b-2 border-transparent">
+        <button @click="isLangDropdownOpen = !isLangDropdownOpen" class="whitespace-nowrap p-2">
+          <span>DE</span>
+          <i class="fas fa-chevron-down fa-fw text-xs"></i>
+        </button>
+        <div class="relative">
+          <div x-show="isLangDropdownOpen" @click.outside="isLangDropdownOpen = false" x-cloak class="absolute right-0 mt-6 py-2 w-48 bg-white rounded shadow-md z-50">
+            <a href="/blog/" lang="en" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">English</a>
+          </div>
+        </div>
+      </li>
+      <li class="flex items-center border-b-2 border-transparent">
+        <a class="p-2 hover:no-underline" href="https://twitter.com/Cryptomator" target="_blank" rel="noopener"><i class="fab fa-twitter fa-fw" aria-label="Twitter"></i></a>
+      </li>
+      <li class="flex items-center border-b-2 border-transparent">
+        <a class="p-2 hover:no-underline" href="https://github.com/cryptomator" target="_blank" rel="noopener"><i class="fab fa-github fa-fw" aria-label="GitHub"></i></a>
+      </li>
+    </ul>
+    
+    
+    <button @click="isNavOpen = !isNavOpen" type="button" class="self-center lg:hidden border border-primary rounded px-2 py-1 mx-2" aria-label="Toggle Navigation">
+      <i x-show="isNavOpen" class="fas fa-times fa-fw"></i>
+      <i x-show="!isNavOpen" class="fas fa-bars fa-fw"></i>
+    </button>
+  </div>
+  
+  
+  <div :class="isNavOpen ? 'block' : 'hidden'" x-cloak class="lg:hidden">
+    <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/downloads/">Downloads</a>
+    <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/hub/">Cryptomator Hub</a>
+    
+    <hr class="border-primary my-2"/>
+
+    <div class="uppercase tracking-wide text-gray-500 text-xs font-bold p-2">
+      Unterstütze uns
+    </div>
+    <div class="mt-1">
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/supporter-cert/">Supporter-Zertifikat</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/donate/">Spenden</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/sponsors/">Sponsoren</a>
+    </div>
+    
+    <hr class="border-primary my-2"/>
+
+    <div class="uppercase tracking-wide text-gray-500 text-xs font-bold p-2">
+      Mehr erfahren
+    </div>
+    <div class="mt-1">
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/open-source/">Wie Open Source die Sicherheit stärkt</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/encrypt-dropbox/">Verschlüsselung deiner Dropbox</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/boxcryptor-alternative/">Alternative zu Boxcryptor</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/coop/">Unsere Kooperationspartner</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/enterprise/">Einsatz im Enterprise</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/gdpr/">DSGVO-Konformität</a>
+    </div>
+
+    <hr class="border-primary my-2"/>
+    
+    <div class="uppercase tracking-wide text-gray-500 text-xs font-bold p-2">
+      <i class="fas fa-globe fa-fw"></i> DE
+    </div>
+    <div class="mt-1">
+      
+      <a href="/blog/" lang="en" class="block px-2 py-1 hover:text-secondary hover:no-underline">English</a>
+      
+    </div>
+    
+    <hr class="border-primary my-2"/>
+    
+    <a class="block p-2 hover:text-secondary hover:no-underline" href="https://twitter.com/Cryptomator" target="_blank" rel="noopener">
+      <i class="fab fa-twitter fa-fw"></i>
+      <span>Cryptomator auf Twitter</span>
+    </a>
+    <a class="block p-2 hover:text-secondary hover:no-underline" href="https://github.com/cryptomator" target="_blank" rel="noopener">
+      <i class="fab fa-github fa-fw"></i>
+      <span>Cryptomator auf GitHub</span>
+    </a>
+  </div>
+</nav>
+
+    <div class="bg-gray-100 min-vh-80">
+    
+    
+  <div class="container-prose py-12">
+    <header class="prose prose-sm md:prose max-w-none md:max-w-none mb-6">
+      <h1>Blog <a href="/de/feed.xml"><i class="fas fa-rss-square"></i></a></h1>
+    </header>
+
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2023-02-01</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2023/02/01/1-7-0-what-you-need-to-know/">Cryptomator 1.7.0: Was hat sich geändert?</a></h2>
+            <p>Die Veröffentlichung von Cryptomator 1.7.0 für Desktop steht kurz bevor, und du solltest wissen, welche Änderungen es für dich bringt.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2022-12-08</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2022/12/08/boxcryptor-shuts-down-find-your-cloud-encryption-alternative/">Boxcryptor stellt seine Dienste ein – Hier ist deine Alternative</a></h2>
+            <p>Wie bereits im letzten Blog-Post erwähnt, hat Dropbox die IP-Technologie von Boxcryptor übernommen. Das bedeutet, dass die Dienste von Boxcryptor für neue Nutzer:innen nicht mehr verfügbar sind und bestehende Nutzer:innen wahrscheinlich migrieren müssen, wenn ihre Verträge auslaufen.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2022-11-30</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2022/11/30/congratulations-boxcryptor-dropbox/">Herzlichen Glückwunsch Boxcryptor &amp; Dropbox! – Wir sind hier um zu bleiben</a></h2>
+            <p>Du hast vielleicht mitbekommen, dass Dropbox die IP-Technologie von Boxcryptor übernommen hat. Wir gratulieren beiden Unternehmen und wünschen ihnen alles Gute für die Zukunft!</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2022-11-03</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2022/11/03/hub-1.0/">Cryptomator Hub 1.0 Release</a></h2>
+            <p>Wir freuen uns, euch mitteilen zu können, dass Cryptomator Hub, die Team- und Unternehmenslösung für Cryptomator, für den Produktionseinsatz bereit ist! Vielen Dank an unsere Tester, die in den letzten 3 Monaten an unserer offenen Beta teilgenommen haben, für ihr Feedback.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2022-04-04</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2022/04/04/roadmap/">Cryptomator Roadmap Early 2022</a></h2>
+            <p>Im vergangenen Jahr hat sich viel getan. Mit dieser Roadmap möchten wir euch einen Überblick darüber geben, was sich in Cryptomator geändert hat und worauf ihr euch in den kommenden Monaten freuen könnt.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2022-03-25</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2022/03/25/release-1.6.7/">Cryptomator 1.6.7 Release: Wichtige Änderungen unter Windows</a></h2>
+            <p>Cryptomator 1.6.7 für Desktop enthält wichtige Änderungen für Windows-Nutzer: Ein neuer Installer und ein zusätzlicher Treiber.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2022-01-11</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2022/01/11/ios-vulnerability/">Vulnerability in iOS Version 2.0.0–2.0.3 (Please update to 2.0.4)</a></h2>
+            <p>We always claimed that if there once were a security issue with Cryptomator, we&rsquo;d be unable to hide it. Now it happened: A user reported an issue in our iOS app that we consider severe.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2021-12-21</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2021/12/21/ios-2.0/">Cryptomator 2.0 für iOS Release</a></h2>
+            <p>Wir freuen uns, euch mitteilen zu können, dass Cryptomator 2.0 für iOS ab sofort im App Store verfügbar ist! Wir möchten uns bei unseren über 2.300 TestFlight-Nutzer:innen bedanken, die die App in den letzten 6 Monaten getestet haben.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2021-11-30</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2021/11/30/computer-security-day/">Computer Security Day</a></h2>
+            <p>Antiviren-Software und Werbeblocker sind wohl die häufigsten Mittel, um die Datensicherheit auf dem eigenen Gerät zu erhöhen. Anlässlich des heutigen Computer Security Days haben wir hier fünf weitere Tipps, wie du die Sicherheit deines Computers verbessern kannst.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2021-10-11</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2021/10/11/vault-format-8/">Vault Format 8</a></h2>
+            <p>im Zuge des anstehenden Releases von Cryptomator 1.6.0 möchten wir euch einen Einblick über die Motivation und Umsetzung eine der wichtigen Änderungen geben: Das neue Tresorformat in Version 8.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2021-10-11</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2021/10/11/1-6-0-what-you-need-to-know/">Cryptomator 1.6.0: Was hat sich geändert?</a></h2>
+            <p>In diesem Blog-Beitrag möchten wir euch einige Neuigkeiten über das bevorstehende Update von Cryptomator auf Version 1.6.0 mitteilen.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2021-07-22</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2021/07/22/android-document-provider/">Update on the Document Provider Development</a></h2>
+            <p>From time to time, we need to adjust our schedule for certain features. We are well aware that the Document Provider is the most-requested feature of the Android app, but despite this fact, we need to temporarily shift our attention to other tasks within this project.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2021-06-30</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2021/06/30/ios-2.0-beta/">Cryptomator 2.0 für iOS: Open Source und Beta-Release</a></h2>
+            <p>Endlich ist es soweit! Die brandneue iOS-App von Cryptomator kann nun in einer Beta-Version per TestFlight ausprobiert werden und das Projekt ist jetzt wie angekündigt vollständig quelloffen!</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2021-04-15</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2021/04/15/eu-e2ee-strategic-autonomy-in-danger/">Strategische Autonomie in Gefahr: Europäische Tech-Unternehmen warnen vor sinkendem Datenschutzniveau in der EU</a></h2>
+            <p>Skymatic GmbH, Maintainer des Cryptomator-Projekts, unterzeichnet einen offenen Brief zur EU-Initiative „Fighting child sexual abuse: detection, removal, and reporting of illegal content“.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2021-04-08</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2021/04/08/roadmap/">Cryptomator Roadmap Early 2021</a></h2>
+            <p>Die Arbeiten an Cryptomator 1.5.x neigen sich allmählich dem Ende zu und wir widmen uns nun der nächsten größeren Version 1.6.x. Mehr dazu gibt&rsquo;s in dieser Roadmap!</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2021-03-31</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2021/03/31/world-backup-day/">World Backup Day: So geht ihr auf Nummer sicher</a></h2>
+            <p>Grundsätzlich gibt es zwei Arten von Menschen: Diejenigen, die regelmäßig Backups erstellen und die, die noch nie Daten verloren haben. Anlässlich des „World Backup Days“ wollen wir euch erklären, wieso ihr drüber nachdenken solltet, regelmäßig ein Backup zu erstellen, auch wenn ihr selbst bisher noch Glück gehabt habt.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2020-12-23</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2020/12/23/android-open-source/">Open Source: Cryptomator für Android</a></h2>
+            <p>Wir haben es letzten Monat angekündigt und nun ist es soweit… unser Geschenk an die Community rechtzeitig zu den Feiertagen: Cryptomator für Android ist jetzt vollständig Open-Source!</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2020-11-20</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2020/11/20/roadmap/">Cryptomator Roadmap Late 2020</a></h2>
+            <p>Wir haben kürzlich Cryptomator 1.5.10 für Windows, macOS und Linux mit vielen neuen Features und Fehlerbehebungen veröffentlicht. Nun, eigentlich waren die Änderungen für 1.5.9 vorgesehen, aber wir haben daraufhin einen Hotfix-Release veröffentlicht. Da sich das (verrückte) Jahr dem Ende zuneigt, möchten wir euch einen Einblick in unsere plattformübergreifende Roadmap für die kommenden Monate geben!</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2020-05-07</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2020/05/07/cryptomator-for-android-for-paranoids/">Cryptomator Android-App für uns Paranoide</a></h2>
+            <p>Cryptomator für Android ohne Internet-Zugriffsrechte verwenden, um Hintertüren fast unmöglich zu machen.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2020-04-20</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2020/04/20/release-1.5.0/">Cryptomator 1.5.0 Release</a></h2>
+            <p>Cryptomator 1.5.0 is now available with a brand-new user interface (incl. dark mode) and an improved vault format.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2020-02-12</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2020/02/12/roadmap/">Cryptomator Roadmap Early 2020</a></h2>
+            <p>Bei all der Arbeit an Cryptomator müssen wir uns gelegentlich selbst an unser Vorhaben erinnern, euch über die Entwicklungsarbeiten auf dem Laufenden zu halten. Wie viele von euch schon bemerkt haben, geht es mit großen Schritten auf das nächste größere Release von Cryptomator zu. Daher denke ich, ist es an der Zeit ein kurzes Statusupdate sowie einen Ausblick zu geben.
+Status der Desktop-Anwendung Wir planen noch in Q1 2020 Version 1.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2019-07-21</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2019/07/21/roadmap/">Cryptomator Roadmap Mid 2019</a></h2>
+            <p>Wir möchten uns vornehmen, einen regelmäßigeren Blick auf unsere Roadmap zu geben, da wir vergangene, aktuelle und zukünftige Entwicklungen an Cryptomator öffentlich dokumentieren möchten. Anders als bisher möchten wir auch von den Roadmaps unserer mobilen Apps berichten.
+Desktop Im Desktop-Bereich verfolgen wir zurzeit zwei verschiedene Branches: Zum einen streben wir die Feature-Vervollständigung von 1.4.x an, wobei 1.4.12 bereits in den Startlöchern steht. Er wird für Linux-Nutzer endlich eine Möglichkeit der Speicherung ihres Passworts im System ermöglichen und das viel gewünschte Feature der &ldquo;Custom Mount Flags&rdquo; beinhalten.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2019-01-14</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2019/01/14/roadmap/">Cryptomator Roadmap Early 2019</a></h2>
+            <p>Hey, es ist ein neues Jahr, also kommt hier in alter Tradition unser vierteljährlicher 🙈 Blick auf die Roadmap.
+OpenJDK und OpenJFX Bisher haben wir das Oracle JDK verwendet, da dies die GUI-Bibliothek beinhaltete, die wir für Cryptomator verwendet haben: JavaFX. Ab JDK 11 planen wir die Umstellung auf OpenJDK und OpenJFX. JavaFX wird ohnehin nicht mehr im Oracle JDK enthalten sein und OpenJFX verspricht kürzere Release-Zyklen und wird - wie der Name schon sagt - in einem offenen Prozess entwickelt.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2018-11-06</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2018/11/06/release-1.4.0/">Cryptomator 1.4.0 Release</a></h2>
+            <p>Introducing Dokany (Windows) and FUSE (macOS, Linux) support. Vaults can now be mounted via Dokany and FUSE which is now the preferred way over WebDAV. Expect vastly improved integration into the system.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2018-06-18</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2018/06/18/sponsors/">Werden Sie Cryptomator-Sponsor</a></h2>
+            <p>Wie Sie wissen, bieten wir Cryptomator als Pay-What-You-Want Software an und wir wollen es dabei belassen. Inzwischen sind wir zu einem kleinen Team herangewachsen, das Vollzeit an diesem Projekt arbeitet. Und wir alle müssen unsere Rechnungen bezahlen. Dafür brauchen wir Ihre Hilfe! Wenn Sie Cryptomator in Ihrem Unternehmen einsetzen oder ein Unternehmen kennen, das Open-Source-Software einsetzt, fragen Sie bitte, ob es offizieller Sponsor von Cryptomator werden möchte. Alternativ können Sie Cryptomator durch regelmäßige Spenden unterstützen.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2018-01-07</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2018/01/07/roadmap/">Cryptomator Roadmap Early 2018</a></h2>
+            <p>Da verständlicherweise nicht alle unsere Nutzer alle Entwicklungsaktivitäten auf GitHub verfolgen können, möchte ich an dieser Stelle ein paar Absätze dazu schreiben, welche technischen Neuerungen 2018 bei Cryptomator anstehen und wie sie sich auf die Nutzung auswirken.
+FUSE Die größte anstehende Änderung ist die Implementierung von FUSE-basierten Laufwerken. Diese wird es zusätzlich zu WebDAV geben und sie werden die neue Standardeinstellung werden. Die notwendige Bibliothek entwicklen wir gerade. Sie basiert auf jnr-fuse, was bedeutet, dass FUSE for macOS bzw.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2017-10-17</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2017/10/17/android-1.0/">Cryptomator 1.0 für Android Release</a></h2>
+            <p>Wir freuen uns über die heutige Veröffentlichung von Cryptomator 1.0 für Android. 🎉 Jetzt können Sie Ihre Cloud-Dateien auch mit Android-Geräten schützen. Die App ist zu den Desktop- und iOS-Versionen von Cryptomator natürlich kompatibel.
+Wir haben die App im letzten Jahr kontinuierlich weiterentwickelt, um höchste Sicherheit und Benutzerfreundlichkeit zu gewährleisten. Dank dem Feedback von Ihnen und über 10.000 Beta-Testern hat die Android-App nun ein Stadium erreicht, das den hohen Anforderungen von Cryptomator gerecht wird.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2017-09-13</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2017/09/13/community/">Ein neues Zuhause für unsere Community</a></h2>
+            <p>Unsere Online-Community hat endlich ein Zuhause gefunden. Hier erreichen Sie uns von nun an bei technischen Fragen und bekommen gleichzeitig die Möglichkeit, sich untereinander auszutauschen. Die Seite wurde ins Leben gerufen, um langfristig eine umfassende Knowledge Base zu errichten, die dabei helfen soll, Fragen schnell zu beantworten.
+Wir freuen uns über jeden Besucher und sind jetzt schon gespannt auf Ihre Beiträge!
+https://community.cryptomator.org/ </p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2017-07-01</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2017/07/01/release-1.3.0/">Cryptomator 1.3.0 Release</a></h2>
+            <p>We&rsquo;ve completely rewritten Cryptomator. Its core components are now modularized to CryptoLib, CryptoFS, and WebDAV-NIO-Adapter. A complete list of closed issues is available here.
+Improvements Auto-Unlock!!! 🎉 (#40) We finally implemented the most-wished feature. Still experimental and will be completed by autostart (optionally hidden) in future versions New vault format 6 (#521) Added new options to &ldquo;unlocked&rdquo; screen: Mount/unmount without locking/unlocking (#452) Network access now filtered by the socket instead of the application (#431) You can now change the socket port without restarting Cryptomator New log system with log file rotation and exposed, user-adjustable configuration Windows Removed IPv6 flag, Windows will now always mount cryptomator-vault which is mapped to 127.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2017-05-09</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2017/05/09/cyberduck-meets-cryptomator/">Cyberduck meets Cryptomator</a></h2>
+            <p>Cyberduck 6.0 mit der Unterstützung von Cryptomator-Tresoren ist seit heute erhältlich. Die neue Version ist unter cyberduck.io herunterladbar. Cyberduck ist ein freier Remote-Dateibrowser für Mac und Windows und ist somit das perfekte Tool für alle, die ihre Cloud-Daten nicht lokal synchronisieren wollen.
+Illustration von Katharina Hagemann Cyberduck erlaubt Ihnen den Zugriff auf Ihren Cloudspeicher ohne einen zusätzlichen Sync-Client. FTP, SFTP, WebDAV, Amazon S3, Backblaze B2, Microsoft Azure &amp; OneDrive und OpenStack Swift werden u.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2016-12-02</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2016/12/02/release-1.2.3/">Mysteriösen Windows-Fehler behoben mit 1.2.3 Update</a></h2>
+            <p>Cryptomator 1.2.3 für Windows behebt einen mysteriösen Fehler, der als Systemfehler 53 oder 67 bekannt ist. Inzwischen ist dieser zwar nicht mehr so mysteriös, aber er hat uns von Anfang an Albträume bereitet! Cycor auf GitHub hat die Ursache für den Systemfehler 53/67 herausgefunden, nachdem er monatelang selbst dieses Problem hatte, und in GitHub Issue 210 darüber berichtet.
+Scheinbar gibt es einen Windows Registry-Eintrag, der für die Auflistung von verfügbaren Netzwerkprovidern verantwortlich ist, namens ProviderOrder.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2016-11-04</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2016/11/04/android-0.1/">Cryptomator für Android 0.1 Beta</a></h2>
+            <p>Wir haben endlich die erste Beta-Version von Cryptomator für Android nach einer fast 6-monatigen Entwicklungszeit veröffentlicht. Es handelt sich dabei um eine komplett neue und native App. Dazu haben wir den kryptographischen Code aus unserem Hauptprojekt ausgelagert, der nun als CryptoLib verfügbar ist.
+Für mehr Informationen zum Beta-Test folgen Sie bitte diesem Link. Version 0.1 beinhaltet noch lange nicht alle Features, die wir für die finale Version vorgesehen haben, und hat uns bekannte Bugs, aber wir sind trotzdem offen für Vorschläge und natürlich Fehlerberichte.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2016-09-21</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2016/09/21/release-1.2.0/">Cryptomator 1.2.0 Release</a></h2>
+            <p>Cryptomator 1.2.0 für Windows, Mac und Linux ist nun zum Download verfügbar!
+Neue Features Unter Windows und Mac können Sie jetzt Ihr Passwort speichern – natürlich optional. Dieses Feature ist eine Vorbereitung für das automatische Entsperren von Tresoren (GitHub Issue 40), was eines der meistgefragtesten Features ist, das wir für den nächsten Minor-Release planen. Neuer Migrationsbildschirm, der ein versehentliches Migrieren verhindern soll. Cryptomator für Mac erscheint nun im Dock + Application Switcher, wenn die Anwendung nicht in die Menüleiste minimiert ist.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2016-08-15</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2016/08/15/release-1.1.4/">Sichersheitslücken behoben mit 1.1.4 Update</a></h2>
+            <p>Cryptomator 1.1.4 für Windows, OS X und Linux behebt zwei (verwandte) Sicherheitslücken, mit denen es möglich war, Flash-Dateien in den Tresor einzuschleusen und diese über einen Browser auszuführen, der so die SOP &ldquo;umgeht&rdquo; (GitHub Issues 318 &amp; 319) und Zugriff auf den Tresor erlangen kann. Danke an Lukas Reschke, der uns diese Schwachstellen gemeldet hat!
+Weiterhin wurden Fehler im Zusammenhang mit Dropbox, Google Drive, Windows Laufwerksbuchstaben, die Windows Registry und WebDAV-Zugriff unter Linux behoben.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2016-06-16</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2016/06/16/indepth-french-app-store/">In-Depth: Export Compliance for French iOS App Store</a></h2>
+            <p>Cyptomator for iOS has finally been approved by the French administration. You can download it now in the French App Store. We&rsquo;d like to share our experience on how to receive export compliance for the French iOS App Store.
+Just to be clear, you also need the U.S. Encryption Registration (ERN) approval from the U.S. Bureau of Industry (BIS). But this has already been covered by many sites, just google for export compliance ern ios app store.</p>
+          </div>
+        </article>
+      </section>
+    
+      <section class="mb-6">
+        <article class="border rounded shadow bg-white p-4">
+          <p class="text-xs md:text-sm text-gray-600 mb-1">2016-05-25</p>
+          <div class="prose prose-sm md:prose max-w-none md:max-w-none">
+            <h2><a href="/de/blog/2016/05/25/release-1.1.0/">Cryptomator 1.1 Release</a></h2>
+            <p>Cryptomator 1.1 für Windows, OS X und Linux ist nun zum Download verfügbar! Wir haben einen Passwortstärke-Indikator hinzugefügt und Sync-Konflikte werden nun erkannt.
+Das ist neu: Passwortstärke-Indikator: Basiert auf zxcvbn von Dropbox. Danke an Jean-Noël Charon (jncharon auf GitHub), der dieses Feature implementiert hat. Auflösung von Sync-Konflikten: Wenn gleichzeitige Änderungen an einer Datei auf mehreren Geräten dafür sorgen, dass in Dropbox, Google Drive, etc. ein Konflikt erkannt wird, so wird dieser nun von Cryptomator berücksichtigt.</p>
+          </div>
+        </article>
+      </section>
+    
+  </div>
+
+    </div>
+    <footer class="border-t-2 border-secondary pt-8 pb-16">
+  <section class="container text-white font-light leading-loose grid grid-cols-2 gap-x-6 gap-y-8 md:grid-cols-3 lg:grid-cols-5">
+    <div>
+      <h4 class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">Cryptomator</h4>
+      <ul class="list-none m-0">
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/blog/">Blog</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://cryptomator.redbubble.com/" target="_blank" rel="noopener">Merchandise</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/presskit/">Pressemappe</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">Etwas beitragen</h4>
+      <ul class="list-none m-0">
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://github.com/cryptomator" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/donate/">Spenden</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://translate.cryptomator.org/" target="_blank" rel="noopener">Übersetzen</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">Support</h4>
+      <ul class="list-none m-0">
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://docs.cryptomator.org/" target="_blank" rel="noopener">Docs</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://community.cryptomator.org/" target="_blank" rel="noopener">Community</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/contact/">Kontakt</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">Uns folgen</h4>
+      <ul class="list-none m-0">
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://twitter.com/Cryptomator" target="_blank" rel="noopener">Twitter</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://mastodon.online/@cryptomator" target="_blank" rel="noopener me">Fediverse</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/feed.xml" rel="alternate" type="application/rss+xml">RSS-Feed</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">Rechtliches</h4>
+      <ul class="list-none m-0">
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/impressum/">Impressum</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/privacy/">Datenschutzerklärung</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/terms/">AGB</a></li>
+      </ul>
+    </div>
+  </section>
+</footer>
+
+
+    
+    <script type="text/javascript" src="/js/jquery/jquery.min.ff1523fb7389539c84c65aba19260648793bb4f5e29329d2ee8804bc37a3fe6e.js" integrity="sha256-/xUj&#43;3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="></script>
+
+    
+    <script type="text/javascript" src="/js/alpinejs/cdn.min.d1573a45c19419ee881d3f7e6d6810bb955ea0d64470da1f1875537de18c603e.js" integrity="sha256-0Vc6RcGUGe6IHT9&#43;bWgQu5VeoNZEcNofGHVTfeGMYD4=" defer></script>
+
+    
+    <script type="text/javascript" src="/js/lazysizes/lazysizes.min.3d9120fa621da6d613c1698b7014ec6bdf4620366e8f2b7b547059f4b6f6272b.js" integrity="sha256-PZEg&#43;mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys=" async></script>
+  </body>
+</html>

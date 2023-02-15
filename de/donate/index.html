@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spenden</title>
+    
+      <meta name="description" content="Wenn du an der Weiterentwicklung von Cryptomator interessiert bist, kannst du uns mit einer Spende beliebiger Höhe unterstützen. Vielen Dank!"/>
+      <meta property="og:title" content="Cryptomator - Spenden"/>
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://cryptomator.org/de/donate/"/>
+      <meta property="og:site_name" content="Cryptomator"/>
+      <meta property="og:description" content="Wenn du an der Weiterentwicklung von Cryptomator interessiert bist, kannst du uns mit einer Spende beliebiger Höhe unterstützen. Vielen Dank!"/>
+      <meta property="og:image" content="https://cryptomator.org/img/og-image.png">
+      <meta property="og:image:width" content="1200"/>
+      <meta property="og:image:height" content="630"/>
+    
+    <meta property="og:locale" content="de_DE" />
+    
+      <meta property="og:locale:alternate" content="en_US" />
+    
+    <meta name="apple-itunes-app" content="app-id=1560822163">
+    
+      
+      <link rel="stylesheet" href="/css/main.min.0768fc2e50c20d0f0f617b2ff7e661afefac5a64c173728de1addb03fbf10145.css" integrity="sha256-B2j8LlDCDQ8PYXsv9&#43;Zhr&#43;&#43;sWmTBc3KN4a3bA/vxAUU=" media="screen" />
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/de/feed.xml" />
+    
+      <link rel="alternate" hreflang="en" href="/donate/" />
+    
+    
+      
+    
+  </head>
+  <body class="bg-dark font-body text-gray-900">
+    <div class="w-full bg-primary text-center text-sm text-white p-0.5">
+  <p>Suchst du nach einer Alternative zu Boxcryptor nach deren Übernahme? Cryptomator ist hier, um zu bleiben! <a class="underline" href="/de/blog/2022/12/08/boxcryptor-shuts-down-find-your-cloud-encryption-alternative/">Mehr erfahren.</a></p>
+</div>
+<nav x-data="{ isNavOpen: false }" :class="isNavOpen ? 'relative' : 'relative'" class="w-full text-primary absolute lg:px-8 bg-white border-t-2 border-primary shadow">
+  <div class="flex justify-between items-stretch w-full">
+    <a class="flex items-center hover:no-underline py-2 mx-2 lg:ml-0" href="/de/">
+      <img src="/img/logo.svg" class="h-8" alt="Logo"/>
+      <span class="font-headline font-bold ml-2 pb-px">CRYPTOMATOR</span>
+    </a>
+
+    
+    <ul class="hidden lg:flex items-stretch list-none m-0">
+      <li class="flex items-center lg:mx-2 border-b-2 border-transparent hover:border-primary">
+        <a class="p-2 hover:no-underline" href="/de/downloads/">Downloads</a>
+      </li>
+      <li class="flex items-center lg:mx-2 border-b-2 border-transparent hover:border-primary">
+        <a class="p-2 hover:no-underline" href="/de/hub/">Cryptomator Hub</a>
+      </li>
+      <li x-data="{ isSupportUsDropdownOpen: false }" class="flex items-center border-b-2 border-transparent">
+        <button @click="isSupportUsDropdownOpen = !isSupportUsDropdownOpen" class="whitespace-nowrap p-2">
+          <span>Unterstütze uns</span>
+          <i class="fas fa-chevron-down fa-fw text-xs"></i>
+        </button>
+        <div class="relative">
+          <div x-show="isSupportUsDropdownOpen" @click.outside="isSupportUsDropdownOpen = false" x-cloak class="absolute right-0 mt-6 py-2 w-64 bg-white rounded shadow-md z-50">
+            <a href="/de/supporter-cert/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Supporter-Zertifikat</a>
+            <a href="/de/donate/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Spenden</a>
+            <a href="/de/sponsors/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Sponsoren</a>
+          </div>
+        </div>
+      </li>
+      <li x-data="{ isLearnMoreDropdownOpen: false }" class="flex items-center border-b-2 border-transparent">
+        <button @click="isLearnMoreDropdownOpen = !isLearnMoreDropdownOpen" class="whitespace-nowrap p-2">
+          <span>Mehr erfahren</span>
+          <i class="fas fa-chevron-down fa-fw text-xs"></i>
+        </button>
+        <div class="relative">
+          <div x-show="isLearnMoreDropdownOpen" @click.outside="isLearnMoreDropdownOpen = false" x-cloak class="absolute right-0 mt-6 py-2 w-96 bg-white rounded shadow-md z-50">
+            <a href="/de/open-source/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Wie Open Source die Sicherheit stärkt</a>
+            <a href="/de/encrypt-dropbox/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Verschlüsselung deiner Dropbox</a>
+            <a href="/de/boxcryptor-alternative/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Alternative zu Boxcryptor</a>
+            <a href="/de/coop/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Unsere Kooperationspartner</a>
+            <a href="/de/enterprise/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">Einsatz im Enterprise</a>
+            <a href="/de/gdpr/" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">DSGVO-Konformität</a>
+          </div>
+        </div>
+      </li>
+      
+      <li class="flex items-center mx-5 my-3 border-l border-primary"></li>
+      
+      <li x-data="{ isLangDropdownOpen: false }" class="flex items-center border-b-2 border-transparent">
+        <button @click="isLangDropdownOpen = !isLangDropdownOpen" class="whitespace-nowrap p-2">
+          <span>DE</span>
+          <i class="fas fa-chevron-down fa-fw text-xs"></i>
+        </button>
+        <div class="relative">
+          <div x-show="isLangDropdownOpen" @click.outside="isLangDropdownOpen = false" x-cloak class="absolute right-0 mt-6 py-2 w-48 bg-white rounded shadow-md z-50">
+            <a href="/donate/" lang="en" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">English</a>
+          </div>
+        </div>
+      </li>
+      <li class="flex items-center border-b-2 border-transparent">
+        <a class="p-2 hover:no-underline" href="https://twitter.com/Cryptomator" target="_blank" rel="noopener"><i class="fab fa-twitter fa-fw" aria-label="Twitter"></i></a>
+      </li>
+      <li class="flex items-center border-b-2 border-transparent">
+        <a class="p-2 hover:no-underline" href="https://github.com/cryptomator" target="_blank" rel="noopener"><i class="fab fa-github fa-fw" aria-label="GitHub"></i></a>
+      </li>
+    </ul>
+    
+    
+    <button @click="isNavOpen = !isNavOpen" type="button" class="self-center lg:hidden border border-primary rounded px-2 py-1 mx-2" aria-label="Toggle Navigation">
+      <i x-show="isNavOpen" class="fas fa-times fa-fw"></i>
+      <i x-show="!isNavOpen" class="fas fa-bars fa-fw"></i>
+    </button>
+  </div>
+  
+  
+  <div :class="isNavOpen ? 'block' : 'hidden'" x-cloak class="lg:hidden">
+    <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/downloads/">Downloads</a>
+    <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/hub/">Cryptomator Hub</a>
+    
+    <hr class="border-primary my-2"/>
+
+    <div class="uppercase tracking-wide text-gray-500 text-xs font-bold p-2">
+      Unterstütze uns
+    </div>
+    <div class="mt-1">
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/supporter-cert/">Supporter-Zertifikat</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/donate/">Spenden</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/sponsors/">Sponsoren</a>
+    </div>
+    
+    <hr class="border-primary my-2"/>
+
+    <div class="uppercase tracking-wide text-gray-500 text-xs font-bold p-2">
+      Mehr erfahren
+    </div>
+    <div class="mt-1">
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/open-source/">Wie Open Source die Sicherheit stärkt</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/encrypt-dropbox/">Verschlüsselung deiner Dropbox</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/boxcryptor-alternative/">Alternative zu Boxcryptor</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/coop/">Unsere Kooperationspartner</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/enterprise/">Einsatz im Enterprise</a>
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="/de/gdpr/">DSGVO-Konformität</a>
+    </div>
+
+    <hr class="border-primary my-2"/>
+    
+    <div class="uppercase tracking-wide text-gray-500 text-xs font-bold p-2">
+      <i class="fas fa-globe fa-fw"></i> DE
+    </div>
+    <div class="mt-1">
+      
+      <a href="/donate/" lang="en" class="block px-2 py-1 hover:text-secondary hover:no-underline">English</a>
+      
+    </div>
+    
+    <hr class="border-primary my-2"/>
+    
+    <a class="block p-2 hover:text-secondary hover:no-underline" href="https://twitter.com/Cryptomator" target="_blank" rel="noopener">
+      <i class="fab fa-twitter fa-fw"></i>
+      <span>Cryptomator auf Twitter</span>
+    </a>
+    <a class="block p-2 hover:text-secondary hover:no-underline" href="https://github.com/cryptomator" target="_blank" rel="noopener">
+      <i class="fab fa-github fa-fw"></i>
+      <span>Cryptomator auf GitHub</span>
+    </a>
+  </div>
+</nav>
+
+    <div class="bg-gray-100 min-vh-80">
+    
+    
+  <div class="container py-12">
+    <header class="prose prose-sm md:prose max-w-none md:max-w-none mb-6">
+      <h1>Spenden</h1>
+      <p class="lead">Wenn du an der Weiterentwicklung von Cryptomator interessiert bist, kannst du uns mit einer Spende beliebiger Höhe unterstützen. Vielen Dank!</p>
+    </header>
+
+    <div x-data="{showTab: location.hash}" @hashchange.window="showTab = location.hash" class="flex flex-col space-y-4 w-full relative lg:h-412px">
+      
+        <div class="space-y-2 lg:space-y-0">
+          <div class="w-full lg:pr-3 lg:w-1/2">
+            <button @click.prevent="location.hash = '#paypal'" :class="{'border-white': showTab != '#paypal', 'border-primary': showTab == '#paypal'}" class="flex items-center justify-between bg-white border-l-4 rounded shadow text-left p-4 w-full">
+              <div class="flex items-center">
+                <i :class="{'text-gray-600': showTab != '#paypal', 'text-primary': showTab == '#paypal'}" class="flex-shrink-0 fab fa-paypal fa-fw text-2xl mr-4" aria-hidden="true"></i>
+                <h2 :class="{'text-primary': showTab == '#paypal'}" class="font-headline font-medium text-xl lg:text-2xl leading-snug">PayPal</h2>
+              </div>
+              <div class="ml-3">
+                <i :class="{'text-gray-500': showTab != '#paypal', 'text-primary': showTab == '#paypal'}" class="fas fa-chevron-right hidden lg:block"></i>
+                <i :class="{'fa-chevron-right text-gray-500': showTab != '#paypal', 'fa-chevron-down text-primary': showTab == '#paypal'}" class="fas lg:hidden"></i>
+              </div>
+            </button>
+          </div>
+          <div x-show="showTab == '#paypal'" class="w-full lg:absolute lg:top-0 lg:right-0 lg:pl-3 lg:w-1/2" x-cloak>
+            <div class="rounded shadow bg-white p-4" x-cloak>
+              <div class="text-center">
+  <p class="text-sm md:text-base leading-relaxed text-gray-700 mb-4">Nach dem Klick auf &#34;Weiter&#34; werden Sie auf unsere PayPal-Seite geleitet.</p>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" x-data="{acceptTerms: false}">
+    <input type="hidden" name="cmd" value="_s-xclick" />
+    <input type="hidden" name="hosted_button_id" value="NUQ7XQSWMQEGS" />
+    <input type="hidden" name="amount" value="15" />
+    <p class="text-sm md:text-base leading-relaxed text-gray-700 mb-4">
+<input class="mr-1 rounded text-primary focus:ring-0 focus:ring-offset-0 focus:border-secondary" type="checkbox" id="id-275634981" x-model="acceptTerms" />
+<label for="id-275634981">Ich akzeptiere die <a class="text-primary no-underline hover:underline" href="/de/privacy/">Datenschutzerklärung</a>.</label>
+</p>
+    <button type="submit" class="btn btn-primary w-full md:w-64" :disabled="!acceptTerms"><i class="fas fa-external-link" aria-hidden="true"></i> Weiter zu PayPal</button>
+  </form>
+</div>
+
+            </div>
+          </div>
+        </div>
+      
+        <div class="space-y-2 lg:space-y-0">
+          <div class="w-full lg:pr-3 lg:w-1/2">
+            <button @click.prevent="location.hash = '#creditcard'" :class="{'border-white': showTab != '#creditcard', 'border-primary': showTab == '#creditcard'}" class="flex items-center justify-between bg-white border-l-4 rounded shadow text-left p-4 w-full">
+              <div class="flex items-center">
+                <i :class="{'text-gray-600': showTab != '#creditcard', 'text-primary': showTab == '#creditcard'}" class="flex-shrink-0 fas fa-credit-card fa-fw text-2xl mr-4" aria-hidden="true"></i>
+                <h2 :class="{'text-primary': showTab == '#creditcard'}" class="font-headline font-medium text-xl lg:text-2xl leading-snug">Kreditkarte</h2>
+              </div>
+              <div class="ml-3">
+                <i :class="{'text-gray-500': showTab != '#creditcard', 'text-primary': showTab == '#creditcard'}" class="fas fa-chevron-right hidden lg:block"></i>
+                <i :class="{'fa-chevron-right text-gray-500': showTab != '#creditcard', 'fa-chevron-down text-primary': showTab == '#creditcard'}" class="fas lg:hidden"></i>
+              </div>
+            </button>
+          </div>
+          <div x-show="showTab == '#creditcard'" class="w-full lg:absolute lg:top-0 lg:right-0 lg:pl-3 lg:w-1/2" x-cloak>
+            <div class="rounded shadow bg-white p-4" x-cloak>
+              <div x-data="{amount: 15, currency: 'EUR', frequency: 'once', oneTimePayment: null, oneTimePaymentStatus: {validCardNum: false, captcha: null, errorMessage: '', inProgress: false, success: false}, recurringPayment: new RecurringPayment(), acceptTerms: false}" x-init="oneTimePayment = new OneTimePayment(oneTimePaymentStatus)">
+  <div class="flex flex-wrap md:flex-nowrap">
+    <div class="w-full mb-4 md:w-1/2 md:pr-3">
+      <label class="block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2">Betrag</label>
+      <div class="flex items-center rounded bg-gray-300">
+        <div class="flex-shrink-0 relative text-gray-700 w-16">
+          <select x-model="currency" class="w-full rounded-l border-gray-300 bg-gray-300 focus:ring-0 focus:border-secondary">
+            <option value="EUR">€</option>
+            <option value="USD">$</option>
+          </select>
+        </div>
+        <input type="number" min="1" step="1" x-model="amount" class="flex-grow min-w-0 text-right border-gray-300 focus:ring-0 focus:border-secondary md:pr-0" placeholder="min. 1" required/>
+        <div class="flex-shrink-0 text-gray-700 px-3">,00</div>
+      </div>
+    </div>
+
+    <div class="w-full mb-4 md:w-1/2 md:pl-3">
+      <label class="block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2">Spende</label>
+      <div class="flex">
+        <button class="w-1/2 py-2 border border-gray-300 rounded-l bg-gray-300 text-gray-700 hover:border-gray-400 hover:bg-gray-400 focus:bg-gray-400 focus:border-secondary" :class="{'border-gray-400 bg-gray-400 text-gray-800 font-bold': frequency === 'once'}" @click="frequency = 'once'">
+          <i class="fas fa-check" x-show="frequency === 'once'"></i>
+          Einmalig
+        </button>
+        <button class="w-1/2 py-2 border border-gray-300 rounded-r bg-gray-300 text-gray-700 hover:border-gray-400 hover:bg-gray-400 focus:bg-gray-400 focus:border-secondary" :class="{'border-gray-400 bg-gray-400 text-gray-800 font-bold': frequency === 'recurring'}" @click="frequency = 'recurring'">
+          <i class="fas fa-check" x-show="frequency === 'recurring'"></i>
+          Monatlich
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div x-show="frequency === 'once'">
+    <div class="mb-4">
+      <label class="block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2">Kreditkarte</label>
+      <div> 
+        <input type="text" x-ref="stripePlaceholder" class="w-full rounded border-gray-300 focus:ring-0 focus:border-secondary" @focus.once="oneTimePayment.initStripeField($refs.stripePlaceholder, 'Lädt…', 'de')"/>
+      </div>
+    </div>
+
+    <div class="text-center mt-8" x-show="!oneTimePaymentStatus.success">
+      <p class="text-sm md:text-base leading-relaxed text-gray-700 mb-4">Kreditkartenzahlungen werden über Stripe abgewickelt. Wir können dabei weder deine Kartennummer noch die Prüfziffer einsehen. In deiner Abrechnung wird <a class="text-primary no-underline hover:underline" href="https://support.stripe.com/questions/unknown-charge-on-card-from-stripe" target="_blank" rel="noopener">eine Buchung von Stripe</a> enthalten sein.</p>
+
+      <p class="text-sm md:text-base leading-relaxed text-gray-700 mb-4">
+<input class="mr-1 rounded text-primary focus:ring-0 focus:ring-offset-0 focus:border-secondary" type="checkbox" id="id-538169427" x-model="acceptTerms" />
+<label for="id-538169427">Ich akzeptiere die <a class="text-primary no-underline hover:underline" href="/de/privacy/">Datenschutzerklärung</a>.</label>
+</p>
+
+      <div x-ref="captchaWrapper" x-show="!oneTimePaymentStatus.captcha" class="flex justify-center">
+        <button :disabled="!oneTimePaymentStatus.validCardNum || !acceptTerms" @click="loadRecaptcha($refs.captchaWrapper, (token) => oneTimePaymentStatus.captcha = token)" class="btn btn-primary w-full md:w-64">Weiter…</button>
+      </div>
+
+      <button x-show="oneTimePaymentStatus.captcha" :disabled="oneTimePaymentStatus.inProgress || !acceptTerms" @click="oneTimePayment.charge(amount, currency)" class="btn btn-primary w-full md:w-64">
+        <i class="fas fa-credit-card"></i>
+        Jetzt bezahlen
+        <i class="fas fa-spinner fa-spin" x-show="oneTimePaymentStatus.inProgress" aria-hidden="true"></i>
+      </button>
+
+      <p class="text-sm text-red-600 mt-2" x-text="oneTimePaymentStatus.errorMessage"></p>
+    </div>
+
+    <p class="text-lg text-center mt-8" x-show="oneTimePaymentStatus.success">👍 Deine Zahlung war erfolgreich!</p>
+  </div>
+
+  <div x-show="frequency === 'recurring'" class="text-center">
+    <p class="text-sm md:text-base leading-relaxed text-gray-700 mb-4">Wiederkehrende Kreditkartenzahlungen werden über unsere Stripe-Seite erstellt.</p>
+    <p class="text-sm md:text-base leading-relaxed text-gray-700 mb-4">
+<input class="mr-1 rounded text-primary focus:ring-0 focus:ring-offset-0 focus:border-secondary" type="checkbox" id="id-723569418" x-model="acceptTerms" />
+<label for="id-723569418">Ich akzeptiere die <a class="text-primary no-underline hover:underline" href="/de/privacy/">Datenschutzerklärung</a>.</label>
+</p>
+    <button type="submit" class="btn btn-primary w-full md:w-64" @click="recurringPayment.checkout(amount, currency, 'de')" :disabled="!acceptTerms">
+      <i class="fas fa-external-link" aria-hidden="true"></i> Weiter zu Stripe
+    </button>
+  </div>
+</div>
+
+
+  
+  <script type="text/javascript" src="/js/recaptcha.min.ad20aa2f7e72be34befe0936317c4345651e97f81208a8cc3baba80765077a5e.js" integrity="sha256-rSCqL35yvjS&#43;/gk2MXxDRWUel/gSCKjMO6uoB2UHel4=" defer></script>
+  
+  <script type="text/javascript" src="/js/cardpayments.min.eaa8d64c5cdb32a6f30113a73767abd0d00026fec38cbe4e3c8cc867c38cb0c0.js" integrity="sha256-6qjWTFzbMqbzAROnN2er0NAAJv7DjL5OPIzIZ8OMsMA=" defer></script>
+
+
+            </div>
+          </div>
+        </div>
+      
+        <div class="space-y-2 lg:space-y-0">
+          <div class="w-full lg:pr-3 lg:w-1/2">
+            <button @click.prevent="location.hash = '#banktransfer'" :class="{'border-white': showTab != '#banktransfer', 'border-primary': showTab == '#banktransfer'}" class="flex items-center justify-between bg-white border-l-4 rounded shadow text-left p-4 w-full">
+              <div class="flex items-center">
+                <i :class="{'text-gray-600': showTab != '#banktransfer', 'text-primary': showTab == '#banktransfer'}" class="flex-shrink-0 fas fa-landmark fa-fw text-2xl mr-4" aria-hidden="true"></i>
+                <h2 :class="{'text-primary': showTab == '#banktransfer'}" class="font-headline font-medium text-xl lg:text-2xl leading-snug">Überweisung</h2>
+              </div>
+              <div class="ml-3">
+                <i :class="{'text-gray-500': showTab != '#banktransfer', 'text-primary': showTab == '#banktransfer'}" class="fas fa-chevron-right hidden lg:block"></i>
+                <i :class="{'fa-chevron-right text-gray-500': showTab != '#banktransfer', 'fa-chevron-down text-primary': showTab == '#banktransfer'}" class="fas lg:hidden"></i>
+              </div>
+            </button>
+          </div>
+          <div x-show="showTab == '#banktransfer'" class="w-full lg:absolute lg:top-0 lg:right-0 lg:pl-3 lg:w-1/2" x-cloak>
+            <div class="rounded shadow bg-white p-4" x-cloak>
+              <dl class="flex flex-wrap items-baseline mb-4">
+  <dt class="block uppercase tracking-wide text-gray-600 text-xs font-bold w-full md:text-right md:w-1/3 md:pr-2">Empfänger</dt>
+  <dd class="text-sm md:text-base leading-relaxed text-gray-700 mb-4 md:w-2/3 md:mb-0">Skymatic GmbH</dd>
+  <dt class="block uppercase tracking-wide text-gray-600 text-xs font-bold w-full md:text-right md:w-1/3 md:pr-2">IBAN</dt>
+  <dd class="text-sm md:text-base leading-relaxed text-gray-700 mb-4 md:w-2/3 md:mb-0">
+    <span>DE21</span><span class="ml-2">1101</span><span class="ml-2">0100</span><span class="ml-2">2620</span><span class="ml-2">4168</span><span class="ml-2">49</span>
+  </dd>
+  <dt class="block uppercase tracking-wide text-gray-600 text-xs font-bold w-full md:text-right md:w-1/3 md:pr-2">BIC</dt>
+  <dd class="text-sm md:text-base leading-relaxed text-gray-700 md:w-2/3">SOBKDEBBXXX</dd>
+</dl>
+<p class="text-sm md:text-base leading-relaxed text-gray-700 text-center">Durch die Überweisung akzeptiere ich die <a class="text-primary no-underline hover:underline" href="/de/privacy/">Datenschutzerklärung</a>.</p>
+
+            </div>
+          </div>
+        </div>
+      
+        <div class="space-y-2 lg:space-y-0">
+          <div class="w-full lg:pr-3 lg:w-1/2">
+            <button @click.prevent="location.hash = '#crypto'" :class="{'border-white': showTab != '#crypto', 'border-primary': showTab == '#crypto'}" class="flex items-center justify-between bg-white border-l-4 rounded shadow text-left p-4 w-full">
+              <div class="flex items-center">
+                <i :class="{'text-gray-600': showTab != '#crypto', 'text-primary': showTab == '#crypto'}" class="flex-shrink-0 fas fa-alien-monster fa-fw text-2xl mr-4" aria-hidden="true"></i>
+                <h2 :class="{'text-primary': showTab == '#crypto'}" class="font-headline font-medium text-xl lg:text-2xl leading-snug">Crypto</h2>
+              </div>
+              <div class="ml-3">
+                <i :class="{'text-gray-500': showTab != '#crypto', 'text-primary': showTab == '#crypto'}" class="fas fa-chevron-right hidden lg:block"></i>
+                <i :class="{'fa-chevron-right text-gray-500': showTab != '#crypto', 'fa-chevron-down text-primary': showTab == '#crypto'}" class="fas lg:hidden"></i>
+              </div>
+            </button>
+          </div>
+          <div x-show="showTab == '#crypto'" class="w-full lg:absolute lg:top-0 lg:right-0 lg:pl-3 lg:w-1/2" x-cloak>
+            <div class="rounded shadow bg-white p-4" x-cloak>
+              <div class="text-center">
+  <p class="text-sm md:text-base leading-relaxed text-gray-700 mb-4">Die Cryptowährung wird im nächsten Schritt ausgewählt. Nach dem Klick auf &#34;Weiter&#34; werden Sie auf unsere CoinPayments-Seite geleitet.</p>
+  <form action="https://www.coinpayments.net/index.php" method="post" target="_top" x-data="{acceptTerms: false}">
+    <input type="hidden" name="cmd" value="_donate" />
+    <input type="hidden" name="reset" value="1" />
+    <input type="hidden" name="merchant" value="963d3aa90995dc5542113e7801e31e2a" />
+    <input type="hidden" name="item_name" value="Cryptomator Donation" />
+    <input type="hidden" name="want_shipping" value="0" />
+    <input type="hidden" name="amountf" value="15" />
+    <input type="hidden" name="currency" value="EUR" />
+    <input type="hidden" name="allow_amount" value="1" />
+    <input type="hidden" name="success_url" value="https://cryptomator.org/donate/thanks" />
+    <input type="hidden" name="allow_extra" value="1" />
+    <p class="text-sm md:text-base leading-relaxed text-gray-700 mb-4">
+<input class="mr-1 rounded text-primary focus:ring-0 focus:ring-offset-0 focus:border-secondary" type="checkbox" id="id-213948567" x-model="acceptTerms" />
+<label for="id-213948567">Ich akzeptiere die <a class="text-primary no-underline hover:underline" href="/de/privacy/">Datenschutzerklärung</a>.</label>
+</p>
+    <button type="submit" class="btn btn-primary w-full md:w-64" :disabled="!acceptTerms"><i class="fas fa-external-link" aria-hidden="true"></i> Weiter zu CoinPayments</button>
+  </form>
+</div>
+
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+
+  <section x-data="{feedbackData: {errorMessage: '', success: false, inProgress: false}, submitData: {email: ''}, customerPortal: null}" x-init="customerPortal = new CustomerPortal($refs.form, feedbackData, submitData)" class="container text-center py-12">
+    <h3 class="font-headline text-xl md:text-2xl leading-relaxed mb-4">Möchtest du deine wiederkehrende Spende verwalten?</h3>
+
+    <form x-show="!feedbackData.success" x-ref="form" class="max-w-xl mx-auto">
+      <p class="text-sm md:text-base leading-relaxed text-gray-700 mb-4">Falls du die Option &#34;Kreditkarte&#34; verwendet hast, um eine monatliche Spende einzurichten, und diese verwalten oder kündigen möchtest, gib unten deine E-Mail-Adresse ein.</p>
+      <div class="flex justify-center items-center rounded bg-gray-300">
+        <input x-model="submitData.email" x-ref="email" @blur="$refs.email.classList.add('show-invalid')" type="email" class="flex-grow rounded-l border-gray-300 focus:ring-0 focus:border-secondary" placeholder="E-Mail-Adresse" required/>
+        <button :disabled="feedbackData.inProgress" @click.prevent="customerPortal.request()" type="submit" class="flex-shrink-0 flex items-center gap-1 btn btn-primary rounded-l-none px-4">
+          <i :class="{'fa-envelope': !feedbackData.inProgress, 'fa-spinner fa-spin': feedbackData.inProgress}" class="fas fa-fw" aria-hidden="true"></i> Abrufen
+        </button>
+      </div>
+      <p :class="{'hidden': !feedbackData.errorMessage}" class="text-sm text-red-600 mt-2" x-text="feedbackData.errorMessage"></p>
+    </form>
+
+    <div x-show="feedbackData.success" x-cloak>
+      <p class="text-sm md:text-base leading-relaxed text-gray-700 mb-4">👍 Ein Kundenportal wurde für dich erstellt und dir per E-Mail zugesandt.</p>
+      <p class="text-sm md:text-base leading-relaxed text-gray-700">❓ Wenn du keine E-Mail bekommen hast, <a class="text-primary no-underline hover:underline" href="mailto:support@cryptomator.org">kontaktiere uns</a>.</p>
+    </div>
+  </section>
+
+  <section class="container text-center pt-12 pb-24">
+    <h3 class="font-headline text-xl md:text-2xl leading-relaxed mb-4">Möchtest du ein offizieller Sponsor werden?</h3>
+    <a href="/de/sponsors/" role="button" class="btn btn-outline-primary px-8">
+      <i class="fas fa-heart"></i> Werde Sponsor
+    </a>
+  </section>
+
+  
+    
+    <script type="text/javascript" src="/js/customerportal.min.d4fb48111df2344eedfaef65b7b415787b8ad15bdc22cf1368cbd02fe475ee43.js" integrity="sha256-1PtIER3yNE7t&#43;u9lt7QVeHuK0VvcIs8TaMvQL&#43;R17kM=" defer></script>
+  
+
+    </div>
+    <footer class="border-t-2 border-secondary pt-8 pb-16">
+  <section class="container text-white font-light leading-loose grid grid-cols-2 gap-x-6 gap-y-8 md:grid-cols-3 lg:grid-cols-5">
+    <div>
+      <h4 class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">Cryptomator</h4>
+      <ul class="list-none m-0">
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/blog/">Blog</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://cryptomator.redbubble.com/" target="_blank" rel="noopener">Merchandise</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/presskit/">Pressemappe</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">Etwas beitragen</h4>
+      <ul class="list-none m-0">
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://github.com/cryptomator" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/donate/">Spenden</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://translate.cryptomator.org/" target="_blank" rel="noopener">Übersetzen</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">Support</h4>
+      <ul class="list-none m-0">
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://docs.cryptomator.org/" target="_blank" rel="noopener">Docs</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://community.cryptomator.org/" target="_blank" rel="noopener">Community</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/contact/">Kontakt</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">Uns folgen</h4>
+      <ul class="list-none m-0">
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://twitter.com/Cryptomator" target="_blank" rel="noopener">Twitter</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="https://mastodon.online/@cryptomator" target="_blank" rel="noopener me">Fediverse</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/feed.xml" rel="alternate" type="application/rss+xml">RSS-Feed</a></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h4 class="block uppercase tracking-wide text-gray-400 text-xs font-bold mb-2">Rechtliches</h4>
+      <ul class="list-none m-0">
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/impressum/">Impressum</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/privacy/">Datenschutzerklärung</a></li>
+        <li><a class="text-white hover:text-secondary hover:no-underline" href="/de/terms/">AGB</a></li>
+      </ul>
+    </div>
+  </section>
+</footer>
+
+
+    
+    <script type="text/javascript" src="/js/jquery/jquery.min.ff1523fb7389539c84c65aba19260648793bb4f5e29329d2ee8804bc37a3fe6e.js" integrity="sha256-/xUj&#43;3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="></script>
+
+    
+    <script type="text/javascript" src="/js/alpinejs/cdn.min.d1573a45c19419ee881d3f7e6d6810bb955ea0d64470da1f1875537de18c603e.js" integrity="sha256-0Vc6RcGUGe6IHT9&#43;bWgQu5VeoNZEcNofGHVTfeGMYD4=" defer></script>
+
+    
+    <script type="text/javascript" src="/js/lazysizes/lazysizes.min.3d9120fa621da6d613c1698b7014ec6bdf4620366e8f2b7b547059f4b6f6272b.js" integrity="sha256-PZEg&#43;mIdptYTwWmLcBTsa99GIDZujyt7VHBZ9Lb2Jys=" async></script>
+  </body>
+</html>
