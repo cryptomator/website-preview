@@ -1,0 +1,143 @@
+{{- $textColor := cond .IsHome "white" "primary" -}}
+{{- $backgroundColor := cond .IsHome "bg-trans-white" "bg-white" -}}
+{{- $navBorderColor := cond .IsHome "border-transparent" "border-primary" -}}
+{{- $defaultPos := cond .IsHome "absolute" "relative" -}}
+{{- $currentRelPermalink := .RelPermalink -}}
+<div class="w-full bg-primary text-center text-sm text-white p-0.5">
+  <p>{{ i18n "nav_promotion" . | safeHTML }}</p>
+</div>
+<nav x-data="{ isNavOpen: false }" :class="isNavOpen ? 'relative' : '{{ $defaultPos }}'" class="w-full text-{{ $textColor }} absolute lg:px-8 {{ $backgroundColor }} border-t-2 {{ $navBorderColor }} shadow">
+  <div class="flex justify-between items-stretch w-full">
+    <a class="flex items-center hover:no-underline py-2 mx-2 lg:ml-0" href="{{ .Site.LanguagePrefix }}/">
+      <img src="/img/logo.svg" class="h-8" alt="Logo"/>
+      <span class="font-headline font-bold ml-2 pb-px">CRYPTOMATOR</span>
+    </a>
+
+    <!-- Regular Navigation -->
+    <ul class="hidden lg:flex items-stretch list-none m-0">
+      {{- range .Site.Data.nav.RelLinks }}
+      {{- with $.Site.GetPage . }}
+      {{- $borderColor := cond (hasPrefix $currentRelPermalink .RelPermalink) $textColor "transparent" }}
+      <li class="flex items-center lg:mx-2 border-b-2 border-{{ $borderColor }} hover:border-{{ $textColor }}">
+        <a class="p-2 hover:no-underline" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+      {{- end }}
+      {{- end }}
+      <li x-data="{ isSupportUsDropdownOpen: false }" class="flex items-center border-b-2 border-transparent">
+        <button @click="isSupportUsDropdownOpen = !isSupportUsDropdownOpen" class="whitespace-nowrap p-2">
+          <span>{{ i18n "nav_support_us" . }}</span>
+          <i class="fas fa-chevron-down fa-fw text-xs"></i>
+        </button>
+        <div class="relative">
+          <div x-show="isSupportUsDropdownOpen" @click.outside="isSupportUsDropdownOpen = false" x-cloak class="absolute right-0 mt-6 py-2 w-64 bg-white rounded shadow-md z-50">
+            {{- range .Site.Data.nav.SupportUsRelLinks }}
+            {{- with $.Site.GetPage . }}
+            <a href="{{ .RelPermalink }}" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">{{ cond (isset .Params "navtitle") .Params.Navtitle .Title }}</a>
+            {{- end}}
+            {{- end }}
+          </div>
+        </div>
+      </li>
+      <li x-data="{ isLearnMoreDropdownOpen: false }" class="flex items-center border-b-2 border-transparent">
+        <button @click="isLearnMoreDropdownOpen = !isLearnMoreDropdownOpen" class="whitespace-nowrap p-2">
+          <span>{{ i18n "nav_learn_more" . }}</span>
+          <i class="fas fa-chevron-down fa-fw text-xs"></i>
+        </button>
+        <div class="relative">
+          <div x-show="isLearnMoreDropdownOpen" @click.outside="isLearnMoreDropdownOpen = false" x-cloak class="absolute right-0 mt-6 py-2 w-96 bg-white rounded shadow-md z-50">
+            {{- range .Site.Data.nav.LearnMoreRelLinks }}
+            {{- with $.Site.GetPage . }}
+            <a href="{{ .RelPermalink }}" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">{{ cond (isset .Params "navtitle") .Params.Navtitle .Title }}</a>
+            {{- end}}
+            {{- end }}
+          </div>
+        </div>
+      </li>
+      
+      <li class="flex items-center mx-5 my-3 border-l border-{{ $textColor }}"></li>
+      
+      <li x-data="{ isLangDropdownOpen: false }" class="flex items-center border-b-2 border-transparent">
+        <button @click="isLangDropdownOpen = !isLangDropdownOpen" class="whitespace-nowrap p-2">
+          <span>{{ .Site.Language.Lang | upper }}</span>
+          <i class="fas fa-chevron-down fa-fw text-xs"></i>
+        </button>
+        <div class="relative">
+          <div x-show="isLangDropdownOpen" @click.outside="isLangDropdownOpen = false" x-cloak class="absolute right-0 mt-6 py-2 w-48 bg-white rounded shadow-md z-50">
+            {{- range .Translations }}
+            <a href="{{ .RelPermalink }}" lang="{{ .Lang }}" class="block px-4 py-2 text-gray-800 hover:bg-secondary hover:text-white hover:no-underline">{{ .Language.LanguageName }}</a>
+            {{- end }}
+          </div>
+        </div>
+      </li>
+      <li class="flex items-center border-b-2 border-transparent">
+        <a class="p-2 hover:no-underline" href="https://twitter.com/Cryptomator" target="_blank" rel="noopener"><i class="fab fa-twitter fa-fw" aria-label="Twitter"></i></a>
+      </li>
+      <li class="flex items-center border-b-2 border-transparent">
+        <a class="p-2 hover:no-underline" href="https://github.com/cryptomator" target="_blank" rel="noopener"><i class="fab fa-github fa-fw" aria-label="GitHub"></i></a>
+      </li>
+    </ul>
+    
+    <!-- Toggle Button for Smartphone Navigation -->
+    <button @click="isNavOpen = !isNavOpen" type="button" class="self-center lg:hidden border border-{{ $textColor }} rounded px-2 py-1 mx-2" aria-label="Toggle Navigation">
+      <i x-show="isNavOpen" class="fas fa-times fa-fw"></i>
+      <i x-show="!isNavOpen" class="fas fa-bars fa-fw"></i>
+    </button>
+  </div>
+  
+  <!-- Smartphone Navigation -->
+  <div :class="isNavOpen ? 'block' : 'hidden'" x-cloak class="lg:hidden">
+    {{- range .Site.Data.nav.RelLinks }}
+    {{- with $.Site.GetPage . }}
+    <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{- end }}
+    {{- end }}
+    
+    <hr class="border-primary my-2"/>
+
+    <div class="uppercase tracking-wide text-gray-500 text-xs font-bold p-2">
+      {{ i18n "nav_support_us" . }}
+    </div>
+    <div class="mt-1">
+      {{- range .Site.Data.nav.SupportUsRelLinks }}
+      {{- with $.Site.GetPage . }}
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="{{ .RelPermalink }}">{{ cond (isset .Params "navtitle") .Params.Navtitle .Title }}</a>
+      {{- end }}
+      {{- end }}
+    </div>
+    
+    <hr class="border-primary my-2"/>
+
+    <div class="uppercase tracking-wide text-gray-500 text-xs font-bold p-2">
+      {{ i18n "nav_learn_more" . }}
+    </div>
+    <div class="mt-1">
+      {{- range .Site.Data.nav.LearnMoreRelLinks }}
+      {{- with $.Site.GetPage . }}
+      <a class="block py-2 mx-2 hover:text-secondary hover:no-underline" href="{{ .RelPermalink }}">{{ cond (isset .Params "navtitle") .Params.Navtitle .Title }}</a>
+      {{- end }}
+      {{- end }}
+    </div>
+
+    <hr class="border-primary my-2"/>
+    
+    <div class="uppercase tracking-wide text-gray-500 text-xs font-bold p-2">
+      <i class="fas fa-globe fa-fw"></i> {{ .Site.Language.Lang | upper }}
+    </div>
+    <div class="mt-1">
+      {{ range .Translations }}
+      <a href="{{ .RelPermalink }}" lang="{{ .Lang }}" class="block px-2 py-1 hover:text-secondary hover:no-underline">{{ .Language.LanguageName }}</a>
+      {{ end }}
+    </div>
+    
+    <hr class="border-primary my-2"/>
+    
+    <a class="block p-2 hover:text-secondary hover:no-underline" href="https://twitter.com/Cryptomator" target="_blank" rel="noopener">
+      <i class="fab fa-twitter fa-fw"></i>
+      <span>{{ i18n "nav_twitter" . }}</span>
+    </a>
+    <a class="block p-2 hover:text-secondary hover:no-underline" href="https://github.com/cryptomator" target="_blank" rel="noopener">
+      <i class="fab fa-github fa-fw"></i>
+      <span>{{ i18n "nav_github" . }}</span>
+    </a>
+  </div>
+</nav>

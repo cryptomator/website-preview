@@ -1,0 +1,98 @@
+baseURL = "https://cryptomator.org/"
+title = "Cryptomator"
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+enableemoji = true
+
+[languages]
+  [languages.en]
+    weight = 1
+    languageName = "English"
+    languageCode = "en_US"
+  [languages.de]
+    weight = 2
+    languageName = "Deutsch"
+    languageCode = "de_DE"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML"]
+
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss"
+    baseName = "feed"
+
+[module]
+
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+
+  [[module.mounts]]
+    source = "node_modules/@skymatic/fontawesome-pro/webfonts"
+    target = "static/webfonts"
+
+  [[module.mounts]]
+    source = "node_modules/jquery/dist"
+    target = "assets/js/jquery"
+
+  [[module.mounts]]
+    source = "node_modules/alpinejs/dist"
+    target = "assets/js/alpinejs"
+
+  [[module.mounts]]
+    source = "node_modules/lazysizes"
+    target = "assets/js/lazysizes"
+
+  [[module.mounts]]
+    source = "node_modules/js-yaml/dist"
+    target = "assets/js/js-yaml"
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[params]
+  [params.releases]
+    [params.releases.exe]
+      version = "1.6.17"
+      filename = "Cryptomator-1.6.17-x64.exe"
+      downloadUrl = "https://github.com/cryptomator/cryptomator/releases/download/1.6.17/Cryptomator-1.6.17-x64.exe"
+      signatureUrl = "https://github.com/cryptomator/cryptomator/releases/download/1.6.17/Cryptomator-1.6.17-x64.exe.asc"
+      checksum = "f7cad11d7696a9e5d22574f9bc82afd51a24388910d595c5018798e32d073224"
+    [params.releases.msi]
+      version = "1.6.17"
+      filename = "Cryptomator-1.6.17-x64.msi"
+      downloadUrl = "https://github.com/cryptomator/cryptomator/releases/download/1.6.17/Cryptomator-1.6.17-x64.msi"
+      signatureUrl = "https://github.com/cryptomator/cryptomator/releases/download/1.6.17/Cryptomator-1.6.17-x64.msi.asc"
+      checksum = "e8c8e93ff2873b7b57d047cf729b31645b32c39bedb3f8945b8259c5293494ea"
+    [params.releases.dmg]
+      version = "1.6.17"
+      filename = "Cryptomator-1.6.17.dmg"
+      downloadUrl = "https://github.com/cryptomator/cryptomator/releases/download/1.6.17/Cryptomator-1.6.17-x64.dmg"
+      signatureUrl = "https://github.com/cryptomator/cryptomator/releases/download/1.6.17/Cryptomator-1.6.17-x64.dmg.asc"
+      checksum = "9ca0e230650b75b7ae424ffad8aaf98ef131facf1ca524b709f497c768e0727d"
+    [params.releases.dmg-arm64]
+      version = "1.6.17"
+      filename = "Cryptomator-1.6.17-arm64.dmg"
+      downloadUrl = "https://github.com/cryptomator/cryptomator/releases/download/1.6.17/Cryptomator-1.6.17-arm64.dmg"
+      signatureUrl = "https://github.com/cryptomator/cryptomator/releases/download/1.6.17/Cryptomator-1.6.17-arm64.dmg.asc"
+      checksum = "9b98791303bc310cbbc78b69dc4cffa1b3d72a860ccf84bf2d7d396d391d4cce"
+    [params.releases.appimage]
+      version = "1.6.17"
+      filename = "cryptomator-1.6.17-x86_64.AppImage"
+      downloadUrl = "https://github.com/cryptomator/cryptomator/releases/download/1.6.17/cryptomator-1.6.17-x86_64.AppImage"
+      signatureUrl = "https://github.com/cryptomator/cryptomator/releases/download/1.6.17/cryptomator-1.6.17-x86_64.AppImage.asc"
+      checksum = "18eedc6fb1894fe3b7061cdbf7597a49f4a7fdb300cee8b0aaeec24e99eb5a42"
+    [params.releases.android]
+      version = "1.7.5"
+      filename = "Cryptomator-1.7.5.apk"
+      downloadUrl = "https://static.cryptomator.org/android/1.7.5/Cryptomator-1.7.5.apk"
+      checksum = "cdd87e27e8f04910c5efae012e3f1ef90bc64922f16a7cd135b5c8125d00e200"
+
+[permalinks]
+  blog = "/blog/:year/:month/:day/:slug/"

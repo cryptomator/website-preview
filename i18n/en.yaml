@@ -1,0 +1,672 @@
+- id: site_meta_description
+  translation: "Encrypt Dropbox, Google Drive, and any other cloud. Cryptomator is free and open source."
+- id: nav_promotion
+  translation: "Looking for an alternative to Boxcryptor after their acquisition? Cryptomator is here to stay! <a class=\"underline\" href=\"/blog/2022/12/08/boxcryptor-shuts-down-find-your-cloud-encryption-alternative/\">Learn more.</a>"
+- id: nav_support_us
+  translation: "Support Us"
+- id: nav_learn_more
+  translation: "Learn More"
+- id: nav_twitter
+  translation: "Cryptomator on Twitter"
+- id: nav_github
+  translation: "Cryptomator on GitHub"
+- id: footer_contribute_title
+  translation: "Contribute"
+- id: footer_contribute_translate
+  translation: "Translate"
+- id: footer_follow_us_title
+  translation: "Follow Us"
+- id: footer_follow_us_rss_feed
+  translation: "RSS Feed"
+- id: footer_legal_title
+  translation: "Legal"
+- id: accept_terms_and_privacy_and_coupon_policy
+  translation: "I accept the <a class=\"text-primary no-underline hover:underline\" href=\"/terms/\">Terms & Conditions</a> as well as the <a class=\"text-primary no-underline hover:underline\" href=\"/privacy/\">Privacy Policy</a>. Coupons redeemed during checkout are excluded from the right of withdrawal."
+- id: accept_terms_and_privacy
+  translation: "I accept the <a class=\"text-primary no-underline hover:underline\" href=\"/terms/\">Terms & Conditions</a> as well as the <a class=\"text-primary no-underline hover:underline\" href=\"/privacy/\">Privacy Policy</a>."
+- id: accept_privacy
+  translation: "I accept the <a class=\"text-primary no-underline hover:underline\" href=\"/privacy/\">Privacy Policy</a>."
+- id: accept_privacy_implicitly
+  translation: "By transferring, I accept the <a class=\"text-primary no-underline hover:underline\" href=\"/privacy/\">Privacy Policy</a>."
+
+# Android
+- id: android_getkey_title
+  translation: "Buy a license key"
+- id: android_getkey_price
+  translation: "Price"
+- id: android_getkey_price_placeholder
+  translation: "Loading…"
+- id: android_getkey_email
+  translation: "Email"
+- id: android_getkey_email_placeholder
+  translation: "Email address"
+- id: android_getkey_instruction
+  translation: "Payments are securely handled by Paddle."
+- id: android_getkey_checkout
+  translation: "Checkout"
+
+- id: android_getkey_success
+  translation: "Your payment was successful!"
+- id: android_getkey_key
+  translation: "License Key"
+- id: android_getkey_key_placeholder
+  translation: "Loading…"
+- id: android_getkey_key_instruction
+  translation: "This is your license key. Enter it in the Cryptomator app. The license key has also been sent to your email address."
+
+- id: android_download_title
+  translation: "Download APK"
+- id: android_download_button
+  translation: "Download"
+- id: android_download_sha256_signature
+  translation: "SHA256 Signature"
+
+- id: android_keyrecovery_title
+  translation: "Did you lose your license key?"
+- id: android_keyrecovery_instruction
+  translation: "To recover a lost license key or receipt, enter your email address below."
+- id: android_keyrecovery_email_placeholder
+  translation: "Email address"
+- id: android_keyrecovery_retrieve
+  translation: "Retrieve"
+- id: android_keyrecovery_success
+  translation: "We've sent details of your past transactions and licenses to you via email."
+- id: android_keyrecovery_contact_us
+  translation: "If you didn't get an email, <a class=\"text-primary no-underline hover:underline\" href=\"mailto:support@cryptomator.org\">contact us</a>."
+
+- id: android_fdroid_title
+  translation: "Get it on F-Droid"
+- id: android_fdroid_repo
+  translation: "Open this <a class=\"text-primary no-underline hover:underline\" href=\"https://static.cryptomator.org/android/fdroid/repo?fingerprint=F7C3EC3B0D588D3CB52983E9EB1A7421C93D4339A286398E71D7B651E8D8ECDD\">link</a> or scan the QR code on your phone to add our repository."
+- id: android_fdroid_qr_code
+  translation: "QR Code"
+
+# Blog
+- id: blob_post_author_prefix
+  translation: "by"
+
+# Coop
+- id: coop_more_info
+  translation: "More Info"
+- id: coop_your_business_title
+  translation: "Your Business?"
+- id: coop_your_business_paragraph
+  translation: "Interested in Cryptomator for your business? Explore various fields of application."
+
+# Donate
+- id: donate_paypal_instruction
+  translation: "After pressing \"Proceed\", you will be redirected to our PayPal site."
+- id: donate_paypal_calltoaction
+  translation: "Proceed to PayPal"
+
+- id: donate_creditcard_amount
+  translation: "Amount"
+- id: donate_creditcard_amount_placeholder
+  translation: "min. 1"
+- id: donate_creditcard_amount_suffix
+  translation: ".00"
+- id: donate_creditcard_frequency
+  translation: "Frequency"
+- id: donate_creditcard_frequency_once
+  translation: "One-Time"
+- id: donate_creditcard_frequency_recurring
+  translation: "Monthly"
+- id: donate_creditcard_number
+  translation: "Credit Card"
+- id: donate_creditcard_once_instruction
+  translation: "Credit card payments are securely handled by Stripe. We will not be able to see your card number or CVC. Please expect to be <a class=\"text-primary no-underline hover:underline\" href=\"https://support.stripe.com/questions/unknown-charge-on-card-from-stripe\" target=\"_blank\" rel=\"noopener\">charged by Stripe</a>."
+- id: donate_creditcard_once_loading
+  translation: "Loading…"
+- id: donate_creditcard_once_loadcaptcha
+  translation: "Continue…"
+- id: donate_creditcard_once_paynow
+  translation: "Pay Now"
+- id: donate_creditcard_once_success
+  translation: "Your payment was successful!"
+- id: donate_creditcard_recurring_instruction
+  translation: "Recurring credit card payments will be set up on our Stripe page."
+- id: donate_creditcard_recurring_calltoaction
+  translation: "Proceed to Stripe"
+
+- id: donate_banktransfer_recipient
+  translation: "Recipient"
+
+- id: donate_crypto_instruction
+  translation: "Select the crypto currency in the next step. After pressing \"Proceed\", you will be redirected to our CoinPayments site."
+- id: donate_crypto_calltoaction
+  translation: "Proceed to CoinPayments"
+
+- id: donate_customer_portal_title
+  translation: "Want to manage your recurring donation?"
+- id: donate_customer_portal_instruction
+  translation: "If you used the \"Credit Card\" option to set up a monthly donation and would like to manage or cancel it, enter your email address below."
+- id: donate_customer_portal_email_placeholder
+  translation: "Email address"
+- id: donate_customer_portal_retrieve
+  translation: "Retrieve"
+- id: donate_customer_portal_success
+  translation: "A customer portal has been created for you and sent to you via email."
+- id: donate_customer_portal_contact_us
+  translation: "If you didn't get an email, <a class=\"text-primary no-underline hover:underline\" href=\"mailto:support@cryptomator.org\">contact us</a>."
+
+- id: donate_become_sponsor_title
+  translation: "Want to become an official sponsor?"
+- id: donate_become_sponsor_button
+  translation: "Become a Sponsor"
+
+# Downloads
+- id: downloads_all_versions_title
+  translation: "Looking for older versions?"
+- id: downloads_all_versions_button
+  translation: "Releases Archive on GitHub"
+
+# Downloads Thanks
+- id: downloads_thanks_notification_title
+  translation: "Your download starts automatically."
+- id: downloads_thanks_notification_detail
+  translation: "Didn't work? Click here to restart:"
+- id: downloads_thanks_sha256_signature
+  translation: "SHA256 Signature"
+- id: downloads_thanks_pgp_signature
+  translation: "PGP Signature"
+- id: downloads_thanks_pgp_signature_download
+  translation: "Download PGP Signature"
+- id: downloads_thanks_pgp_key_fingerprint
+  translation: "Fingerprint"
+- id: downloads_thanks_title
+  translation: "Thanks for choosing Cryptomator!"
+- id: downloads_thanks_getting_started_title
+  translation: "Getting Started"
+- id: downloads_thanks_getting_started_detail
+  translation: "If you are a first-time user, you might be interested to:"
+- id: downloads_thanks_getting_started_detail_1
+  translation: "Read our <a href=\"https://docs.cryptomator.org/\" target=\"_blank\" rel=\"noopener\">documentation</a>, which should guide you in case you would like some instructions."
+- id: downloads_thanks_getting_started_detail_2
+  translation: "Join our <a href=\"https://community.cryptomator.org/\" target=\"_blank\" rel=\"noopener\">community forum</a>, which is a great place to ask for support or share your thoughts."
+- id: downloads_thanks_support_cryptomator_title
+  translation: "Support Cryptomator"
+- id: downloads_thanks_support_cryptomator_detail
+  translation: "Development of the desktop application would not be possible without the support of our users."
+- id: downloads_thanks_support_cryptomator_detail_1
+  translation: "Would you like to <a href=\"/donate/\">donate</a> or <a href=\"/sponsors/\">become a sponsor</a>?"
+- id: downloads_thanks_support_cryptomator_detail_2
+  translation: "Would you like to <a href=\"https://translate.cryptomator.org/\" target=\"_blank\" rel=\"noopener\">help translating Cryptomator</a>?"
+- id: downloads_thanks_support_cryptomator_detail_3
+  translation: "Would you like to <a href=\"https://github.com/cryptomator/cryptomator\" target=\"_blank\" rel=\"noopener\">contribute code</a> or <a href=\"https://github.com/cryptomator/cryptomator/issues/new/choose\" target=\"_blank\" rel=\"noopener\">report bugs</a>?"
+
+# Enterprise
+- id: enterprise_contact_us_title
+  translation: "Are you interested?"
+- id: enterprise_contact_us_button
+  translation: "Contact Us for an Offer"
+
+# Home
+- id: home_header_title
+  translation: "Put&nbsp;a&nbsp;lock on&nbsp;your&nbsp;cloud"
+- id: home_header_description
+  translation: "With Cryptomator, the key to your data is in your hands. Cryptomator encrypts your data quickly and easily. Afterwards you upload them protected to your favorite cloud service."
+- id: home_header_button
+  translation: "Download Now"
+- id: home_header_hub
+  translation: "Working in teams? Check out <span class=\"underline\">Cryptomator Hub</span>!"
+- id: home_header_woman_cloud_alt
+  translation: "Relaxed woman on a cloud secured by a lock"
+- id: home_newsletter_title
+  translation: "Let's stay in touch"
+- id: home_newsletter_instruction
+  translation: "Subscribe to our mailing list or follow <a class=\"text-primary no-underline hover:underline\" href=\"https://twitter.com/Cryptomator\" target=\"_blank\" rel=\"noopener\">@Cryptomator</a> on Twitter."
+- id: home_newsletter_email_placeholder
+  translation: "Email address"
+- id: home_newsletter_subscribe
+  translation: "Subscribe"
+- id: home_newsletter_success
+  translation: "Thank you for subscribing! A confirmation link has been sent to your email address."
+- id: home_trustingbrands_title
+  translation: "Brands Trusting our Technology"
+- id: home_sponsors_title
+  translation: "Proudly Sponsored By"
+- id: home_sponsors_button
+  translation: "Become a Sponsor"
+- id: home_testimonials_title
+  translation: "What our Users Say"
+- id: home_testimonials_image_alt
+  translation: "Profile picture of"
+- id: home_reception_title
+  translation: "Reception"
+- id: home_cebit_title
+  translation: "Awardee of the CeBIT Innovation Award 2016"
+- id: home_cebit_subtitle
+  translation: "Cryptomator won the Special Award for Usable Security and Privacy."
+
+# Hub
+- id: hub_header_title
+  translation: "The&nbsp;secure&nbsp;way to&nbsp;work&nbsp;in&nbsp;teams"
+- id: hub_header_description
+  translation: "Cryptomator Hub adds zero-knowledge key management for teams and organizations to Cryptomator. It easily integrates into your existing identity management incl. OpenID Connect, SAML, and LDAP. As usual, your favorite cloud service remains your free choice."
+- id: hub_header_self_hosted
+  translation: "Self-Hosted"
+- id: hub_header_self_hosted_docs_cta
+  translation: "Get Started Now"
+- id: hub_header_self_hosted_setup_cta
+  translation: "Setup Wizard"
+- id: hub_header_managed
+  translation: "Managed"
+- id: hub_header_managed_cta
+  translation: "Coming Soon"
+- id: hub_header_managed_cta_tooltip
+  translation: "Expected to launch in February. If you're interested, please subscribe to our Hub mailing list at the bottom."
+- id: hub_header_man_vault_alt
+  translation: "Person holding the key to a very secure vault"
+
+- id: hub_video_title
+  translation: "Quick Introduction"
+- id: hub_video_description
+  translation: "Let us show you how Cryptomator Hub adds access management for your Cryptomator vaults."
+
+- id: hub_features_feature_1_title
+  translation: "Strong Authentication"
+- id: hub_features_feature_1_description
+  translation: "Hook up Cryptomator Hub to your existing identity infrastructure and set up any industry-standard authentication method for your team. <a href=\"https://www.keycloak.org/\" target=\"_blank\" rel=\"noopener\">Powered by Keycloak.</a>"
+- id: hub_features_feature_2_title
+  translation: "End-to-End Encryption"
+- id: hub_features_feature_2_description
+  translation: "Vaults created with Cryptomator Hub will be stored the same way as you're used to with Cryptomator – securely using end-to-end encryption. <a href=\"https://docs.cryptomator.org/en/latest/security/architecture/\" target=\"_blank\" rel=\"noopener\">Learn more.</a>"
+- id: hub_features_feature_3_title
+  translation: "Zero Knowledge"
+- id: hub_features_feature_3_description
+  translation: "Cryptomator Hub manages key material without getting in touch with unencrypted keys. It is a true zero-knowledge solution. <a href=\"https://github.com/cryptomator/hub/wiki/Zero-Knowledge-Key-Management\" target=\"_blank\" rel=\"noopener\">Learn more.</a>"
+
+- id: hub_pricing_title
+  translation: "Pricing Plans"
+- id: hub_pricing_description
+  translation: "Unlock the full potential of your Hub instance and get your team on board with client-side encryption for your cloud storage."
+- id: hub_pricing_infrastructure_self_hosted
+  translation: "Self-Hosted"
+- id: hub_pricing_infrastructure_managed
+  translation: "Managed"
+- id: hub_pricing_infrastructure_managed_coming_later
+  translation: "Managed instances will be available soon. Subscribe to our Hub mailing list at the bottom to be informed."
+- id: hub_pricing_community_title
+  translation: "Community"
+- id: hub_pricing_community_statement
+  translation: "Free"
+- id: hub_pricing_community_description
+  translation: "for up to 5 seats"
+- id: hub_pricing_community_benefit_1
+  translation: "Unlimited vaults"
+- id: hub_pricing_community_benefit_2
+  translation: "Full access via Desktop app"
+- id: hub_pricing_community_benefit_3
+  translation: "Read-only access via Mobile apps"
+- id: hub_pricing_community_benefit_3_tooltip
+  translation: "If you unlocked the full version of the mobile app, you will be granted full access."
+- id: hub_pricing_community_benefit_4
+  translation: "Community support"
+- id: hub_pricing_standard_title
+  translation: "Standard"
+- id: hub_pricing_standard_description
+  translation: "per seat, per month"
+- id: hub_pricing_standard_benefit_1
+  translation: "Everything in Community"
+- id: hub_pricing_standard_benefit_2
+  translation: "Full access via Mobile apps"
+- id: hub_pricing_standard_benefit_2_tooltip
+  translation: "You will be granted full access without having to unlock the full version of the mobile app."
+- id: hub_pricing_standard_benefit_3
+  translation: "Audit logs"
+- id: hub_pricing_standard_benefit_4
+  translation: "Email support"
+- id: hub_pricing_managed_standard_benefit_1
+  translation: "Custom domain"
+- id: hub_pricing_managed_standard_benefit_2
+  translation: "Hosting in Europe"
+- id: hub_pricing_enterprise_title
+  translation: "Enterprise"
+- id: hub_pricing_enterprise_statement
+  translation: "Custom"
+- id: hub_pricing_enterprise_description
+  translation: "tailored pricing"
+- id: hub_pricing_enterprise_benefit_1
+  translation: "Everything in Standard"
+- id: hub_pricing_enterprise_benefit_2
+  translation: "Priority email support"
+- id: hub_pricing_enterprise_benefit_3
+  translation: "Expert training and assistance"
+- id: hub_pricing_enterprise_benefit_4
+  translation: "Volume discount for large teams"
+- id: hub_pricing_coming_later
+  translation: "Currently in development, ETA early 2023."
+
+- id: hub_faq_title
+  translation: "Frequently Asked Questions"
+
+- id: hub_contact_us_title
+  translation: "More questions?"
+- id: hub_contact_us_description
+  translation: "Are you interested in a demo? Would you like to know more about Cryptomator Hub?"
+- id: hub_contact_us_button
+  translation: "Contact Us"
+
+- id: hub_newsletter_title
+  translation: "Let's stay in touch"
+- id: hub_newsletter_instruction
+  translation: "Subscribe to our Hub mailing list to be the first to know more."
+- id: hub_newsletter_email_placeholder
+  translation: "Email address"
+- id: hub_newsletter_subscribe
+  translation: "Subscribe"
+- id: hub_newsletter_success
+  translation: "Thank you for subscribing! A confirmation link has been sent to your email address."
+
+# Hub Billing
+- id: hub_billing_landing_title
+  translation: "Manage Hub Subscription"
+- id: hub_billing_landing_description
+  translation: "Please enter your Hub ID in order to continue. You will find this as an admin of your Hub instance under \"Billing\"."
+- id: hub_billing_landing_hubid_placeholder
+  translation: "Hub ID"
+- id: hub_billing_landing_submit
+  translation: "Continue"
+
+- id: hub_billing_manage_status_title
+  translation: "Status"
+- id: hub_billing_manage_status_active
+  translation: "Active"
+- id: hub_billing_manage_status_pastdue
+  translation: "Past Due"
+- id: hub_billing_manage_status_trialing
+  translation: "Trialing"
+- id: hub_billing_manage_status_paused
+  translation: "Paused"
+- id: hub_billing_manage_status_deleted
+  translation: "Deleted"
+- id: hub_billing_manage_status_quantity_description
+  translation: "Number of Seats"
+- id: hub_billing_manage_status_quantity_action
+  translation: "Change Seats"
+
+- id: hub_billing_manage_next_payment_title
+  translation: "Next Payment"
+- id: hub_billing_manage_next_payment_date_description
+  translation: "Due Date"
+- id: hub_billing_manage_next_payment_date_unavailable
+  translation: "N/A (Paused)"
+- id: hub_billing_manage_next_payment_pause_action
+  translation: "Pause Subscription"
+- id: hub_billing_manage_next_payment_restart_action
+  translation: "Resume Subscription"
+
+- id: hub_billing_manage_payment_info_title
+  translation: "Payment Information"
+- id: hub_billing_manage_payment_info_credit_card
+  translation: "Credit Card"
+- id: hub_billing_manage_payment_info_credit_card_last_four_digits_description
+  translation: "Ending with"
+- id: hub_billing_manage_payment_info_paypal
+  translation: "PayPal"
+- id: hub_billing_manage_payment_info_update_action
+  translation: "Update Payment Method"
+
+- id: hub_billing_manage_license_key_title
+  translation: "License Key"
+- id: hub_billing_manage_license_key_instruction_with_returnurl
+  translation: "This is your license key that is bound to your Hub ID. Press the button below to transfer it to your Hub instance automatically. Otherwise, enter it in your Hub instance under \"Billing\" manually if necessary."
+- id: hub_billing_manage_license_key_instruction_without_returnurl
+  translation: "This is your license key that is bound to your Hub ID. Enter it in your Hub instance under \"Billing\" manually if necessary."
+- id: hub_billing_manage_license_key_transfer_action
+  translation: "Transfer to Hub"
+
+- id: hub_billing_manage_modal_charge_amount_description
+  translation: "Charge Amount"
+- id: hub_billing_manage_modal_continue
+  translation: "Continue"
+- id: hub_billing_manage_modal_confirm
+  translation: "Confirm"
+- id: hub_billing_manage_modal_cancel
+  translation: "Cancel"
+
+- id: hub_billing_manage_restart_subscription_title
+  translation: "Resume Subscription"
+- id: hub_billing_manage_restart_subscription_warning
+  translation: "You are about to resume the subscription, which is currently inactive. By confirming, you will be charged within the day."
+
+- id: hub_billing_manage_change_quantity_title
+  translation: "Change Seats"
+- id: hub_billing_manage_change_quantity_description
+  translation: "If you require more or less seats than the current limit, you can adjust the quantity here."
+- id: hub_billing_manage_change_quantity_amount_description
+  translation: "Only users who are granted access to vaults count towards the seats limit."
+- id: hub_billing_manage_change_quantity_confirmation_current_amount_description
+  translation: "Current Number of Seats"
+- id: hub_billing_manage_change_quantity_confirmation_new_amount_description
+  translation: "New Number of Seats"
+- id: hub_billing_manage_change_quantity_confirmation_increase_warning
+  translation: "You are about to increase the seats limit. By confirming, you will be immediately charged for the difference."
+- id: hub_billing_manage_change_quantity_confirmation_decrease_warning
+  translation: "You are about to decrease the seats limit. By confirming, your next payment will be reduced by the difference."
+
+- id: hub_billing_checkout_description
+  translation: "Unlock the full potential of your Hub instance and get your team on board with client-side encryption for your cloud storage."
+
+- id: hub_billing_checkout_standard_title
+  translation: "Standard"
+- id: hub_billing_checkout_standard_description
+  translation: "per seat, per month, billed yearly"
+
+- id: hub_billing_checkout_standard_hubid
+  translation: "Hub ID"
+- id: hub_billing_checkout_standard_hubid_description
+  translation: "This is unique to your Hub instance. The subscription will be bound to it."
+- id: hub_billing_checkout_standard_quantity
+  translation: "Number of Seats"
+- id: hub_billing_checkout_standard_quantity_description
+  translation: "Only users who are granted access to vaults count towards the seats limit."
+- id: hub_billing_checkout_standard_email
+  translation: "Email"
+- id: hub_billing_checkout_standard_email_placeholder
+  translation: "Email address"
+- id: hub_billing_checkout_standard_instruction
+  translation: "Payments are securely handled by Paddle."
+- id: hub_billing_checkout_coupon
+  translation: "Use coupon code <code>HUB25</code> during checkout to get 25% off for the first year!"
+- id: hub_billing_checkout_standard_submit
+  translation: "Checkout"
+
+- id: hub_billing_checkout_enterprise_title
+  translation: "Enterprise"
+- id: hub_billing_checkout_enterprise_statement
+  translation: "Custom"
+- id: hub_billing_checkout_enterprise_description
+  translation: "tailored pricing"
+
+- id: hub_billing_checkout_enterprise_subtitle
+  translation: "Get Ready for Your Enterprise"
+- id: hub_billing_checkout_enterprise_cta
+  translation: "You have a large team? We're happy to offer customized pricing and an individual solution for your needs."
+- id: hub_billing_checkout_enterprise_action
+  translation: "Contact Us"
+
+- id: hub_billing_checkout_faq_title
+  translation: "Frequently Asked Questions"
+
+# Hub Setup
+- id: hub_setup_description
+  translation: "Generate the necessary configuration templates for your Hub deployment and get your team on board with client-side encryption for your cloud storage."
+- id: hub_setup_more_info
+  translation: "You can find more documentation at <a href=\"https://docs.cryptomator.org/en/latest/hub/setup/\">docs.cryptomator.org</a>."
+
+- id: hub_setup_deployment_header_title
+  translation: "Deployment"
+- id: hub_setup_deployment_header_description
+  translation: "On what type of infrastructure do you want to deploy Cryptomator Hub?"
+- id: hub_setup_deployment_kubernetes_namespace_description
+  translation: "Namespace for the Kubernetes resources."
+- id: hub_setup_deployment_kubernetes_ingress_include
+  translation: "Include Ingress object in Kubernetes config."
+- id: hub_setup_deployment_compose_traefik_include
+  translation: "Include Traefik in Docker Compose config."
+- id: hub_setup_deployment_compose_traefik_public_network_description
+  translation: "Name of the publicly exposed network of Traefik."
+- id: hub_setup_deployment_compose_test_description
+  translation: "This deployment type is only intended for testing purposes on `localhost`. This can be used as-is without any further configuration."
+
+- id: hub_setup_hub_header_title
+  translation: "Cryptomator Hub"
+- id: hub_setup_hub_header_description
+  translation: "General information about your Hub installation."
+- id: hub_setup_hub_version_description
+  translation: "For production deployments, use the stable lane."
+- id: hub_setup_hub_public_url
+  translation: "Public Hub URL"
+- id: hub_setup_hub_public_url_description
+  translation: "The full URL including protocol, port, and path of your Hub installation."
+- id: hub_setup_hub_admin_user
+  translation: "Admin User"
+- id: hub_setup_hub_admin_user_description
+  translation: "User name of the initial user that will be created."
+- id: hub_setup_hub_admin_pw
+  translation: "Admin Password"
+- id: hub_setup_hub_admin_pw_description
+  translation: "Password for the initial user. You will be asked to change this on your first login."
+
+- id: hub_setup_keycloak_header_title
+  translation: "Keycloak"
+- id: hub_setup_keycloak_header_description
+  translation: "Cryptomator Hub depends on Keycloak for identity management."
+- id: hub_setup_keycloak_external
+  translation: "External Keycloak"
+- id: hub_setup_keycloak_external_use
+  translation: "Use an existing Keycloak installation."
+- id: hub_setup_keycloak_public_url
+  translation: "Public Keycloak URL"
+- id: hub_setup_keycloak_public_url_external_description
+  translation: "The full URL including protocol, port, and path of your Keycloak installation."
+- id: hub_setup_keycloak_public_url_internal_description
+  translation: "Internal Keycloak container will be deployed to this URL."
+- id: hub_setup_keycloak_realm_id
+  translation: "Realm ID"
+- id: hub_setup_keycloak_realm_id_description
+  translation: "Part of the URL used to login to the correct realm. Therefore it must be an URL-safe string, unique per Keycloak instance."
+- id: hub_setup_keycloak_admin_user
+  translation: "Admin User"
+- id: hub_setup_keycloak_admin_user_description
+  translation: "User name of the admin user that will be created."
+- id: hub_setup_keycloak_admin_pw
+  translation: "Initial Admin Password"
+- id: hub_setup_keycloak_admin_pw_description
+  translation: "Temporary password for the admin user. You should change this on your first login."
+
+- id: hub_setup_database_header_title
+  translation: "Database"
+- id: hub_setup_database_header_description
+  translation: "Cryptomator Hub depends on PostgreSQL for persisting data."
+- id: hub_setup_database_admin_pw
+  translation: "Admin Password"
+- id: hub_setup_database_admin_pw_description
+  translation: "Superuser password for default `postgres` user."
+- id: hub_setup_database_hub_pw
+  translation: "Hub Password"
+- id: hub_setup_database_hub_pw_description
+  translation: "Password for `hub` user with access to `hub` database."
+- id: hub_setup_database_keycloak_pw
+  translation: "Keycloak Password"
+- id: hub_setup_database_keycloak_pw_description
+  translation: "Password for `keycloak` user with access to `keycloak` database."
+
+- id: hub_setup_output_header_title
+  translation: "Config"
+- id: hub_setup_output_header_description
+  translation: "Use this configuration template to deploy Cryptomator Hub."
+- id: hub_setup_output_hint
+  translation: "Hint: Hub and Keycloak requires proper TLS termination in production. Only for tests with localhost or 127.0.0.1 this is not necessary. In the setup wizard you can add the config for the reverse proxies Ingress or Traefik. The deployment for the respective proxy is not included. There are some proxy deployment examples in the <a class=\"text-primary no-underline hover:underline\" href=\"https://docs.cryptomator.org/en/latest/hub/setup/#reverse-proxy\" target=\"_blank\" rel=\"noopener\">documentation</a>."
+
+- id: hub_setup_contact_us_title
+  translation: "Need some help with your configuration?"
+- id: hub_setup_contact_us_description
+  translation: "This wizard creates a sensible default for common configurations. Feel free to contact us if you want us to tailor the setup to your specific needs."
+- id: hub_setup_contact_us_button
+  translation: "Contact Us"
+
+# Supporter Certificate
+- id: supporter_cert_common_email
+  translation: "Email"
+- id: supporter_cert_common_email_placeholder
+  translation: "Email address"
+- id: supporter_cert_common_loadcaptcha
+  translation: "Continue…"
+- id: supporter_cert_common_submit
+  translation: "Send Request"
+- id: supporter_cert_common_success_title
+  translation: "Your request has been sent!"
+- id: supporter_cert_common_success_description
+  translation: "We have received your request and will evaluate it as soon as possible. Depending on our work load, it may take several days."
+
+- id: supporter_cert_funder_quantity
+  translation: "Number of Licenses"
+- id: supporter_cert_funder_quantity_help
+  translation: "License is valid for one user and can be used on multiple computers."
+- id: supporter_cert_funder_price
+  translation: "Price per License"
+- id: supporter_cert_funder_price_placeholder
+  translation: "min. 15"
+- id: supporter_cert_funder_price_suffix
+  translation: ".00"
+- id: supporter_cert_funder_price_help
+  translation: "Minimum amount is 15 per license. Currency is determined during checkout."
+- id: supporter_cert_funder_instruction
+  translation: "Payments are securely handled by Paddle."
+- id: supporter_cert_funder_checkout
+  translation: "Checkout"
+- id: supporter_cert_funder_success
+  translation: "Your payment was successful!"
+- id: supporter_cert_funder_key
+  translation: "Supporter Certificate"
+- id: supporter_cert_funder_key_placeholder
+  translation: "Loading…"
+- id: supporter_cert_funder_key_instruction
+  translation: "This is your supporter certificate. Enter it in the Cryptomator settings under \"Support Us\". It has also been sent to your email address."
+
+- id: supporter_cert_contributor_github_username
+  translation: "GitHub Username"
+- id: supporter_cert_contributor_github_username_placeholder
+  translation: "Username on GitHub"
+- id: supporter_cert_contributor_github_contribution_link
+  translation: "GitHub Contribution Link"
+- id: supporter_cert_contributor_github_contribution_link_placeholder
+  translation: "Contribution link on GitHub (https://github.com/...)"
+- id: supporter_cert_contributor_instruction
+  translation: "Check out our <a class=\"text-primary no-underline hover:underline\" href=\"https://github.com/cryptomator/cryptomator/blob/develop/.github/CONTRIBUTING.md\" target=\"_blank\" rel=\"noopener\">contribution guide</a> to get started."
+
+- id: supporter_cert_translator_crowdin_username
+  translation: "Crowdin Username"
+- id: supporter_cert_translator_crowdin_username_placeholder
+  translation: "Username on Crowdin"
+- id: supporter_cert_translator_instruction
+  translation: "<a class=\"text-primary no-underline hover:underline\" href=\"https://translate.cryptomator.org/\" target=\"_blank\" rel=\"noopener\">Help translating</a> Cryptomator to your favorite language."
+
+- id: supporter_cert_influencer_reference
+  translation: "Reference"
+- id: supporter_cert_influencer_reference_placeholder
+  translation: "- Link to blog post, how-to video, wiki contribution, etc. (https://...)\n- Number of followers, estimated page views, etc.\n\nmax. 800 characters"
+- id: supporter_cert_influencer_instruction
+  translation: "Share anything about Cryptomator on social media, on your website, or on any other media to spread the word."
+
+- id: supporter_cert_other_reason
+  translation: "Reason"
+- id: supporter_cert_other_reason_placeholder
+  translation: "max. 800 characters"
+- id: supporter_cert_other_instruction
+  translation: "Let us know any other reason that doesn't fit in the other categories."
+
+- id: supporter_cert_recovery_title
+  translation: "Did you lose your supporter certificate?"
+- id: supporter_cert_recovery_instruction
+  translation: "To recover a lost certificate or receipt, enter your email address below."
+- id: supporter_cert_recovery_email_placeholder
+  translation: "Email address"
+- id: supporter_cert_recovery_retrieve
+  translation: "Retrieve"
+- id: supporter_cert_recovery_success
+  translation: "We've sent details of your past transactions and licenses to you via email."
+- id: supporter_cert_recovery_contact_us
+  translation: "If you didn't get an email, <a class=\"text-primary no-underline hover:underline\" href=\"mailto:support@cryptomator.org\">contact us</a>."

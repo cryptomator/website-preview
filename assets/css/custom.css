@@ -1,0 +1,161 @@
+/* custom classes: */
+.container-prose {
+  @apply w-full mx-auto;
+  max-width: 768px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn {
+  @apply inline-block border rounded no-underline px-4 py-2;
+}
+
+.btn:hover,
+.btn:focus {
+  @apply no-underline outline-none;
+}
+
+.btn:disabled,
+.btn:hover:disabled,
+.btn:focus:disabled {
+  @apply cursor-not-allowed bg-gray-300 border-gray-300;
+}
+
+.btn-primary {
+  @apply bg-primary border-primary text-white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  @apply text-white transition transform duration-200 ease-in-out shadow-md -translate-y-px;
+}
+
+.btn-primary:disabled {
+  @apply shadow-none translate-y-0;
+}
+
+.btn-outline-primary {
+  @apply border border-primary text-primary;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  @apply bg-primary text-white transition transform duration-200 ease-in-out;
+}
+
+.btn-outline-secondary {
+  @apply border border-secondary text-secondary;
+}
+
+.btn-outline-secondary:hover,
+.btn-outline-secondary:focus {
+  @apply bg-secondary text-white transition transform duration-200 ease-in-out;
+}
+
+.btn-outline-gray-500 {
+  @apply border border-transparent text-gray-500;
+}
+
+.btn-outline-gray-500:hover,
+.btn-outline-gray-500:focus {
+  @apply border-gray-500 text-gray-500;
+}
+
+.text-btn {
+  @apply no-underline;
+}
+
+.text-btn:hover,
+.text-btn:focus {
+  @apply underline;
+}
+
+.text-btn:disabled,
+.text-btn:hover:disabled,
+.text-btn:focus:disabled {
+  @apply cursor-not-allowed no-underline text-gray-300;
+}
+
+.StripeElement {
+  @apply rounded border border-gray-300 px-3 py-2;
+}
+
+.StripeElement--focus {
+  @apply border-secondary;
+}
+
+input:focus:invalid,
+input.show-invalid:invalid,
+textarea:focus:invalid,
+textarea.show-invalid:invalid {
+  @apply border-red-500 ring-0;
+}
+
+input:disabled,
+input:not([type='checkbox']):not([type='radio']):read-only,
+select:disabled,
+textarea:disabled,
+textarea:read-only {
+  @apply bg-gray-200;
+}
+
+.aspect-16x9 {
+  padding-bottom: 56.25%;
+}
+
+.img-muted {
+  filter: grayscale(100%);
+  opacity: .5;
+  transition: filter .1s, opacity .1s;
+}
+
+.img-muted:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.min-vh-66 {
+  min-height: 66vh;
+}
+
+.min-vh-80 {
+  min-height: 80vh;
+}
+
+nav a {
+  color: inherit;
+}
+
+nav a:hover {
+  color: inherit;
+}
+
+.bg-trans-white {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.m-remover {
+  margin: 0 !important;
+}
+
+.has-tooltip {
+  @apply relative inline-block;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply block;
+}
+
+.tooltip {
+  @apply absolute hidden z-50;
+}
+
+.tooltip-center {
+  @apply transform -translate-x-1/2;
+  left: 50%;
+}
+
+/* see https://github.com/alpinejs/alpine#x-cloak */
+[x-cloak] {
+  display: none;
+}

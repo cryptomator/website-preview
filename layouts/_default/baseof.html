@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ .Title }}</title>
+    {{ if and (eq .Section "blog") .IsPage }}
+      <meta name="description" content="{{ .Summary }}">
+      <meta property="og:title" content="{{ .Title }}">
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="{{ .Permalink }}">
+      <meta property="og:site_name" content="{{ .Site.Title }}">
+      <meta property="og:description" content="{{ .Summary }}">
+      <meta property="article:author" content="{{ with .Params.Author }}{{ . }}{{ else }}Cryptobot{{ end }}" />
+      <meta property="article:published_time" content="{{ dateFormat "2006-01-02" .Params.Date }}" />
+      {{ range .Params.tags }}
+        <meta property="article:tag" content="{{ . }}" />
+      {{ end }}
+      <meta property="og:image" content="{{ "/img/logo.png" | absURL }}" />
+      <meta property="og:image:width" content="256" />
+      <meta property="og:image:height" content="256" />
+    {{ else if (eq .Type "article") }}
+      <meta name="description" content="{{ .Params.Description }}">
+      <meta property="og:title" content="{{ .Title }}">
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content="{{ .Permalink }}">
+      <meta property="og:site_name" content="{{ .Site.Title }}">
+      <meta property="og:description" content="{{ .Params.Description }}">
+      {{ if .Params.Ogimage }}
+        <meta property="og:image" content="{{ .Params.Ogimage.Relsrc | absURL }}">
+        <meta property="og:image:width" content="{{ .Params.Ogimage.Width }}"/>
+        <meta property="og:image:height" content="{{ .Params.Ogimage.Height }}"/>
+      {{ else }}
+        <meta property="og:image" content="{{ "/img/og-image.png" | absURL }}">
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="630"/>
+      {{ end }}
+    {{ else }}
+      <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ i18n "site_meta_description" }}{{ end }}"/>
+      <meta property="og:title" content="{{ if not .IsHome }}Cryptomator - {{ end }}{{ .Title }}"/>
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="{{ .Permalink }}"/>
+      <meta property="og:site_name" content="{{ .Site.Title }}"/>
+      <meta property="og:description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ i18n "site_meta_description" }}{{ end }}"/>
+      <meta property="og:image" content="{{ "/img/og-image.png" | absURL }}">
+      <meta property="og:image:width" content="1200"/>
+      <meta property="og:image:height" content="630"/>
+    {{ end }}
+    <meta property="og:locale" content="{{ .Site.Language.Params.LanguageCode }}" />
+    {{ range .Translations }}
+      <meta property="og:locale:alternate" content="{{ .Language.Params.LanguageCode }}" />
+    {{ end }}
+    <meta name="apple-itunes-app" content="app-id=1560822163">
+    {{ if .Site.IsServer }}
+      {{ $css := resources.Get "css/main.css" | postCSS }}
+      <link rel="stylesheet" href="{{ $css.RelPermalink }}" media="screen" />
+    {{ else }}
+      {{ $css := resources.Get "css/main.css" | postCSS | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" media="screen" />
+    {{ end }}
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="{{ .Site.LanguagePrefix }}/feed.xml" />
+    {{ range .Translations }}
+      <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .RelPermalink }}" />
+    {{ end }}
+    {{ block "head" . }}
+      <!-- optional additional page-specific stuff that goes into head -->
+    {{ end }}
+  </head>
+  <body class="bg-dark font-body text-gray-900">
+    {{ partial "nav.html" . }}
+    <div class="bg-gray-100 min-vh-80">
+    <!-- Code that all your templates share, like a header -->
+    {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+    {{ end }}
+    </div>
+    {{ partial "footer.html" . }}
+
+    {{ $jquery := resources.Get "js/jquery/jquery.min.js" | fingerprint }}
+    <script type="text/javascript" src="{{ $jquery.RelPermalink }}" integrity="{{ $jquery.Data.Integrity }}"></script>
+
+    {{ $alpine := resources.Get "js/alpinejs/cdn.min.js" | fingerprint }}
+    <script type="text/javascript" src="{{ $alpine.RelPermalink }}" integrity="{{ $alpine.Data.Integrity }}" defer></script>
+
+    {{ $lazysizes := resources.Get "js/lazysizes/lazysizes.min.js" | fingerprint }}
+    <script type="text/javascript" src="{{ $lazysizes.RelPermalink }}" integrity="{{ $lazysizes.Data.Integrity }}" async></script>
+  </body>
+</html>

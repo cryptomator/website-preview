@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <div class="container-prose py-12">
+    <article class="prose prose-sm md:prose max-w-none md:max-w-none">
+      <header class="mb-6">
+        <h1>{{ .Title }}</h1>
+        <p class="lead">{{ .Description }}</p>
+      </header>
+      {{ .Content }}
+    </article>
+    {{ if and .Params.Ctalink .Params.Ctatext }}
+      <p class="text-center mt-8">
+        <a class="btn btn-primary" href="{{ .Params.Ctalink }}" target="_blank" rel="noopener"><i class="fas fa-link"></i> {{ .Params.Ctatext }}</a>
+      </p>
+    {{ end }}
+  </div>
+{{ end }}
