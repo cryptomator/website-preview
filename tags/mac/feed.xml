@@ -3,15 +3,15 @@
   <channel>
     <title>Cryptomator Blog</title>
     <description>Recent Blog Posts on cryptomator.org</description>
-    <link>https://cryptomator.org/tags/mac/</link>
+    <link>https://preview.cryptomator.org/tags/mac/</link>
     <language>en</language>
-    <atom:link href="https://cryptomator.org/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://preview.cryptomator.org/feed.xml" rel="self" type="application/rss+xml" />
     <image>
-      <url>https://cryptomator.org/img/logo.png</url>
+      <url>https://preview.cryptomator.org/img/logo.png</url>
       <title>Cryptomator Blog</title>
-      <link>https://cryptomator.org/tags/mac/</link>
+      <link>https://preview.cryptomator.org/tags/mac/</link>
     </image>
-    <lastBuildDate>Wed, 15 Feb 2023 10:40:28 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Feb 2023 10:44:59 +0000</lastBuildDate>
     <generator>Hugo</generator>
     
       <item>
@@ -19,7 +19,7 @@
         <description>&lt;p&gt;If you&amp;rsquo;re subscribed to our &lt;a href=&#34;https://github.com/cryptomator/cryptomator/releases&#34;&gt;releases on GitHub&lt;/a&gt;, this is already old news for you: We have released the &lt;a href=&#34;https://github.com/cryptomator/cryptomator/releases/tag/1.7.0-beta1&#34;&gt;first beta&lt;/a&gt; of the upcoming Cryptomator 1.7.0! It contains a lot of internal changes and a bunch of new features, some of which are almost as old as Cryptomator itself.&lt;/p&gt;
 &lt;p&gt;We are very proud of this release, as it eliminates technical debt, delivers long-awaited features, and prepares Cryptomator Desktop for the future. But putting aside about 3,000 lines of code changes and a 4-month development iteration (not counting work in our libraries), let&amp;rsquo;s dive into this release to see what you, the user, will get out of it.&lt;/p&gt;
 &lt;figure class=&#34;text-center&#34;&gt;
-  &lt;img class=&#34;inline-block rounded&#34; src=&#34;https://cryptomator.org/img/blog/cryptomator-1-7-0.png&#34; srcset=&#34;https://cryptomator.org/img/blog/cryptomator-1-7-0.png 1x, https://cryptomator.org/img/blog/cryptomator-1-7-0@2x.png 2x&#34; alt=&#34;Cryptomator 1.7.0 Release&#34; /&gt;
+  &lt;img class=&#34;inline-block rounded&#34; src=&#34;https://preview.cryptomator.org/img/blog/cryptomator-1-7-0.png&#34; srcset=&#34;https://preview.cryptomator.org/img/blog/cryptomator-1-7-0.png 1x, https://preview.cryptomator.org/img/blog/cryptomator-1-7-0@2x.png 2x&#34; alt=&#34;Cryptomator 1.7.0 Release&#34; /&gt;
 &lt;/figure&gt;
 &lt;h2 id=&#34;locate-encrypted-file&#34;&gt;Locate Encrypted File&lt;/h2&gt;
 &lt;p&gt;As already mentioned, Cryptomator 1.7.0 includes a feature that has been requested for a very long time: Locating the encrypted counterpart of a file. Sounds complex, but once you remember that Cryptomator encrypts filenames and obfuscates the directory structure (&lt;a href=&#34;https://docs.cryptomator.org/en/latest/security/architecture/#filename-encryption&#34;&gt;see our docs&lt;/a&gt;), it is easy to understand.&lt;/p&gt;
@@ -33,7 +33,7 @@
 &lt;p&gt;For the past year, we have been desperately searching for an alternative. Our proof of concept using Apple&amp;rsquo;s File Provider framework was not very convincing and would basically require a whole new architecture. Fortunately, you, our community, informed us about an alternative: &lt;a href=&#34;https://www.fuse-t.org/&#34;&gt;FUSE-T&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;FUSE-T is a young project that does not rely on deprecated macOS APIs and can be used as a drop-in-replacement for macFUSE. It requires a much less deep system integration than macFUSE while offering a similar performance. This makes Cryptomator ready for the medium-term future on macOS. But since FUSE-T is quite young, support for it is experimental for now. We encourage you to try it though!&lt;/p&gt;
 &lt;figure class=&#34;text-center&#34;&gt;
-  &lt;img class=&#34;inline-block rounded&#34; src=&#34;https://cryptomator.org/img/blog/preferences-fuse-t.png&#34; srcset=&#34;https://cryptomator.org/img/blog/preferences-fuse-t.png 1x, https://cryptomator.org/img/blog/preferences-fuse-t@2x.png 2x&#34; alt=&#34;Experimental Support for FUSE-T&#34; /&gt;
+  &lt;img class=&#34;inline-block rounded&#34; src=&#34;https://preview.cryptomator.org/img/blog/preferences-fuse-t.png&#34; srcset=&#34;https://preview.cryptomator.org/img/blog/preferences-fuse-t.png 1x, https://preview.cryptomator.org/img/blog/preferences-fuse-t@2x.png 2x&#34; alt=&#34;Experimental Support for FUSE-T&#34; /&gt;
 &lt;/figure&gt;
 &lt;p&gt;So, while the File Provider extension is not out of our sight, we are relieved to be able to offer you a stable system integration of your Cryptomator vaults.&lt;/p&gt;
 &lt;h2 id=&#34;volume-types-overhaul&#34;&gt;Volume Types Overhaul&lt;/h2&gt;
@@ -45,7 +45,7 @@
 &lt;h3 id=&#34;winfsp-change-local-vs-network-drive&#34;&gt;WinFsp Change: Local vs. Network Drive&lt;/h3&gt;
 &lt;p&gt;Windows users may notice that their vault is now mounted as a network drive by default. This has the advantage of better performance when listing large directories. The disadvantage is that it cannot be mounted into a directory. Accessing the vault as a privileged user is still possible by using the UNC path.&lt;/p&gt;
 &lt;figure class=&#34;text-center&#34;&gt;
-  &lt;img class=&#34;inline-block rounded&#34; src=&#34;https://cryptomator.org/img/blog/winfsp-change.png&#34; srcset=&#34;https://cryptomator.org/img/blog/winfsp-change.png 1x, https://cryptomator.org/img/blog/winfsp-change@2x.png 2x&#34; alt=&#34;WinFsp Change: Local vs. Network Drive&#34; /&gt;
+  &lt;img class=&#34;inline-block rounded&#34; src=&#34;https://preview.cryptomator.org/img/blog/winfsp-change.png&#34; srcset=&#34;https://preview.cryptomator.org/img/blog/winfsp-change.png 1x, https://preview.cryptomator.org/img/blog/winfsp-change@2x.png 2x&#34; alt=&#34;WinFsp Change: Local vs. Network Drive&#34; /&gt;
 &lt;/figure&gt;
 &lt;p&gt;If you really need a local drive, you can always change the volume type in the preferences.&lt;/p&gt;
 &lt;h3 id=&#34;dokany-deprecation&#34;&gt;Dokany Deprecation&lt;/h3&gt;
@@ -63,8 +63,8 @@
 &lt;p&gt;You can continue to use your existing vaults as before. There are no vault upgrades and there is no action required on your part. Cryptomator will support both modes of operation.&lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/blog/2023/02/01/1-7-0-what-you-need-to-know/</link>
-        <guid isPermaLink="true">https://cryptomator.org/blog/2023/02/01/1-7-0-what-you-need-to-know/</guid>
+        <link>https://preview.cryptomator.org/blog/2023/02/01/1-7-0-what-you-need-to-know/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/blog/2023/02/01/1-7-0-what-you-need-to-know/</guid>
         
         <category>cryptomator</category>
         
@@ -80,10 +80,10 @@
     
       <item>
         <title>Boxcryptor Shuts Down – Here is Your Cloud Encryption Alternative</title>
-        <description>&lt;p&gt;As mentioned in the &lt;a href=&#34;https://cryptomator.org/blog/2022/11/30/congratulations-boxcryptor-dropbox/&#34;&gt;last blog post&lt;/a&gt;, Dropbox has acquired Boxcryptor&amp;rsquo;s key technology. This means that Boxcryptor&amp;rsquo;s services will no longer be available to new users and existing users will likely have to migrate when their contracts expire.&lt;/p&gt;
-&lt;p&gt;We are here to stay and offer you the chance to try our open-source software. Cryptomator is free and can be used without an account. &lt;a href=&#34;https://cryptomator.org/downloads/&#34;&gt;Just download&lt;/a&gt; and get started.&lt;/p&gt;
+        <description>&lt;p&gt;As mentioned in the &lt;a href=&#34;https://preview.cryptomator.org/blog/2022/11/30/congratulations-boxcryptor-dropbox/&#34;&gt;last blog post&lt;/a&gt;, Dropbox has acquired Boxcryptor&amp;rsquo;s key technology. This means that Boxcryptor&amp;rsquo;s services will no longer be available to new users and existing users will likely have to migrate when their contracts expire.&lt;/p&gt;
+&lt;p&gt;We are here to stay and offer you the chance to try our open-source software. Cryptomator is free and can be used without an account. &lt;a href=&#34;https://preview.cryptomator.org/downloads/&#34;&gt;Just download&lt;/a&gt; and get started.&lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;re looking for a replacement, you&amp;rsquo;ve come to the right place. We compare the features of Boxcryptor with those of Cryptomator. See for yourself!&lt;/p&gt;
-&lt;img class=&#34;inline-block&#34; src=&#34;https://cryptomator.org/img/boxcryptor-alternative/cryptobot-analysis.png&#34; srcset=&#34;https://cryptomator.org/img/boxcryptor-alternative/cryptobot-analysis.png 1x, https://cryptomator.org/img/boxcryptor-alternative/cryptobot-analysis@2x.png 2x&#34; alt=&#34;Cryptomator is constantly analysed by experts using modern tools.&#34; /&gt;
+&lt;img class=&#34;inline-block&#34; src=&#34;https://preview.cryptomator.org/img/boxcryptor-alternative/cryptobot-analysis.png&#34; srcset=&#34;https://preview.cryptomator.org/img/boxcryptor-alternative/cryptobot-analysis.png 1x, https://preview.cryptomator.org/img/boxcryptor-alternative/cryptobot-analysis@2x.png 2x&#34; alt=&#34;Cryptomator is constantly analysed by experts using modern tools.&#34; /&gt;
 &lt;h2 id=&#34;features-of-boxcryptor&#34;&gt;Features of Boxcryptor&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Encryption of all major cloud providers&lt;/li&gt;
@@ -98,20 +98,20 @@
 &lt;ul&gt;
 &lt;li&gt;Encryption of all major cloud providers (no restriction on Desktop app; mobile apps compatible with Dropbox, Google Drive, OneDrive, pCloud, iCloud Drive on iOS, and any cloud via WebDAV and S3)&lt;/li&gt;
 &lt;li&gt;Available on Windows, macOS, Linux, iOS, and Android&lt;/li&gt;
-&lt;li&gt;Both for personal use and for businesses: &lt;a href=&#34;https://cryptomator.org/hub/&#34;&gt;Cryptomator Hub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Both for personal use and for businesses: &lt;a href=&#34;https://preview.cryptomator.org/hub/&#34;&gt;Cryptomator Hub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;End-to-end and zero-knowledge encryption&lt;/li&gt;
 &lt;li&gt;Free Desktop app, one-time purchase (€15) for the mobile app, no subscription&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cryptomator.org/open-source/&#34;&gt;Maximum transparency through open-source software&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://preview.cryptomator.org/open-source/&#34;&gt;Maximum transparency through open-source software&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Unlimited number of devices&lt;/li&gt;
 &lt;li&gt;Password recovery through offline key recovery&lt;/li&gt;
 &lt;li&gt;Software &amp;ldquo;Made in Germany&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img class=&#34;inline-block&#34; src=&#34;https://cryptomator.org/img/encrypt-dropbox/cryptobot-unlocking-vault.png&#34; srcset=&#34;https://cryptomator.org/img/encrypt-dropbox/cryptobot-unlocking-vault.png 1x, https://cryptomator.org/img/encrypt-dropbox/cryptobot-unlocking-vault@2x.png 2x&#34; alt=&#34;Cryptomator allows you to access your cleartext data without the need to remove encryption protection.&#34; /&gt;
+&lt;img class=&#34;inline-block&#34; src=&#34;https://preview.cryptomator.org/img/encrypt-dropbox/cryptobot-unlocking-vault.png&#34; srcset=&#34;https://preview.cryptomator.org/img/encrypt-dropbox/cryptobot-unlocking-vault.png 1x, https://preview.cryptomator.org/img/encrypt-dropbox/cryptobot-unlocking-vault@2x.png 2x&#34; alt=&#34;Cryptomator allows you to access your cleartext data without the need to remove encryption protection.&#34; /&gt;
 &lt;h2 id=&#34;how-to-migrate-from-boxcryptor-to-cryptomator&#34;&gt;How to Migrate From Boxcryptor to Cryptomator&lt;/h2&gt;
 &lt;p&gt;Switching from Boxcryptor to Cryptomator is simple. Boxcryptor provides an &lt;a href=&#34;https://support.boxcryptor.com/en/help/faq-and-troubleshooting/#migration-guide&#34;&gt;off-migration guide&lt;/a&gt; on their website to decrypt all Boxcryptor encrypted files. Make sure that your sensitive data is at no point unencrypted in the cloud. Then, you set up Cryptomator so you can encrypt and securely sync those files back to the cloud.&lt;/p&gt;
 &lt;h3 id=&#34;how-to-easily-set-up-cryptomator&#34;&gt;How to Easily Set Up Cryptomator&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://cryptomator.org/downloads/&#34;&gt;Download&lt;/a&gt; and install Cryptomator.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://preview.cryptomator.org/downloads/&#34;&gt;Download&lt;/a&gt; and install Cryptomator.&lt;/li&gt;
 &lt;li&gt;Once Cryptomator is installed, you can create a new vault.&lt;/li&gt;
 &lt;li&gt;Give your vault a name.&lt;/li&gt;
 &lt;li&gt;Now select a cloud storage of your choice as the storage location of your vault.&lt;/li&gt;
@@ -121,8 +121,8 @@
 &lt;p&gt;If you want, you can unlock it immediately and reveal the virtual drive. From now on, you can store your sensitive files here, e.g., the data that you previously encrypted with Boxcryptor, in order to encrypt them in the cloud with Cryptomator from now on. &lt;a href=&#34;https://docs.cryptomator.org/en/latest/desktop/adding-vaults/&#34;&gt;Detailed instructions are available here.&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/blog/2022/12/08/boxcryptor-shuts-down-find-your-cloud-encryption-alternative/</link>
-        <guid isPermaLink="true">https://cryptomator.org/blog/2022/12/08/boxcryptor-shuts-down-find-your-cloud-encryption-alternative/</guid>
+        <link>https://preview.cryptomator.org/blog/2022/12/08/boxcryptor-shuts-down-find-your-cloud-encryption-alternative/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/blog/2022/12/08/boxcryptor-shuts-down-find-your-cloud-encryption-alternative/</guid>
         
         <category>cryptomator</category>
         
@@ -131,7 +131,7 @@
       <item>
         <title>Congratulations Boxcryptor &amp; Dropbox! – We Are Here to Stay</title>
         <description>&lt;p&gt;You may have heard that &lt;a href=&#34;https://www.boxcryptor.com/en/blog/post/new-chapter-with-dropbox/&#34;&gt;Boxcryptor&lt;/a&gt;&amp;rsquo;s IP technology has been acquired by &lt;a href=&#34;https://blog.dropbox.com/topics/company/dropbox-to-acquire-boxcryptor-assets-bring-end-to-end-encryption-to-business-users&#34;&gt;Dropbox&lt;/a&gt;. Congratulations to both companies and we wish them all the best for the future! 🎉&lt;/p&gt;
-&lt;p&gt;For quite some time, Cryptomator has been seen as an &lt;a href=&#34;https://cryptomator.org/boxcryptor-alternative/&#34;&gt;alternative to Boxcryptor&lt;/a&gt; and you can bet that we were very surprised by this news. On today&amp;rsquo;s Computer Security Day, we want to take the opportunity to let you all know that Cryptomator is here to stay. ❤️&lt;/p&gt;
+&lt;p&gt;For quite some time, Cryptomator has been seen as an &lt;a href=&#34;https://preview.cryptomator.org/boxcryptor-alternative/&#34;&gt;alternative to Boxcryptor&lt;/a&gt; and you can bet that we were very surprised by this news. On today&amp;rsquo;s Computer Security Day, we want to take the opportunity to let you all know that Cryptomator is here to stay. ❤️&lt;/p&gt;
 &lt;h2 id=&#34;what-does-this-mean-for-cryptomator&#34;&gt;What does this mean for Cryptomator?&lt;/h2&gt;
 &lt;p&gt;Obviously, we are not affected by this acquisition. We are still the same team, with the same goals, and the same vision. &lt;a href=&#34;https://skymatic.de/&#34;&gt;Skymatic GmbH&lt;/a&gt; will continue to develop and maintain Cryptomator and we will continue to provide you with a free and open-source solution for end-to-end encryption. 🚀&lt;/p&gt;
 &lt;p&gt;The concept behind Cryptomator does not depend on any single cloud provider and we will continue to support as many cloud providers as we can.&lt;/p&gt;
@@ -140,18 +140,18 @@
 &lt;p&gt;With open-source tools, it has been shown in the past that a fork of the application can coexist or replace the actual app if it no longer exists. This means that even if Skymatic GmbH, together with the community, stops developing Cryptomator or sells Cryptomator to a third party, it is very likely that one of the many forks of Cryptomator will continue to be actively maintained and developed by the community.&lt;/p&gt;
 &lt;h2 id=&#34;what-does-this-mean-for-dropbox-users&#34;&gt;What does this mean for Dropbox users?&lt;/h2&gt;
 &lt;p&gt;It&amp;rsquo;s probably too early to tell but Dropbox plans to offer end-to-end encryption to its business users only. We are happy to see that Dropbox is taking end-to-end encryption seriously.&lt;/p&gt;
-&lt;p&gt;Cryptomator works very well with Dropbox and for now, &lt;a href=&#34;https://cryptomator.org/encrypt-dropbox/&#34;&gt;encrypting your Dropbox&lt;/a&gt; with Cryptomator is the best option.&lt;/p&gt;
+&lt;p&gt;Cryptomator works very well with Dropbox and for now, &lt;a href=&#34;https://preview.cryptomator.org/encrypt-dropbox/&#34;&gt;encrypting your Dropbox&lt;/a&gt; with Cryptomator is the best option.&lt;/p&gt;
 &lt;h2 id=&#34;what-does-this-mean-for-boxcryptor-users&#34;&gt;What does this mean for Boxcryptor users?&lt;/h2&gt;
 &lt;p&gt;We are very sorry to hear that Boxcryptor is going to end its existing service. It is no longer available for new users and existing users will likely have to migrate when their contracts expire. If you are affected by this, we welcome you to give Cryptomator a try. 😉 Feel free to check out our &lt;a href=&#34;https://community.cryptomator.org/&#34;&gt;community&lt;/a&gt; for help and support.&lt;/p&gt;
-&lt;p&gt;Cryptomator can be &lt;a href=&#34;https://cryptomator.org/downloads/&#34;&gt;downloaded&lt;/a&gt; for all major operating systems and is ideal for personal use out of the box. The Desktop app is free to use and the mobile apps can be purchased for a one-time fee.&lt;/p&gt;
-&lt;p&gt;If you are looking for a team and enterprise solution, check out &lt;a href=&#34;https://cryptomator.org/hub/&#34;&gt;Cryptomator Hub&lt;/a&gt;, which is open source as well. 🎉&lt;/p&gt;
+&lt;p&gt;Cryptomator can be &lt;a href=&#34;https://preview.cryptomator.org/downloads/&#34;&gt;downloaded&lt;/a&gt; for all major operating systems and is ideal for personal use out of the box. The Desktop app is free to use and the mobile apps can be purchased for a one-time fee.&lt;/p&gt;
+&lt;p&gt;If you are looking for a team and enterprise solution, check out &lt;a href=&#34;https://preview.cryptomator.org/hub/&#34;&gt;Cryptomator Hub&lt;/a&gt;, which is open source as well. 🎉&lt;/p&gt;
 &lt;h2 id=&#34;thanks&#34;&gt;Thanks&lt;/h2&gt;
 &lt;p&gt;Cryptomator started almost nine years ago as a side project. We are now a team of passionate developers and are happy to be able to work on Cryptomator. Kudos to all of our open-source contributors, translators, and testers! We are grateful for all the support we have received from the Cryptomator community over the years and for the trust you have placed in us. Special thanks to our sponsors and supporters!&lt;/p&gt;
-&lt;p&gt;We feel like that we are just getting started and have great updates coming up! To support the ongoing open-source development of Cryptomator, consider &lt;a href=&#34;https://cryptomator.org/donate/&#34;&gt;donating&lt;/a&gt; or &lt;a href=&#34;https://cryptomator.org/sponsors/&#34;&gt;sponsoring&lt;/a&gt;. ❤️&lt;/p&gt;
+&lt;p&gt;We feel like that we are just getting started and have great updates coming up! To support the ongoing open-source development of Cryptomator, consider &lt;a href=&#34;https://preview.cryptomator.org/donate/&#34;&gt;donating&lt;/a&gt; or &lt;a href=&#34;https://preview.cryptomator.org/sponsors/&#34;&gt;sponsoring&lt;/a&gt;. ❤️&lt;/p&gt;
 </description>
         <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/blog/2022/11/30/congratulations-boxcryptor-dropbox/</link>
-        <guid isPermaLink="true">https://cryptomator.org/blog/2022/11/30/congratulations-boxcryptor-dropbox/</guid>
+        <link>https://preview.cryptomator.org/blog/2022/11/30/congratulations-boxcryptor-dropbox/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/blog/2022/11/30/congratulations-boxcryptor-dropbox/</guid>
         
         <category>cryptomator</category>
         
@@ -170,13 +170,13 @@
 &lt;p&gt;Cryptomator Hub is based on the same concept of a vault, a secure file storage for syncing to the cloud with end-to-end encryption. New is that Hub replaces the vault password with a central access management.&lt;/p&gt;
 &lt;p&gt;Individual access to Cryptomator vaults is secured through server-side authentication and key management. Hub manages key material based on a zero-knowledge solution without getting in touch with unencrypted keys. &lt;a href=&#34;https://github.com/cryptomator/hub/wiki/Zero-Knowledge-Key-Management&#34;&gt;Learn more.&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;how-can-i-get-started&#34;&gt;How can I get started?&lt;/h2&gt;
-&lt;p&gt;The self-hosted solution is delivered as a software container and can be deployed using Kubernetes or Docker. Vist the &lt;a href=&#34;https://cryptomator.org/hub/&#34;&gt;landing page&lt;/a&gt; of Cryptomator Hub to get started.&lt;/p&gt;
+&lt;p&gt;The self-hosted solution is delivered as a software container and can be deployed using Kubernetes or Docker. Vist the &lt;a href=&#34;https://preview.cryptomator.org/hub/&#34;&gt;landing page&lt;/a&gt; of Cryptomator Hub to get started.&lt;/p&gt;
 &lt;p&gt;Hub can be used for free for up to 5 team members. For larger teams and companies, an annual license can be purchased through the website at $6.00 per seat per month. Until the end of the year, there is a promotional discount that gives 25% off for the first year. 🎊&lt;/p&gt;
 &lt;p&gt;And as always, Cryptomator Hub is fully &lt;a href=&#34;https://github.com/cryptomator/hub&#34;&gt;open source&lt;/a&gt;. If you have more questions, let us know in the discussion below or &lt;a href=&#34;mailto:hub@cryptomator.org&#34;&gt;contact us&lt;/a&gt;. We are looking forward to your feedback! 🤖&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Nov 2022 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/blog/2022/11/03/hub-1.0/</link>
-        <guid isPermaLink="true">https://cryptomator.org/blog/2022/11/03/hub-1.0/</guid>
+        <link>https://preview.cryptomator.org/blog/2022/11/03/hub-1.0/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/blog/2022/11/03/hub-1.0/</guid>
         
         <category>cryptomator</category>
         
@@ -200,8 +200,8 @@
 &lt;p&gt;If you read this far, we’d like to share a secret with you. We are currently working on &lt;a href=&#34;https://cryptomator.org/hub/&#34;&gt;Cryptomator Hub&lt;/a&gt;. That’s it for now but you’ll definitely hear more about it this year.&lt;/p&gt;
 </description>
         <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/blog/2022/04/04/roadmap/</link>
-        <guid isPermaLink="true">https://cryptomator.org/blog/2022/04/04/roadmap/</guid>
+        <link>https://preview.cryptomator.org/blog/2022/04/04/roadmap/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/blog/2022/04/04/roadmap/</guid>
         
         <category>cryptomator</category>
         
@@ -219,7 +219,7 @@
 &lt;p&gt;The last blog post is already a while ago. We hope you&amp;rsquo;re all doing fine. Cryptomator 1.6.7 for Desktop is out now and let&amp;rsquo;s explore the changes together since it&amp;rsquo;s more than just a &amp;ldquo;patch&amp;rdquo;! The update contains some noteworthy changes, especially for Windows users.&lt;/p&gt;
 &lt;h2 id=&#34;new-installer&#34;&gt;New Installer&lt;/h2&gt;
 &lt;p&gt;With Cryptomator 1.6.0, instead of delivering a &amp;ldquo;regular&amp;rdquo; executable for installation, we provided a &lt;a href=&#34;https://en.wikipedia.org/wiki/Windows_Installer&#34;&gt;Windows Installer package&lt;/a&gt; to allow easier scripted deployment of Cryptomator. But this approach also had drawbacks: We couldn&amp;rsquo;t bundle third-party drivers (i.e., Dokany) leading to inferior user experience.&lt;/p&gt;
-&lt;p&gt;These dire times are over! When you head over to &lt;a href=&#34;https://cryptomator.org/downloads/&#34;&gt;downloads&lt;/a&gt; and select Windows, you&amp;rsquo;re getting an executable again that bundles the MSI installer as well as additional dependencies. Furthermore, it supports command-line parameters (e.g., &lt;code&gt;/quiet&lt;/code&gt;). For a complete list, run the installer with the &lt;code&gt;/?&lt;/code&gt; parameter.&lt;/p&gt;
+&lt;p&gt;These dire times are over! When you head over to &lt;a href=&#34;https://preview.cryptomator.org/downloads/&#34;&gt;downloads&lt;/a&gt; and select Windows, you&amp;rsquo;re getting an executable again that bundles the MSI installer as well as additional dependencies. Furthermore, it supports command-line parameters (e.g., &lt;code&gt;/quiet&lt;/code&gt;). For a complete list, run the installer with the &lt;code&gt;/?&lt;/code&gt; parameter.&lt;/p&gt;
 &lt;p&gt;If you want to download the &amp;ldquo;pure&amp;rdquo; MSI installer without dependencies, it&amp;rsquo;s also available on the downloads site or head over to the &lt;a href=&#34;https://github.com/cryptomator/cryptomator/releases/tag/1.6.7&#34;&gt;release on GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;new-default-vfs-driver-virtual-volume&#34;&gt;New Default VFS Driver (Virtual Volume)&lt;/h2&gt;
 &lt;p&gt;As already mentioned, the new EXE installer can include dependencies again, so we added one right from the start: &lt;a href=&#34;https://winfsp.dev/&#34;&gt;WinFsp&lt;/a&gt;.&lt;/p&gt;
@@ -235,8 +235,8 @@
 &lt;p&gt;We hope you are enjoying this Cryptomator update.&lt;/p&gt;
 </description>
         <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/blog/2022/03/25/release-1.6.7/</link>
-        <guid isPermaLink="true">https://cryptomator.org/blog/2022/03/25/release-1.6.7/</guid>
+        <link>https://preview.cryptomator.org/blog/2022/03/25/release-1.6.7/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/blog/2022/03/25/release-1.6.7/</guid>
         
         <category>cryptomator</category>
         
@@ -278,8 +278,8 @@
 &lt;p&gt;The rewritten iOS app has been tested by more than 2,300 beta testers over a period of half a year. After all, it was just very bad luck that this issue has not been discovered during this beta.&lt;/p&gt;
 </description>
         <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/blog/2022/01/11/ios-vulnerability/</link>
-        <guid isPermaLink="true">https://cryptomator.org/blog/2022/01/11/ios-vulnerability/</guid>
+        <link>https://preview.cryptomator.org/blog/2022/01/11/ios-vulnerability/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/blog/2022/01/11/ios-vulnerability/</guid>
         
         <category>cryptomator</category>
         
@@ -294,7 +294,7 @@
         <description>&lt;p&gt;We are happy to announce that Cryptomator 2.0 for iOS is now available &lt;a href=&#34;https://apps.apple.com/us/app/cryptomator-2/id1560822163&#34;&gt;in the App Store&lt;/a&gt;! 🎉 We&amp;rsquo;d like to express our gratitude to our over 2,300 TestFlight users for testing the app over the last 6 months. ❤️&lt;/p&gt;
 &lt;figure class=&#34;text-center&#34;&gt;
   &lt;a href=&#34;https://apps.apple.com/us/app/cryptomator-2/id1560822163&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
-    &lt;img class=&#34;inline-block rounded&#34; src=&#34;https://cryptomator.org/img/blog/ios-2.0.png&#34; srcset=&#34;https://cryptomator.org/img/blog/ios-2.0.png 1x, https://cryptomator.org/img/blog/ios-2.0@2x.png 2x&#34; alt=&#34;Cryptomator 2.0 for iOS&#34; /&gt;
+    &lt;img class=&#34;inline-block rounded&#34; src=&#34;https://preview.cryptomator.org/img/blog/ios-2.0.png&#34; srcset=&#34;https://preview.cryptomator.org/img/blog/ios-2.0.png 1x, https://preview.cryptomator.org/img/blog/ios-2.0@2x.png 2x&#34; alt=&#34;Cryptomator 2.0 for iOS&#34; /&gt;
   &lt;/a&gt;
 &lt;/figure&gt;
 &lt;p&gt;Last year in April, we started to rebuild our iOS app from scratch. That&amp;rsquo;s why we decided to develop Cryptomator 2.0 in Swift. This will make it easier for us to maintain the app in the future.&lt;/p&gt;
@@ -306,8 +306,8 @@
 &lt;p&gt;We are already looking forward to your feedback! 🤖&lt;/p&gt;
 </description>
         <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/blog/2021/12/21/ios-2.0/</link>
-        <guid isPermaLink="true">https://cryptomator.org/blog/2021/12/21/ios-2.0/</guid>
+        <link>https://preview.cryptomator.org/blog/2021/12/21/ios-2.0/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/blog/2021/12/21/ios-2.0/</guid>
         
         <category>cryptomator</category>
         
@@ -334,12 +334,12 @@
 &lt;p&gt;In addition, plug-ins to protect against phishing and malware can increase the security of your browser. These can be activated relatively easy with most providers.&lt;/p&gt;
 &lt;h2 id=&#34;5-secure-on-the-go-in-the-cloud&#34;&gt;5. Secure on the go in the cloud&lt;/h2&gt;
 &lt;p&gt;Uploading your own data to the cloud can be very handy, for example, if you want to quickly share pictures or expand your own storage space. But when the data is uploaded to the cloud &amp;ldquo;just like that&amp;rdquo;, it is not safe from strangers&amp;rsquo; eyes. The reason is quite simple; the data is unprotected in the cloud; once someone has gained access, they can simply access all the data without any obstacles. This can be easily avoided; Cryptomator puts your data in the cloud in a secure safe and thus protects it from foreign eyes.&lt;/p&gt;
-&lt;p&gt;You can read how this works in our &lt;a href=&#34;https://cryptomator.org/encrypt-dropbox/&#34;&gt;article on encrypting Dropbox&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You want to encrypt your cloud with Cryptomator? &lt;a href=&#34;https://cryptomator.org/downloads/&#34;&gt;Download here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can read how this works in our &lt;a href=&#34;https://preview.cryptomator.org/encrypt-dropbox/&#34;&gt;article on encrypting Dropbox&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You want to encrypt your cloud with Cryptomator? &lt;a href=&#34;https://preview.cryptomator.org/downloads/&#34;&gt;Download here&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 30 Nov 2021 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/blog/2021/11/30/computer-security-day/</link>
-        <guid isPermaLink="true">https://cryptomator.org/blog/2021/11/30/computer-security-day/</guid>
+        <link>https://preview.cryptomator.org/blog/2021/11/30/computer-security-day/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/blog/2021/11/30/computer-security-day/</guid>
         
         <category>event</category>
         
@@ -395,8 +395,8 @@ Keep in mind that the masterkey file is still needed, since it securely contains
 If you want to know more about the upcoming 1.6.0 version of Cryptomator, continue reading the &lt;a href=&#34;https://cryptomator.org/blog/2021/10/11/1-6-0-what-you-need-to-know/&#34;&gt;article&lt;/a&gt; about it.&lt;/p&gt;
 </description>
         <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/blog/2021/10/11/vault-format-8/</link>
-        <guid isPermaLink="true">https://cryptomator.org/blog/2021/10/11/vault-format-8/</guid>
+        <link>https://preview.cryptomator.org/blog/2021/10/11/vault-format-8/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/blog/2021/10/11/vault-format-8/</guid>
         
         <category>cryptomator</category>
         

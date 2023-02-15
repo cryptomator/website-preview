@@ -3,15 +3,15 @@
   <channel>
     <title>Cryptomator Blog</title>
     <description>Recent Blog Posts on cryptomator.org</description>
-    <link>https://cryptomator.org/de/</link>
+    <link>https://preview.cryptomator.org/de/</link>
     <language>de</language>
-    <atom:link href="https://cryptomator.org/de/feed.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://preview.cryptomator.org/de/feed.xml" rel="self" type="application/rss+xml" />
     <image>
-      <url>https://cryptomator.org/img/logo.png</url>
+      <url>https://preview.cryptomator.org/img/logo.png</url>
       <title>Cryptomator Blog</title>
-      <link>https://cryptomator.org/de/</link>
+      <link>https://preview.cryptomator.org/de/</link>
     </image>
-    <lastBuildDate>Wed, 15 Feb 2023 10:40:28 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Feb 2023 10:44:59 +0000</lastBuildDate>
     <generator>Hugo</generator>
     
       <item>
@@ -19,7 +19,7 @@
         <description>&lt;p&gt;Wenn du unsere &lt;a href=&#34;https://github.com/cryptomator/cryptomator/releases&#34;&gt;Releases auf GitHub&lt;/a&gt; abonniert hast, hast du es vielleicht schon bemerkt: Wir haben die &lt;a href=&#34;https://github.com/cryptomator/cryptomator/releases/tag/1.7.0-beta1&#34;&gt;erste Beta&lt;/a&gt; der kommenden Version 1.7.0 von Cryptomator veröffentlicht! Sie enthält viele interne Änderungen und eine Reihe neuer Funktionen, von denen einige fast so alt sind wie Cryptomator selbst.&lt;/p&gt;
 &lt;p&gt;Wir sind sehr stolz auf diese Version, da sie technische Altlasten beseitigt, lang erwartete Funktionen liefert und Cryptomator Desktop auf die Zukunft vorbereitet. Aber abgesehen von etwa 3.000 Zeilen Code-Änderungen und 4 Monaten Entwicklungszeit (die Arbeit an unseren Bibliotheken nicht mitgerechnet), lass uns in diese Version eintauchen, um zu sehen, was du davon hast.&lt;/p&gt;
 &lt;figure class=&#34;text-center&#34;&gt;
-  &lt;img class=&#34;inline-block rounded&#34; src=&#34;https://cryptomator.org/img/blog/cryptomator-1-7-0.png&#34; srcset=&#34;https://cryptomator.org/img/blog/cryptomator-1-7-0.png 1x, https://cryptomator.org/img/blog/cryptomator-1-7-0@2x.png 2x&#34; alt=&#34;Cryptomator 1.7.0 Release&#34; /&gt;
+  &lt;img class=&#34;inline-block rounded&#34; src=&#34;https://preview.cryptomator.org/img/blog/cryptomator-1-7-0.png&#34; srcset=&#34;https://preview.cryptomator.org/img/blog/cryptomator-1-7-0.png 1x, https://preview.cryptomator.org/img/blog/cryptomator-1-7-0@2x.png 2x&#34; alt=&#34;Cryptomator 1.7.0 Release&#34; /&gt;
 &lt;/figure&gt;
 &lt;h2 id=&#34;verschlüsselte-datei-finden&#34;&gt;Verschlüsselte Datei finden&lt;/h2&gt;
 &lt;p&gt;Wie bereits erwähnt, enthält Cryptomator 1.7.0 eine Funktion, die schon lange gewünscht wurde: Die Suche nach dem verschlüsselten Gegenstück einer Datei. Das klingt kompliziert, ist aber leicht zu verstehen, wenn man sich vor Augen hält, dass Cryptomator Dateinamen verschlüsselt und die Verzeichnisstruktur verschleiert (&lt;a href=&#34;https://docs.cryptomator.org/en/latest/security/architecture/#filename-encryption&#34;&gt;siehe unsere Dokumentation&lt;/a&gt;).&lt;/p&gt;
@@ -33,7 +33,7 @@
 &lt;p&gt;Im vergangenen Jahr haben wir verzweifelt nach einer Alternative gesucht. Unser Proof-of-Concept mit Apples File Provider Framework war nicht sehr überzeugend und würde im Grunde eine komplett neue Architektur erfordern. Glücklicherweise hat uns unsere Community auf eine Alternative hingewiesen: &lt;a href=&#34;https://www.fuse-t.org/&#34;&gt;FUSE-T&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;FUSE-T ist ein junges Projekt, das nicht auf veraltete macOS-APIs zurückgreift und als direkter Ersatz für macFUSE verwendet werden kann. Es erfordert eine weit weniger tiefe Systemintegration als macFUSE, bietet aber eine ähnliche Performance. Damit ist Cryptomator für die mittelfristige Zukunft von macOS gerüstet. Da FUSE-T noch recht neu ist, ist die Unterstützung im Moment noch experimentell. Wir ermutigen dich aber, es auszuprobieren!&lt;/p&gt;
 &lt;figure class=&#34;text-center&#34;&gt;
-  &lt;img class=&#34;inline-block rounded&#34; src=&#34;https://cryptomator.org/img/blog/preferences-fuse-t.png&#34; srcset=&#34;https://cryptomator.org/img/blog/preferences-fuse-t.png 1x, https://cryptomator.org/img/blog/preferences-fuse-t@2x.png 2x&#34; alt=&#34;Experimentelle Unterstützung für FUSE-T&#34; /&gt;
+  &lt;img class=&#34;inline-block rounded&#34; src=&#34;https://preview.cryptomator.org/img/blog/preferences-fuse-t.png&#34; srcset=&#34;https://preview.cryptomator.org/img/blog/preferences-fuse-t.png 1x, https://preview.cryptomator.org/img/blog/preferences-fuse-t@2x.png 2x&#34; alt=&#34;Experimentelle Unterstützung für FUSE-T&#34; /&gt;
 &lt;/figure&gt;
 &lt;p&gt;Obwohl wir die Erweiterung des File Providers nicht aus den Augen verloren haben, sind wir erleichtert, dir eine stabile Systemintegration deiner Cryptomator-Tresore anbieten zu können.&lt;/p&gt;
 &lt;h2 id=&#34;überarbeitung-der-laufwerkstypen&#34;&gt;Überarbeitung der Laufwerkstypen&lt;/h2&gt;
@@ -45,7 +45,7 @@
 &lt;h3 id=&#34;winfsp-änderung-lokales-vs-netzlaufwerk&#34;&gt;WinFsp-Änderung: Lokales vs. Netzlaufwerk&lt;/h3&gt;
 &lt;p&gt;Windows-Benutzer werden feststellen, dass ihr Tresor jetzt standardmäßig als Netzlaufwerk eingebunden ist. Dies hat den Vorteil einer besseren Performance beim Auflisten großer Verzeichnisse. Der Nachteil ist, dass der Tresor nicht in ein Verzeichnis eingebunden werden kann. Der Zugriff auf den Tresor als privilegierter Benutzer ist weiterhin über den UNC-Pfad möglich.&lt;/p&gt;
 &lt;figure class=&#34;text-center&#34;&gt;
-  &lt;img class=&#34;inline-block rounded&#34; src=&#34;https://cryptomator.org/img/blog/winfsp-change.png&#34; srcset=&#34;https://cryptomator.org/img/blog/winfsp-change.png 1x, https://cryptomator.org/img/blog/winfsp-change@2x.png 2x&#34; alt=&#34;WinFsp-Änderung: Lokales vs. Netzlaufwerk&#34; /&gt;
+  &lt;img class=&#34;inline-block rounded&#34; src=&#34;https://preview.cryptomator.org/img/blog/winfsp-change.png&#34; srcset=&#34;https://preview.cryptomator.org/img/blog/winfsp-change.png 1x, https://preview.cryptomator.org/img/blog/winfsp-change@2x.png 2x&#34; alt=&#34;WinFsp-Änderung: Lokales vs. Netzlaufwerk&#34; /&gt;
 &lt;/figure&gt;
 &lt;p&gt;Falls wirklich ein lokales Laufwerk benötigt wird, kann der Laufwerkstyp jederzeit in den Einstellungen geändert werden.&lt;/p&gt;
 &lt;h3 id=&#34;einstellung-der-dokany-unterstützung&#34;&gt;Einstellung der Dokany-Unterstützung&lt;/h3&gt;
@@ -63,8 +63,8 @@
 &lt;p&gt;Du kannst deine bestehenden Tresore wie bisher verwenden. Es gibt keine Tresor-Upgrades und es sind keine Maßnahmen von deiner Seite erforderlich. Cryptomator unterstützt beide Modi.&lt;/p&gt;
 </description>
         <pubDate>Wed, 01 Feb 2023 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/de/blog/2023/02/01/1-7-0-what-you-need-to-know/</link>
-        <guid isPermaLink="true">https://cryptomator.org/de/blog/2023/02/01/1-7-0-what-you-need-to-know/</guid>
+        <link>https://preview.cryptomator.org/de/blog/2023/02/01/1-7-0-what-you-need-to-know/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/de/blog/2023/02/01/1-7-0-what-you-need-to-know/</guid>
         
         <category>cryptomator</category>
         
@@ -80,10 +80,10 @@
     
       <item>
         <title>Boxcryptor stellt seine Dienste ein – Hier ist deine Alternative</title>
-        <description>&lt;p&gt;Wie bereits im &lt;a href=&#34;https://cryptomator.org/de/blog/2022/11/30/congratulations-boxcryptor-dropbox/&#34;&gt;letzten Blog-Post&lt;/a&gt; erwähnt, hat Dropbox die Schlüsseltechnologie von Boxcryptor übernommen. Das bedeutet, dass die Dienste von Boxcryptor für neue Nutzer:innen nicht mehr verfügbar sind und bestehende Nutzer:innen wahrscheinlich migrieren müssen, wenn ihre Verträge auslaufen.&lt;/p&gt;
-&lt;p&gt;Wir sind hier, um zu bleiben, und bieten dir an, unsere Open-Source-Software auszutesten. Cryptomator ist kostenlos und ohne Account nutzbar. &lt;a href=&#34;https://cryptomator.org/de/downloads/&#34;&gt;Einfach herunterladen&lt;/a&gt; und loslegen.&lt;/p&gt;
+        <description>&lt;p&gt;Wie bereits im &lt;a href=&#34;https://preview.cryptomator.org/de/blog/2022/11/30/congratulations-boxcryptor-dropbox/&#34;&gt;letzten Blog-Post&lt;/a&gt; erwähnt, hat Dropbox die Schlüsseltechnologie von Boxcryptor übernommen. Das bedeutet, dass die Dienste von Boxcryptor für neue Nutzer:innen nicht mehr verfügbar sind und bestehende Nutzer:innen wahrscheinlich migrieren müssen, wenn ihre Verträge auslaufen.&lt;/p&gt;
+&lt;p&gt;Wir sind hier, um zu bleiben, und bieten dir an, unsere Open-Source-Software auszutesten. Cryptomator ist kostenlos und ohne Account nutzbar. &lt;a href=&#34;https://preview.cryptomator.org/de/downloads/&#34;&gt;Einfach herunterladen&lt;/a&gt; und loslegen.&lt;/p&gt;
 &lt;p&gt;Wenn du auf der Suche nach einem Ersatz bist, dann bist du hier richtig. Wir vergleichen die Funktionen von Boxcryptor mit Cryptomator. Überzeuge dich selbst!&lt;/p&gt;
-&lt;img class=&#34;inline-block&#34; src=&#34;https://cryptomator.org/img/boxcryptor-alternative/cryptobot-analysis.png&#34; srcset=&#34;https://cryptomator.org/img/boxcryptor-alternative/cryptobot-analysis.png 1x, https://cryptomator.org/img/boxcryptor-alternative/cryptobot-analysis@2x.png 2x&#34; alt=&#34;Cryptomator wird ständig von Fachleuten mit modernen Tools analysiert.&#34; /&gt;
+&lt;img class=&#34;inline-block&#34; src=&#34;https://preview.cryptomator.org/img/boxcryptor-alternative/cryptobot-analysis.png&#34; srcset=&#34;https://preview.cryptomator.org/img/boxcryptor-alternative/cryptobot-analysis.png 1x, https://preview.cryptomator.org/img/boxcryptor-alternative/cryptobot-analysis@2x.png 2x&#34; alt=&#34;Cryptomator wird ständig von Fachleuten mit modernen Tools analysiert.&#34; /&gt;
 &lt;h2 id=&#34;funktionen-und-eigenschaften-von-boxcryptor&#34;&gt;Funktionen und Eigenschaften von Boxcryptor&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Verschlüsselung von allen gängigen Cloud-Anbietern&lt;/li&gt;
@@ -98,20 +98,20 @@
 &lt;ul&gt;
 &lt;li&gt;Verschlüsselung von allen gängigen Cloud-Anbietern (keine Einschränkung bei Desktop-App; mobile Apps mit Dropbox, Google Drive, OneDrive, pCloud, iCloud Drive unter iOS und jeder Cloud via WebDAV und S3 kompatibel)&lt;/li&gt;
 &lt;li&gt;Verfügbar auf Windows, macOS, Linux, iOS und Android&lt;/li&gt;
-&lt;li&gt;Sowohl für den persönlichen Gebrauch als auch für Unternehmen: &lt;a href=&#34;https://cryptomator.org/de/hub/&#34;&gt;Cryptomator Hub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Sowohl für den persönlichen Gebrauch als auch für Unternehmen: &lt;a href=&#34;https://preview.cryptomator.org/de/hub/&#34;&gt;Cryptomator Hub&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Ende-zu-Ende- und Zero-Knowledge-Verschlüsselung&lt;/li&gt;
 &lt;li&gt;Kostenlose Desktop-App, Einmalkauf (15€) bei der mobilen App, kein Abonnement&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://cryptomator.org/de/open-source/&#34;&gt;Maximale Transparenz durch Open-Source-Software&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://preview.cryptomator.org/de/open-source/&#34;&gt;Maximale Transparenz durch Open-Source-Software&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Unbeschränkte Anzahl an Geräten&lt;/li&gt;
 &lt;li&gt;Passwort-Wiederherstellung durch Offline Key Recovery&lt;/li&gt;
 &lt;li&gt;Software „Made in Germany“&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img class=&#34;inline-block&#34; src=&#34;https://cryptomator.org/img/encrypt-dropbox/cryptobot-unlocking-vault.png&#34; srcset=&#34;https://cryptomator.org/img/encrypt-dropbox/cryptobot-unlocking-vault.png 1x, https://cryptomator.org/img/encrypt-dropbox/cryptobot-unlocking-vault@2x.png 2x&#34; alt=&#34;Cryptomator ermöglicht dir den Zugang zu deinen Klartextdaten, ohne dass der Schutz der Verschlüsselung aufgehoben werden muss.&#34; /&gt;
+&lt;img class=&#34;inline-block&#34; src=&#34;https://preview.cryptomator.org/img/encrypt-dropbox/cryptobot-unlocking-vault.png&#34; srcset=&#34;https://preview.cryptomator.org/img/encrypt-dropbox/cryptobot-unlocking-vault.png 1x, https://preview.cryptomator.org/img/encrypt-dropbox/cryptobot-unlocking-vault@2x.png 2x&#34; alt=&#34;Cryptomator ermöglicht dir den Zugang zu deinen Klartextdaten, ohne dass der Schutz der Verschlüsselung aufgehoben werden muss.&#34; /&gt;
 &lt;h2 id=&#34;wie-du-von-boxcryptor-zu-cryptomator-wechselst&#34;&gt;Wie du von Boxcryptor zu Cryptomator wechselst&lt;/h2&gt;
 &lt;p&gt;Der Umzug von Boxcryptor zu Cryptomator ist einfach. Boxcryptor bietet auf deren Website einen &lt;a href=&#34;https://support.boxcryptor.com/de/help/faq-and-troubleshooting/#migration-guide&#34;&gt;Off-Migration Guide&lt;/a&gt;, um alle mit Boxcryptor verschlüsselten Dateien zu entschlüsseln. Stelle zu jedem Zeitpunkt sicher, dass keine sensiblen Daten unverschlüsselt in der Cloud liegen. Anschließend richtest du Cryptomator ein, damit du diese Dateien wieder sicher und verschlüsselt in die Cloud synchronisieren kannst.&lt;/p&gt;
 &lt;h3 id=&#34;so-leicht-richtest-du-cryptomator-ein&#34;&gt;So leicht richtest du Cryptomator ein&lt;/h3&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://cryptomator.org/de/downloads/&#34;&gt;Lade Cryptomator herunter&lt;/a&gt; und installiere es.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://preview.cryptomator.org/de/downloads/&#34;&gt;Lade Cryptomator herunter&lt;/a&gt; und installiere es.&lt;/li&gt;
 &lt;li&gt;Sobald Cryptomator installiert ist, kannst du einen neuen Tresor erstellen.&lt;/li&gt;
 &lt;li&gt;Gib deinem Tresor einen Namen.&lt;/li&gt;
 &lt;li&gt;Wähle nun als Ablageort deines Tresors einen Cloud-Speicher deiner Wahl aus.&lt;/li&gt;
@@ -121,8 +121,8 @@
 &lt;p&gt;Wenn du möchtest, kannst du diesen sofort entsperren und das virtuelle Laufwerk sichtbar werden lassen. Hier legst du ab sofort deine sensiblen Dateien ab, bspw. die Daten, die du vorher mit Boxcryptor verschlüsselt hast, um diese in der Cloud von nun an mit Cryptomator zu verschlüsseln. &lt;a href=&#34;https://docs.cryptomator.org/en/latest/desktop/adding-vaults/&#34;&gt;Eine ausführliche Anleitung gibt es hier.&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 08 Dec 2022 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/de/blog/2022/12/08/boxcryptor-shuts-down-find-your-cloud-encryption-alternative/</link>
-        <guid isPermaLink="true">https://cryptomator.org/de/blog/2022/12/08/boxcryptor-shuts-down-find-your-cloud-encryption-alternative/</guid>
+        <link>https://preview.cryptomator.org/de/blog/2022/12/08/boxcryptor-shuts-down-find-your-cloud-encryption-alternative/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/de/blog/2022/12/08/boxcryptor-shuts-down-find-your-cloud-encryption-alternative/</guid>
         
         <category>cryptomator</category>
         
@@ -131,7 +131,7 @@
       <item>
         <title>Herzlichen Glückwunsch Boxcryptor &amp; Dropbox! – Wir sind hier um zu bleiben</title>
         <description>&lt;p&gt;Du hast vielleicht mitbekommen, dass &lt;a href=&#34;https://blog.dropbox.com/topics/company/dropbox-to-acquire-boxcryptor-assets-bring-end-to-end-encryption-to-business-users&#34;&gt;Dropbox&lt;/a&gt; die IP-Technologie von &lt;a href=&#34;https://www.boxcryptor.com/de/blog/post/new-chapter-with-dropbox/&#34;&gt;Boxcryptor&lt;/a&gt; übernommen hat. Wir gratulieren beiden Unternehmen und wünschen ihnen alles Gute für die Zukunft! 🎉&lt;/p&gt;
-&lt;p&gt;Schon seit geraumer Zeit wird Cryptomator als &lt;a href=&#34;https://cryptomator.org/de/boxcryptor-alternative/&#34;&gt;Alternative zu Boxcryptor&lt;/a&gt; betrachtet und man kann sich bestimmt gut vorstellen, dass wir von dieser Neuigkeit sehr überrascht waren. Am heutigen Computer Security Day möchten wir die Gelegenheit nutzen, um dir mitzuteilen, dass Cryptomator hier ist, um zu bleiben ❤️&lt;/p&gt;
+&lt;p&gt;Schon seit geraumer Zeit wird Cryptomator als &lt;a href=&#34;https://preview.cryptomator.org/de/boxcryptor-alternative/&#34;&gt;Alternative zu Boxcryptor&lt;/a&gt; betrachtet und man kann sich bestimmt gut vorstellen, dass wir von dieser Neuigkeit sehr überrascht waren. Am heutigen Computer Security Day möchten wir die Gelegenheit nutzen, um dir mitzuteilen, dass Cryptomator hier ist, um zu bleiben ❤️&lt;/p&gt;
 &lt;h2 id=&#34;was-bedeutet-das-für-cryptomator&#34;&gt;Was bedeutet das für Cryptomator?&lt;/h2&gt;
 &lt;p&gt;Natürlich sind wir von dieser Übernahme nicht betroffen. Wir sind immer noch das gleiche Team, mit den gleichen Zielen und der gleichen Vision. Die &lt;a href=&#34;https://skymatic.de/&#34;&gt;Skymatic GmbH&lt;/a&gt; wird Cryptomator weiterhin entwickeln und pflegen und wir werden auch weiterhin eine freie und quelloffene Lösung für Ende-zu-Ende-Verschlüsselung anbieten. 🚀&lt;/p&gt;
 &lt;p&gt;Das Konzept hinter Cryptomator ist unabhängig von einem einzelnen Cloud-Anbieter und wir werden weiterhin so viele Cloud-Anbieter wie möglich unterstützen.&lt;/p&gt;
@@ -140,18 +140,18 @@
 &lt;p&gt;Bei Open-Source-Tools hat sich in der Vergangenheit gezeigt, dass ein Fork der Anwendung koexistieren oder die eigentliche Anwendung ersetzen kann, wenn diese nicht mehr existiert. Das heißt, selbst wenn die Skymatic GmbH zusammen mit der Community die Entwicklung von Cryptomator einstellt oder Cryptomator an einen Dritten verkauft, ist es sehr wahrscheinlich, dass einer der vielen Forks von Cryptomator von der Community aktiv weiter gepflegt und entwickelt wird.&lt;/p&gt;
 &lt;h2 id=&#34;was-bedeutet-das-für-dropbox-nutzerinnen&#34;&gt;Was bedeutet das für Dropbox-Nutzer:innen?&lt;/h2&gt;
 &lt;p&gt;Es ist wahrscheinlich noch zu früh, um dazu Genaueres zu sagen, aber Dropbox plant, ihre Ende-zu-Ende-Verschlüsselung nur für Geschäftskunden anzubieten. Wir freuen uns zu sehen, dass Dropbox die Ende-zu-Ende-Verschlüsselung ernst nimmt.&lt;/p&gt;
-&lt;p&gt;Cryptomator arbeitet sehr gut mit Dropbox zusammen und für den Moment ist die &lt;a href=&#34;https://cryptomator.org/de/encrypt-dropbox/&#34;&gt;Verschlüsselung von Dropbox&lt;/a&gt; mit Cryptomator die beste Option.&lt;/p&gt;
+&lt;p&gt;Cryptomator arbeitet sehr gut mit Dropbox zusammen und für den Moment ist die &lt;a href=&#34;https://preview.cryptomator.org/de/encrypt-dropbox/&#34;&gt;Verschlüsselung von Dropbox&lt;/a&gt; mit Cryptomator die beste Option.&lt;/p&gt;
 &lt;h2 id=&#34;was-bedeutet-das-für-boxcryptor-nutzerinnen&#34;&gt;Was bedeutet das für Boxcryptor-Nutzer:innen?&lt;/h2&gt;
 &lt;p&gt;Wir bedauern es sehr, dass Boxcryptor ihren bestehenden Dienst einstellen wird. Es ist für neue Nutzer nicht mehr verfügbar und bestehende Nutzer:innen werden wahrscheinlich migrieren müssen, wenn ihre Verträge auslaufen. Wenn du davon betroffen bist, heißen wir dich herzlich willkommen, Cryptomator auszuprobieren. 😉 Besuche unsere &lt;a href=&#34;https://community.cryptomator.org/&#34;&gt;Community&lt;/a&gt; für Hilfe und Unterstützung.&lt;/p&gt;
-&lt;p&gt;Cryptomator kann für alle gängigen Betriebssysteme &lt;a href=&#34;https://cryptomator.org/de/downloads/&#34;&gt;heruntergeladen&lt;/a&gt; werden und ist ideal für den persönlichen Gebrauch. Die Desktop-App ist kostenlos und die mobilen Apps können gegen eine einmalige Gebühr erworben werden.&lt;/p&gt;
-&lt;p&gt;Wenn du eine Lösung für Teams und Unternehmen suchst, schaue dir &lt;a href=&#34;https://cryptomator.org/de/hub/&#34;&gt;Cryptomator Hub&lt;/a&gt; an, das ebenfalls Open-Source ist. 🎉&lt;/p&gt;
+&lt;p&gt;Cryptomator kann für alle gängigen Betriebssysteme &lt;a href=&#34;https://preview.cryptomator.org/de/downloads/&#34;&gt;heruntergeladen&lt;/a&gt; werden und ist ideal für den persönlichen Gebrauch. Die Desktop-App ist kostenlos und die mobilen Apps können gegen eine einmalige Gebühr erworben werden.&lt;/p&gt;
+&lt;p&gt;Wenn du eine Lösung für Teams und Unternehmen suchst, schaue dir &lt;a href=&#34;https://preview.cryptomator.org/de/hub/&#34;&gt;Cryptomator Hub&lt;/a&gt; an, das ebenfalls Open-Source ist. 🎉&lt;/p&gt;
 &lt;h2 id=&#34;vielen-dank&#34;&gt;Vielen Dank&lt;/h2&gt;
 &lt;p&gt;Cryptomator begann vor fast neun Jahren als ein Nebenprojekt. Heute sind wir ein Team von leidenschaftlichen Entwicklern und freuen uns, dass wir an Cryptomator arbeiten können. Ein großes Lob an alle unsere Open-Source-Contributors, Übersetzer und Tester! Wir sind dankbar für all die Unterstützung, die wir im Laufe der Jahre von der Cryptomator-Community erhalten haben, und für das Vertrauen, das ihr uns entgegenbringt. Unser besonderer Dank gilt unseren Sponsoren und Unterstützern!&lt;/p&gt;
-&lt;p&gt;Wir haben das Gefühl, dass wir gerade erst am Anfang stehen und haben noch große Updates vor uns! Um die fortlaufende Open-Source-Entwicklung von Cryptomator zu unterstützen, freuen wir uns über eine &lt;a href=&#34;https://cryptomator.org/de/donate/&#34;&gt;Spende&lt;/a&gt; oder ein &lt;a href=&#34;https://cryptomator.org/de/sponsors/&#34;&gt;Sponsoring&lt;/a&gt;. ❤️&lt;/p&gt;
+&lt;p&gt;Wir haben das Gefühl, dass wir gerade erst am Anfang stehen und haben noch große Updates vor uns! Um die fortlaufende Open-Source-Entwicklung von Cryptomator zu unterstützen, freuen wir uns über eine &lt;a href=&#34;https://preview.cryptomator.org/de/donate/&#34;&gt;Spende&lt;/a&gt; oder ein &lt;a href=&#34;https://preview.cryptomator.org/de/sponsors/&#34;&gt;Sponsoring&lt;/a&gt;. ❤️&lt;/p&gt;
 </description>
         <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/de/blog/2022/11/30/congratulations-boxcryptor-dropbox/</link>
-        <guid isPermaLink="true">https://cryptomator.org/de/blog/2022/11/30/congratulations-boxcryptor-dropbox/</guid>
+        <link>https://preview.cryptomator.org/de/blog/2022/11/30/congratulations-boxcryptor-dropbox/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/de/blog/2022/11/30/congratulations-boxcryptor-dropbox/</guid>
         
         <category>cryptomator</category>
         
@@ -170,13 +170,13 @@
 &lt;p&gt;Cryptomator Hub basiert auf dem gleichen Konzept des Tresors, einer gesicherten Dateiablage zum Synchronisieren in die Cloud mit Ende-zu-Ende-Verschlüsselung. Neu ist, dass Hub das Tresor-Passwort durch eine zentrale Zugriffsverwaltung ersetzt.&lt;/p&gt;
 &lt;p&gt;Der individuelle Zugriff auf Cryptomator-Tresore wird durch eine serverseitige Authentifizierung und eine Schlüsselverwaltung gesichert. Hub verwaltet das Schlüsselmaterial basierend auf einer Zero-Knowledge-Lösung, ohne mit unverschlüsselten Schlüsseln in Berührung zu kommen. &lt;a href=&#34;https://github.com/cryptomator/hub/wiki/Zero-Knowledge-Key-Management&#34;&gt;Mehr erfahren.&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;wie-kann-ich-losegen&#34;&gt;Wie kann ich losegen?&lt;/h2&gt;
-&lt;p&gt;Die Self-Hosted-Lösung wird als Softwarecontainer ausgeliefert und kann mittels Kubernetes oder Docker installiert werden. Mehr Infos zum Loslegen gibt es auf &lt;a href=&#34;https://cryptomator.org/de/hub/&#34;&gt;Landing Page&lt;/a&gt; von Cryptomator Hub.&lt;/p&gt;
+&lt;p&gt;Die Self-Hosted-Lösung wird als Softwarecontainer ausgeliefert und kann mittels Kubernetes oder Docker installiert werden. Mehr Infos zum Loslegen gibt es auf &lt;a href=&#34;https://preview.cryptomator.org/de/hub/&#34;&gt;Landing Page&lt;/a&gt; von Cryptomator Hub.&lt;/p&gt;
 &lt;p&gt;Hub kann bis zu einer Teamgröße von 5 Personen kostenlos genutzt werden. Für größere Teams und Unternehmen kann über die Webseite eine jährliche Lizenz mit 6,00€ pro Sitz und Monat erworben werden. Bis zum Ende des Jahres gibt es eine Rabattaktion, die 25% Nachlass auf das erste Jahr gewährt. 🎊&lt;/p&gt;
 &lt;p&gt;Und wie immer, Cryptomator Hub ist vollständig &lt;a href=&#34;https://github.com/cryptomator/hub&#34;&gt;Open-Source&lt;/a&gt;. Bei weiteren Fragen teilt sie uns gerne in der untenstehenden Diskussion mit oder &lt;a href=&#34;mailto:hub@cryptomator.org&#34;&gt;kontaktiert uns&lt;/a&gt;. Wir freuen uns auf euer Feedback! 🤖&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Nov 2022 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/de/blog/2022/11/03/hub-1.0/</link>
-        <guid isPermaLink="true">https://cryptomator.org/de/blog/2022/11/03/hub-1.0/</guid>
+        <link>https://preview.cryptomator.org/de/blog/2022/11/03/hub-1.0/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/de/blog/2022/11/03/hub-1.0/</guid>
         
         <category>cryptomator</category>
         
@@ -200,8 +200,8 @@
 &lt;p&gt;Wenn ihr bis hierher gelesen habt, möchten wir ein Geheimnis mit euch teilen. Wir arbeiten derzeit an &lt;a href=&#34;https://cryptomator.org/de/hub/&#34;&gt;Cryptomator Hub&lt;/a&gt;. Das war&amp;rsquo;s fürs Erste, aber ihr werdet bestimmt noch dieses Jahr mehr darüber erfahren.&lt;/p&gt;
 </description>
         <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/de/blog/2022/04/04/roadmap/</link>
-        <guid isPermaLink="true">https://cryptomator.org/de/blog/2022/04/04/roadmap/</guid>
+        <link>https://preview.cryptomator.org/de/blog/2022/04/04/roadmap/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/de/blog/2022/04/04/roadmap/</guid>
         
         <category>cryptomator</category>
         
@@ -219,7 +219,7 @@
 &lt;p&gt;Der letzte Blog-Post ist schon eine Weile her. Wir hoffen, es geht euch allen gut. Cryptomator 1.6.7 für Desktop ist nun verfügbar und wir wollen euch über die Änderungen informieren, denn es ist mehr als nur ein &amp;ldquo;Patch&amp;rdquo; geworden! Das Update enthält nämlich nennenswerte Änderungen, insbesondere für Windows-Nutzer.&lt;/p&gt;
 &lt;h2 id=&#34;neuer-installer&#34;&gt;Neuer Installer&lt;/h2&gt;
 &lt;p&gt;Mit Cryptomator 1.6.0 haben wir statt einer &amp;ldquo;normalen&amp;rdquo; ausführbaren EXE-Datei für die Installation ein &lt;a href=&#34;https://de.wikipedia.org/wiki/Windows_Installer&#34;&gt;Windows-Installer-Paket&lt;/a&gt; zur Verfügung gestellt, um die skriptgesteuerte Installation von Cryptomator zu erleichtern. Dieser Ansatz hatte jedoch auch Nachteile: Wir konnten keine Treiber von Drittanbietern (z.B. Dokany) einbinden, was zu einer schlechteren Benutzererfahrung führte.&lt;/p&gt;
-&lt;p&gt;Diese schlimmen Zeiten sind nun vorbei! Wenn ihr auf die &lt;a href=&#34;https://cryptomator.org/de/downloads/&#34;&gt;Downloads-Seite&lt;/a&gt; geht und Windows auswählt, erhaltet ihr wieder eine ausführbare EXE-Datei, die den MSI-Installer sowie zusätzliche Abhängigkeiten bündelt. Außerdem unterstützt er Kommandozeilenparameter (z.B. &lt;code&gt;/quiet&lt;/code&gt;). Eine vollständige Liste erhaltet ihr, wenn ihr den Installer mit dem Parameter &lt;code&gt;/?&lt;/code&gt; ausführt.&lt;/p&gt;
+&lt;p&gt;Diese schlimmen Zeiten sind nun vorbei! Wenn ihr auf die &lt;a href=&#34;https://preview.cryptomator.org/de/downloads/&#34;&gt;Downloads-Seite&lt;/a&gt; geht und Windows auswählt, erhaltet ihr wieder eine ausführbare EXE-Datei, die den MSI-Installer sowie zusätzliche Abhängigkeiten bündelt. Außerdem unterstützt er Kommandozeilenparameter (z.B. &lt;code&gt;/quiet&lt;/code&gt;). Eine vollständige Liste erhaltet ihr, wenn ihr den Installer mit dem Parameter &lt;code&gt;/?&lt;/code&gt; ausführt.&lt;/p&gt;
 &lt;p&gt;Der &amp;ldquo;reine&amp;rdquo; MSI-Installer ohne Abhängigkeiten steht weiterhin auf der Downloads-Seite zur Verfügung oder auch im &lt;a href=&#34;https://github.com/cryptomator/cryptomator/releases/tag/1.6.7&#34;&gt;Release auf GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;neuer-standard-vfs-treiber-virtuelles-volume&#34;&gt;Neuer Standard-VFS-Treiber (virtuelles Volume)&lt;/h2&gt;
 &lt;p&gt;Wie bereits erwähnt, kann der neue EXE-Installer wieder Abhängigkeiten enthalten, also haben wir von Anfang an eine hinzugefügt: &lt;a href=&#34;https://winfsp.dev/&#34;&gt;WinFsp&lt;/a&gt;.&lt;/p&gt;
@@ -235,8 +235,8 @@
 &lt;p&gt;Wir hoffen, dass euch dieses Cryptomator-Update gefällt.&lt;/p&gt;
 </description>
         <pubDate>Fri, 25 Mar 2022 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/de/blog/2022/03/25/release-1.6.7/</link>
-        <guid isPermaLink="true">https://cryptomator.org/de/blog/2022/03/25/release-1.6.7/</guid>
+        <link>https://preview.cryptomator.org/de/blog/2022/03/25/release-1.6.7/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/de/blog/2022/03/25/release-1.6.7/</guid>
         
         <category>cryptomator</category>
         
@@ -278,8 +278,8 @@
 &lt;p&gt;The rewritten iOS app has been tested by more than 2,300 beta testers over a period of half a year. After all, it was just very bad luck that this issue has not been discovered during this beta.&lt;/p&gt;
 </description>
         <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/de/blog/2022/01/11/ios-vulnerability/</link>
-        <guid isPermaLink="true">https://cryptomator.org/de/blog/2022/01/11/ios-vulnerability/</guid>
+        <link>https://preview.cryptomator.org/de/blog/2022/01/11/ios-vulnerability/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/de/blog/2022/01/11/ios-vulnerability/</guid>
         
         <category>cryptomator</category>
         
@@ -294,7 +294,7 @@
         <description>&lt;p&gt;Wir freuen uns, euch mitteilen zu können, dass Cryptomator 2.0 für iOS ab sofort &lt;a href=&#34;https://apps.apple.com/de/app/cryptomator-2/id1560822163&#34;&gt;im App Store&lt;/a&gt; verfügbar ist! 🎉 Wir möchten uns bei unseren über 2.300 TestFlight-Nutzer:innen bedanken, die die App in den letzten 6 Monaten getestet haben. ❤️&lt;/p&gt;
 &lt;figure class=&#34;text-center&#34;&gt;
   &lt;a href=&#34;https://apps.apple.com/de/app/cryptomator-2/id1560822163&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
-    &lt;img class=&#34;inline-block rounded&#34; src=&#34;https://cryptomator.org/img/blog/ios-2.0.png&#34; srcset=&#34;https://cryptomator.org/img/blog/ios-2.0.png 1x, https://cryptomator.org/img/blog/ios-2.0@2x.png 2x&#34; alt=&#34;Cryptomator 2.0 for iOS&#34; /&gt;
+    &lt;img class=&#34;inline-block rounded&#34; src=&#34;https://preview.cryptomator.org/img/blog/ios-2.0.png&#34; srcset=&#34;https://preview.cryptomator.org/img/blog/ios-2.0.png 1x, https://preview.cryptomator.org/img/blog/ios-2.0@2x.png 2x&#34; alt=&#34;Cryptomator 2.0 for iOS&#34; /&gt;
   &lt;/a&gt;
 &lt;/figure&gt;
 &lt;p&gt;Letztes Jahr im April haben wir damit angefangen, unsere iOS-App von Grund auf neu zu entwickeln. Darum haben wir uns entschieden, Cryptomator 2.0 in Swift zu entwickeln, womit das Projekt zukunftssicher ist und leichter zu warten.&lt;/p&gt;
@@ -306,8 +306,8 @@
 &lt;p&gt;Wir freuen uns auf euer Feedback! 🤖&lt;/p&gt;
 </description>
         <pubDate>Tue, 21 Dec 2021 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/de/blog/2021/12/21/ios-2.0/</link>
-        <guid isPermaLink="true">https://cryptomator.org/de/blog/2021/12/21/ios-2.0/</guid>
+        <link>https://preview.cryptomator.org/de/blog/2021/12/21/ios-2.0/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/de/blog/2021/12/21/ios-2.0/</guid>
         
         <category>cryptomator</category>
         
@@ -334,12 +334,12 @@
 &lt;p&gt;Darüber hinaus können Plug-ins zum Schutz vor Phishing und Malware die Sicherheit des Browsers erhöhen. Diese können bei den meisten Anbietern relativ einfach aktiviert werden.&lt;/p&gt;
 &lt;h2 id=&#34;5-unterwegs-sicher-in-der-cloud&#34;&gt;5. Unterwegs sicher in der Cloud&lt;/h2&gt;
 &lt;p&gt;Das Hochladen der eigenen Daten in die Cloud kann sehr praktisch sein, wenn man zum Beispiel schnell Bilder teilen oder den eigenen Speicherplatz erweitern möchte. Aber wenn die Daten „einfach so“ in die Cloud hochgeladen werden, sind sie vor fremden Augen nicht sicher. Der Grund dafür ist ganz einfach: Die Daten liegen ungeschützt in der Cloud, und wenn sich jemand Zugang verschafft hat, kann er einfach und ungehindert auf alle Daten zugreifen. Das lässt sich leicht vermeiden: Cryptomator legt deine Daten in der Cloud in einem sicheren Tresor ab und schützt sie so vor fremden Blicken.&lt;/p&gt;
-&lt;p&gt;Wie das funktioniert, kannst du in unserem &lt;a href=&#34;https://cryptomator.org/de/encrypt-dropbox/&#34;&gt;Artikel zur Verschlüsselung von Dropbox&lt;/a&gt; nachlesen.&lt;/p&gt;
-&lt;p&gt;Du willst deine Cloud mit Cryptomator verschlüsseln? &lt;a href=&#34;https://cryptomator.org/de/downloads/&#34;&gt;Hier geht es zum Download&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Wie das funktioniert, kannst du in unserem &lt;a href=&#34;https://preview.cryptomator.org/de/encrypt-dropbox/&#34;&gt;Artikel zur Verschlüsselung von Dropbox&lt;/a&gt; nachlesen.&lt;/p&gt;
+&lt;p&gt;Du willst deine Cloud mit Cryptomator verschlüsseln? &lt;a href=&#34;https://preview.cryptomator.org/de/downloads/&#34;&gt;Hier geht es zum Download&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 30 Nov 2021 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/de/blog/2021/11/30/computer-security-day/</link>
-        <guid isPermaLink="true">https://cryptomator.org/de/blog/2021/11/30/computer-security-day/</guid>
+        <link>https://preview.cryptomator.org/de/blog/2021/11/30/computer-security-day/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/de/blog/2021/11/30/computer-security-day/</guid>
         
         <category>event</category>
         
@@ -393,8 +393,8 @@ Beachtet, dass die Masterkey-Datei weiterhin benötigt wird, da sie den eigentli
 Wenn Ihr mehr über die kommende Version 1.6.0 von Cryptomator erfahren wollt, lest &lt;a href=&#34;https://cryptomator.org/blog/2021/10/11/1-6-0-what-you-need-to-know/&#34;&gt;Cryptomator 1.6.0: Was hat sich geändert?&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Mon, 11 Oct 2021 00:00:00 +0000</pubDate>
-        <link>https://cryptomator.org/de/blog/2021/10/11/vault-format-8/</link>
-        <guid isPermaLink="true">https://cryptomator.org/de/blog/2021/10/11/vault-format-8/</guid>
+        <link>https://preview.cryptomator.org/de/blog/2021/10/11/vault-format-8/</link>
+        <guid isPermaLink="true">https://preview.cryptomator.org/de/blog/2021/10/11/vault-format-8/</guid>
         
         <category>cryptomator</category>
         
